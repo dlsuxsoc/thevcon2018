@@ -34,7 +34,8 @@ h1, h2, h3, h4, h5, h6{
 
 h1{
     font-size: 2em;
-    margin-bottom: 2em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
 }
 
 h2{
@@ -42,7 +43,7 @@ h2{
 }
 
 h3{
-    font-size: 1.17em;
+    font-size: 1.30em;
 }
 
 h4{
@@ -59,7 +60,7 @@ h6{
 
 p{
     font-family: 'Nunito', 'Open Sans', sans-serif;
-    font-size: 0.98em;
+    font-size: 1em;
     line-height: 1.7em;
     margin: 1em 0;
     padding: 0;
