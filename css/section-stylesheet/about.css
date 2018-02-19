@@ -1,1 +1,17 @@
 /* NOTE: about section stylesheet */
+
+#about-title{
+    text-align: center;
+}
+
+section#about > div{
+    margin: 6em 0;
+}
+
+section#about div.content-wrapper{
+    margin: 0 2.5em;
+}
+
+section#about > div img{
+    width: 40em;
+}
