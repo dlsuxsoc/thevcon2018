@@ -55,6 +55,7 @@ section.dark-highlighted{
 /* gradient background collection */
 .purple-blue-gradient{
     background: linear-gradient(45deg, #00abd4, #1595c7, #3a6fb1, #5751a0, #6b3b94, #782e8c, #7c2a8a);
+    background-attachment: fixed;
 }
 
 .blue-green-gradient{
