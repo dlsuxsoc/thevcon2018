@@ -36,6 +36,7 @@ h1{
     font-size: 2em;
     text-transform: uppercase;
     margin-bottom: 1em;
+    text-align: center;
 }
 
 h2{
@@ -74,6 +75,10 @@ a{
 
 p a{
     color: var(--theme-blue);
+}
+
+p a:hover{
+    text-decoration: underline;
 }
 
 .white{
