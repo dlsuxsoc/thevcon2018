@@ -1,0 +1,120 @@
+/*
+    stylesheet framework for aesthetics and full-width graphics
+*/
+
+/* THEME ASSET ICONS */
+
+#brand-logo, #sticky-brand-logo{
+    width: 3em;
+}
+
+#bridge{
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+#festive-logo{
+    display: block;
+    margin: 5em 0;
+}
+
+#hands{
+    position: absolute;
+    left: 0;
+    bottom: 1em;
+    width: 100%;
+}
+
+/* AESTHETICS ICONS */
+.aesthetics{
+    position: absolute;
+}
+
+#planet-1{
+    width: 10em;
+    right: -2em;
+    top: 1em;
+}
+
+#planet-2{
+    width: 6em;
+    left: 3em;
+    top: 50em;
+}
+
+#planet-3{
+    width: 20em;
+    right: -10em;
+    top: 44em;
+}
+
+#planet-4{
+    width: 30em;
+    left: -15em;
+    top: 84em;
+}
+
+#earth-1{
+    width: 20em;
+    right: 5em;
+    bottom: 224em;
+}
+
+#lines-blue-1{
+    width: 40em;
+    left: -7em;
+    top: 35em;
+}
+
+#lines-blue-2{
+    width: 45em;
+    right: -7em;
+    bottom: -10em;
+}
+
+#lines-yellow-1{
+    width: 65em;
+    right: -17em;
+    top: 120em;
+}
+
+#lines-yellow-2{
+    width: 55em;
+    right: -17em;
+    bottom: 25em;
+}
+
+#gradient-lines-1{
+    width: 50em;
+    left: -7em;
+    bottom: 40em;
+}
+
+#space-1{
+    width: 25em;
+    top: 3em;
+    right: 0;
+}
+
+/* FONT-AWESOME STYLESHEET */
+footer i.fa{
+    display: inline-block;
+    margin: 0.5em;
+    color: #333;
+    cursor: pointer;
+
+    transition: 0.1s ease all;
+    -webkit-transition: 0.1s ease all;
+    -o-transition: 0.1s ease all;
+    -moz-transition: 0.1s ease all;
+    -ms-transition: 0.1s ease all;
+}
+
+i.fa:hover{
+    color: var(--theme-blue);
+}

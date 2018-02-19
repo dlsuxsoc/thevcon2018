@@ -1,0 +1,53 @@
+/* NOTE: repsosive web design framework */
+
+@media (max-width: 1043px) {
+
+    /* about section */
+    #about div.flex-between{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about div.flex-between:nth-child(even){
+        flex-direction: column-reverse;
+    }
+
+    #about img{
+        width: 70% !important;
+        margin-bottom: 2em;
+    }
+}
+
+@media (max-width: 837px) {
+    section{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #about div.content-wrapper{
+        margin: 0 !important;
+    }
+
+    #call-to-action div.content-wrapper{
+        padding: 0 !important;
+    }
+
+    #room-reservation div.content-wrapper p{
+        padding: 0 !important;
+    }
+
+    footer > div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer > div > div{
+        max-width: 100% !important;
+        text-align: center;
+        margin: 3em 0;
+    }
+
+    footer #faqs h5{
+        padding: 1em;
+    }
+}
