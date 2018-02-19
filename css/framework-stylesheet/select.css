@@ -1,0 +1,40 @@
+/*
+    stylesheet framework for select tags
+*/
+
+select{
+    /*
+    width: 10em;
+    padding: 1em;
+    background-color: transparent;
+    border: thin solid white;
+    border-radius: 3px;
+    */
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 8px 0;
+    padding-left: 10px;
+    width: 100px;
+    padding-right: 25px;
+    margin-right: 1em;
+    font-family: 'Nunito', sans-serif;
+    background-color: transparent;
+    border:  thin solid var(--theme-purple);
+    border-radius: 3px;
+    outline: none;
+    font-weight: normal;
+    color: var(--theme-purple);
+    cursor: pointer;
+
+    background-image: url("../assets/icons/angle-arrow-down.svg");
+    background-size: 11px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 5%);
+}
+
+select.white{
+    background-image: url("../assets/svg/angle-arrow-down-white.svg");
+    border:  thin solid white;
+    color: white;
+}

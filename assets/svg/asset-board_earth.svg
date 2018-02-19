@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="rounded_gradient_lines" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+<g>
+	<path fill="#F5D852" d="M151.22,293.501c-79.126,0-143.5-64.374-143.5-143.502c0-79.126,64.373-143.501,143.5-143.501
+		S294.722,70.873,294.722,150C294.722,229.127,230.347,293.501,151.22,293.501z M151.22,7.49C72.642,7.49,8.712,71.419,8.712,150
+		c0,78.58,63.93,142.51,142.508,142.51c78.58,0,142.51-63.93,142.51-142.51C293.731,71.419,229.801,7.49,151.22,7.49z"/>
+</g>
+<circle fill="#2C2E72" cx="151.221" cy="150" r="124.614"/>
+<g>
+	<defs>
+		<circle id="SVGID_13_" cx="151.221" cy="150" r="124.613"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_13_"  overflow="visible"/>
+	</clipPath>
+	
+		<rect x="135.313" y="-28.383" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -12.835 171.8764)" clip-path="url(#SVGID_2_)" fill="#4279B2" width="131.486" height="259.629"/>
+</g>
+<polygon fill="#06A6B4" points="146.207,184.489 128.208,207.397 102.574,226.213 91.121,255.393 78.576,201.67 61.941,185.853 
+	64.395,146.856 95.484,154.219 118.937,177.945 "/>
+<rect x="58.374" y="126.112" transform="matrix(0.8452 -0.5345 0.5345 0.8452 -65.7103 55.3823)" fill="#06A6B4" width="8.727" height="29.997"/>
+<path fill="#06A6B4" d="M146.207,68.59L73.94,100.769L56.76,98.315l1.964,28.264l-7.964,5.279l-3-20.726l-7.908-15.544
+	c12.7-29.069,41.997-54.541,76.903-65.177l28.907,6.818L146.207,68.59z"/>
+<path fill="#06A6B4" d="M235.418,241.983l3.509-75.492l-59.995-18.271l27.271-60.268l62.177,18.271
+	C284.741,158.31,273.724,204.175,235.418,241.983z"/>
+<path fill="#06A6B4" d="M265.924,101.042L213.02,83.589l9.272-19.362l-16.089-12.544l16.908-3.545
+	C242.748,62.539,256.655,80.393,265.924,101.042z"/>
+<g>
+	<defs>
+		<circle id="SVGID_15_" cx="151.221" cy="150" r="124.613"/>
+	</defs>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_15_"  overflow="visible"/>
+	</clipPath>
+	
+		<rect x="135.313" y="-28.383" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -12.835 171.8764)" clip-path="url(#SVGID_4_)" fill="#4279B2" width="131.486" height="259.629"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="59.357" y="25.559" width="216.424" height="216.424">
+		<feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+		<feBlend  in="SourceGraphic" in2="back" mode="normal"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="59.357" y="25.559" width="216.424" height="216.424" id="SVGID_6_">
+	<g filter="url(#Adobe_OpacityMaskFilter)">
+		<defs>
+			<filter id="Adobe_OpacityMaskFilter_1_" filterUnits="userSpaceOnUse" x="59.357" y="25.559" width="216.424" height="216.424">
+				<feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+				<feBlend  in="SourceGraphic" in2="back" mode="normal"/>
+			</filter>
+		</defs>
+		<mask maskUnits="userSpaceOnUse" x="59.357" y="25.559" width="216.424" height="216.424" id="SVGID_6_">
+		</mask>
+		<linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="59.3571" y1="133.7712" x2="275.7807" y2="133.7712">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#808080"/>
+		</linearGradient>
+		<path mask="url(#SVGID_6_)" fill="url(#SVGID_8_)" d="M151.167,25.559c-36.334,0-69.032,15.555-91.81,40.363
+			c22.182-20.367,51.762-32.803,84.25-32.803c68.822,0,124.613,55.791,124.613,124.613c0,32.488-12.437,62.068-32.803,84.25
+			c24.808-22.778,40.363-55.476,40.363-91.81C275.781,81.351,219.99,25.559,151.167,25.559z"/>
+	</g>
+</mask>
+<linearGradient id="SVGID_10_" gradientUnits="userSpaceOnUse" x1="59.3571" y1="133.7712" x2="275.7807" y2="133.7712">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="1" style="stop-color:#FFFFFF"/>
+</linearGradient>
+<path fill="url(#SVGID_10_)" d="M151.167,25.559c-36.334,0-69.032,15.555-91.81,40.363c22.182-20.367,51.762-32.803,84.25-32.803
+	c68.822,0,124.613,55.791,124.613,124.613c0,32.488-12.437,62.068-32.803,84.25c24.808-22.778,40.363-55.476,40.363-91.81
+	C275.781,81.351,219.99,25.559,151.167,25.559z"/>
+</svg>

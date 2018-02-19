@@ -1,0 +1,45 @@
+/*
+NOTE: mjaren Framework
+flex stylesheet
+items are aligned vertically at the center by default
+*/
+
+.flex-start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-column-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}

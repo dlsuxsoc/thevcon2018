@@ -1,0 +1,132 @@
+/* buttons stylesheet */
+
+/* NOTE: WHAT TO USE?
+ * NOTE: mjaren Framework
+ *
+ * <button class="[classname]">...</button> or
+ * <input type="button" class="[classname]" /> or
+ * <input type="submit" class="[classname]" />
+ *
+ * - radius-5
+ * - radius-full
+ * - white
+ * - dark
+ * - hallow
+ * - hallow-white
+ * - hallow-dark
+ *
+ */
+
+:root{
+    --theme-button-color: #319bb7;
+    --theme-button-accent: #328396;
+    --theme-button-dark-color: #637484;
+    --theme-button-dark-accent: #4C5A68;
+    --theme-button-light-color: white;
+    --theme-button-light-accent: #D0D7DC;
+
+    --theme-button-color-value: white;
+}
+
+button.radius-5, input[type="button"].radius-5, input[type="submit"].radius-5{
+    border-radius: 5px;
+}
+
+button.radius-full, input[type="button"].radius-full, input[type="submit"].radius-full{
+    border-radius: 200px;
+}
+
+/* default look of a button */
+button, input[type="button"], input[type="submit"]{
+    padding: 10px 20px;
+    font-kerning: 3.6em;
+    background-color: var(--theme-button-color);
+    border: thin solid var(--theme-button-color);
+    color: var(--theme-button-color-value);
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 0.7em;
+    margin: 0;
+
+    transition: ease 0.3s all;
+    -webkit-transition: ease 0.3s all;
+    -moz-transition: ease 0.3s all;
+    -o-transition: ease 0.3s all;
+    -ms-transition: ease 0.3s all;
+}
+
+/* white default look of a button */
+button.white, input[type="button"].white, input[type="submit"].white{
+    background-color: var(--theme-button-color-value);
+    border: thin solid var(--theme-button-color-value);
+    color: var(--theme-button-color);
+    margin: 0;
+}
+
+/* dark default look of a button */
+button.dark, input[type="button"].dark, input[type="submit"].dark{
+    background-color: var(--theme-button-dark-color);
+    border: thin solid var(--theme-button-dark-color);
+    color: var(--theme-button-color-value);
+}
+
+/* transparent background color, themed button */
+button.hallow, input[type="button"].hallow, input[type="submit"].hallow{
+    background-color: transparent;
+    color: var(--theme-button-color);
+    border-color: var(--theme-button-color);
+}
+
+/* tranparent background color, white button */
+button.hallow-white, input[type="button"].hallow-white, input[type="submit"].hallow-white{
+    background-color: transparent;
+    color: var(--theme-button-light-color);
+    border-color: var(--theme-button-light-color);
+}
+
+/* tranparent background color, dark button */
+button.hallow-dark, input[type="button"].hallow-dark, input[type="submit"].hallow-dark{
+    background-color: transparent;
+    color: var(--theme-button-dark-color);
+    border-color: var(--theme-button-dark-color);
+}
+
+
+
+/************** pseudoclasses **************/
+button:hover, input[type="button"]:hover, input[type="submit"]:hover{
+    background-color: var(--theme-button-accent);
+    border-color: var(--theme-button-accent);
+    color: var(--theme-button-color-value);
+}
+
+button.hallow:hover, input[type="button"].hallow:hover, input[type="submit"].hallow:hover{
+    background-color: var(--theme-button-color);
+    border-color: var(--theme-button-color);
+    color: var(--theme-button-color-value);
+}
+
+button.white:hover, input[type="button"].white:hover, input[type="submit"].white:hover{
+    background-color: var(--theme-button-light-accent);
+    border-color: var(--theme-button-light-accent);
+    color: var(--theme-button-color);
+}
+
+button.dark:hover, input[type="button"].dark:hover, input[type="submit"].dark:hover{
+    background-color: var(--theme-button-dark-accent);
+    border-color: var(--theme-button-dark-accent);
+    color: var(--theme-button-color-value);
+}
+
+button.hallow-white:hover, input[type="button"].hallow-white:hover, input[type="submit"].white:hover{
+    background-color: transparent;
+    border-color: var(--theme-button-light-accent);
+    color: var(--theme-button-light-accent);
+}
+
+button.hallow-dark:hover, input[type="button"].hallow-dark:hover, input[type="submit"].hallow-dark:hover{
+    background-color: transparent;
+    border-color: var(--theme-button-dark-accent);
+    color: var(--theme-button-dark-accent);
+}

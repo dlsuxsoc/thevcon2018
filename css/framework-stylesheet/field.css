@@ -1,0 +1,57 @@
+/* input field customization stylesheet */
+/* NOTE: mjaren Framework */
+:root{
+    --theme-field-light-bg: white;
+    --theme-field-dark-bg: #313942;
+
+    --theme-field-light-border: #637484;
+    --theme-field-dark-border: #849CB2;
+
+    --theme-field-light-value: #555555;
+    --theme-field-dark-value: #849CB2;
+
+    --theme-field-custom-width: 20%; /* .custom-width */
+}
+
+/* light theme as default look */
+input[type="text"], input[type="number"], input[type="email"],
+input[type="password"]{
+    color: var(--theme-field-light-value);
+    background-color: var(--theme-field-light-bg);
+    border: thin solid var(--theme-field-light-border);
+    padding: 10px 20px;
+    border-radius: 3px;
+    outline: none;
+}
+
+input[type="text"].dark, input[type="number"].dark, input[type="email"].dark,
+input[type="password"].dark{
+    color: var(--theme-field-dark-value);
+    background-color: var(--theme-field-dark-bg);
+    border: thin solid var(--theme-field-dark-border);
+}
+
+::-webkit-input-placeholder{
+    color: #8D9EAE;
+}
+
+input.indent{
+    text-indent: 13px;
+}
+
+/* NOTE properties of this class is changeable */
+input.custom-width{
+    width: var(--theme-field-custom-width);
+}
+
+input.half-width{
+    width: 50%;
+}
+
+input.full-width{
+    width: 100%;
+}
+
+input.full-radius{
+    border-radius: 200px;
+}
