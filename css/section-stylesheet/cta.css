@@ -1,1 +1,10 @@
 /* NOTE: call to action section stylesheet */
+
+#call-to-action div.content-wrapper{
+    padding: 3em 4.5em;
+    text-align: center;
+}
+
+#call-to-action button{
+    padding: 1.5em 8em;
+}
