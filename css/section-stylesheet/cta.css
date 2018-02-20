@@ -8,3 +8,12 @@
 #call-to-action button{
     padding: 1.5em 8em;
 }
+
+#call-to-action p{
+    font-size: 1.2em;
+}
+
+#original-logo{
+    width: 40%;
+    margin: 0 auto;
+}
