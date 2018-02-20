@@ -16,7 +16,7 @@
 }
 
 header, section{
-    padding: 5em 15%;
+    padding: 7em 15%;
 }
 
 header{
@@ -31,9 +31,8 @@ header{
 footer{
     padding: 5em 15%;
     box-sizing: border-box;
-    border-top: thin solid #ccc;
-    border-bottom: thin solid #ccc;
-    background-color: #f4f4f4;
+    /*border-top: thin solid #ccc;*/
+    background-color: #eee;
     position: relative;
     background-image: url('../../assets/svg/asset-board_bridge.svg');
     background-size: 100%;
