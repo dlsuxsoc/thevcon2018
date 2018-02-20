@@ -28,6 +28,19 @@
         margin: 0 !important;
     }
 
+    #history-tagline{
+        font-size: 0.9em;
+    }
+
+    #history div.ball{
+        width: 0.5em;
+        height: 0.5em;
+    }
+
+    #history div.ball p{
+        display: none;
+    }
+
     #call-to-action div.content-wrapper{
         padding: 0 !important;
     }

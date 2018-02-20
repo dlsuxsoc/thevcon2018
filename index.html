@@ -34,6 +34,7 @@
         <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
         <!--<script src="js/translate.js" type="text/javascript"></script>-->
         <script src="js/faqs.js" type="text/javascript"></script>
+        <script src="js/timeline.js" type="text/javascript"></script>
 
         <!-- view information -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -115,24 +116,25 @@
             <h4 id="history-tagline">
                 Before our 26th V-Con this coming 24 to 28 April 2018 at SPICE Arena in Penang Malaysia, here's where we've been changing lives since 2001
             </h4>
+
             <div class="flex-between" id="timelane">
-                <div class="ball"><p>2001</p></div>
-                <div class="ball"><p>2002</p></div>
-                <div class="ball"><p>2003</p></div>
-                <div class="ball"><p>2004</p></div>
-                <div class="ball"><p>2005</p></div>
-                <div class="ball"><p>2006</p></div>
-                <div class="ball"><p>2007</p></div>
-                <div class="ball"><p>2008</p></div>
-                <div class="ball"><p>2009</p></div>
-                <div class="ball"><p>2010</p></div>
-                <div class="ball"><p>2011</p></div>
-                <div class="ball"><p>2012</p></div>
-                <div class="ball"><p>2013</p></div>
-                <div class="ball"><p>2014</p></div>
-                <div class="ball"><p>2015</p></div>
-                <div class="ball"><p>2016</p></div>
-                <div class="ball"><p>2017</p></div>
+                <div class="ball active" data-id="vcon-2001"><p>2001</p></div>
+                <div class="ball" data-id="vcon-2002"><p>2002</p></div>
+                <div class="ball" data-id="vcon-2003"><p>2003</p></div>
+                <div class="ball" data-id="vcon-2004"><p>2004</p></div>
+                <div class="ball" data-id="vcon-2005"><p>2005</p></div>
+                <div class="ball" data-id="vcon-2006"><p>2006</p></div>
+                <div class="ball" data-id="vcon-2007"><p>2007</p></div>
+                <div class="ball" data-id="vcon-2008"><p>2008</p></div>
+                <div class="ball" data-id="vcon-2009"><p>2009</p></div>
+                <div class="ball" data-id="vcon-2010"><p>2010</p></div>
+                <div class="ball" data-id="vcon-2011"><p>2011</p></div>
+                <div class="ball" data-id="vcon-2012"><p>2012</p></div>
+                <div class="ball" data-id="vcon-2013"><p>2013</p></div>
+                <div class="ball" data-id="vcon-2014"><p>2014</p></div>
+                <div class="ball" data-id="vcon-2015"><p>2015</p></div>
+                <div class="ball" data-id="vcon-2016"><p>2016</p></div>
+                <div class="ball" data-id="vcon-2017"><p>2017</p></div>
             </div>
 
             <!-- VCON 2001 -->
@@ -144,7 +146,7 @@
             </div>
 
             <!-- VCON 2002 -->
-            <div id="vcon-2002" class="content-wrapper">
+            <div id="vcon-2002" class="content-wrapper inactive">
                 <h3 id="vcon-2002-title">V-Con Goa 2002</h3>
                 <p id="vcon-2002-par">
                     With 500 participants from different parts of the world, the 2002 V-Con in India showcased the theme "The Essence of Leadership". With the attention it drew, V-Con Goa was held twice to accommodate all the participants who wanted to take part in such an amazing experience.
@@ -152,7 +154,7 @@
             </div>
 
             <!-- VCON 2003 -->
-            <div id="vcon-2003" class="content-wrapper">
+            <div id="vcon-2003" class="content-wrapper inactive">
                 <h3 id="vcon-2003-title">V-Con Kota Kinabalu 2003</h3>
                 <p id="vcon-2003-par">
                     In 2003, V-Con made its way to Kota Kinabalu, Sabah, Malaysia, where it gathered over 500 participants from 26 different countries. It paraded with the theme, "The Essence of Success."
@@ -160,7 +162,7 @@
             </div>
 
             <!-- VCON 2004 -->
-            <div id="vcon-2004" class="content-wrapper">
+            <div id="vcon-2004" class="content-wrapper inactive">
                 <h3 id="vcon-2004-title">V-Dubai 2004 and Euro V-Con 2004</h3>
                 <p id="vcon-2004-par">
                     V-Dubai in 2004 marked the 6th anniversary of the company, where over 700 participants attended.
@@ -170,7 +172,7 @@
             </div>
 
             <!-- VCON 2005 -->
-            <div id="vcon-2005" class="content-wrapper">
+            <div id="vcon-2005" class="content-wrapper inactive">
                 <h3 id="vcon-2005-title">V-Thailand 2005</h3>
                 <p id="vcon-2005-par">
                     V-Thailand 2005 featured activities that highlighted our passion for developing world-class leadership and excellence.
@@ -180,7 +182,7 @@
             </div>
 
             <!-- VCON 2006 -->
-            <div id="vcon-2006" class="content-wrapper">
+            <div id="vcon-2006" class="content-wrapper inactive">
                 <h3 id="vcon-2006-title">V-Malaysia 2006 and Euro V-Con Madrid 2006</h3>
                 <p id="vcon-2006-par">
                     Marked as the 7th V-Convention, V-Malaysia 2006 was held at Sunway Pyramid Convention Center and bore the theme, "Over The Top".
@@ -190,7 +192,7 @@
             </div>
 
             <!-- VCON 2007 -->
-            <div id="vcon-2007" class="content-wrapper">
+            <div id="vcon-2007" class="content-wrapper inactive">
                 <h3 id="vcon-2007-title">V-Jakarta 2007 and V-Africa 2007</h3>
                 <p id="vcon-2007-par">
                     With over 3,000 participants from 40 different countries, V-Jakarta 2007 was held at the Jakarta Convention Center, where The V strengthened its passion for the network’s success.
@@ -200,7 +202,7 @@
             </div>
 
             <!-- VCON 2008 -->
-            <div id="vcon-2008" class="content-wrapper">
+            <div id="vcon-2008" class="content-wrapper inactive">
                 <h3 id="vcon-2008-title">V-Malaysia 2008 and V-Africa 2008</h3>
                 <p id="vcon-2008-par">
                     The company celebrated its 10th anniversary. One of the highlights of V-Con held at the Penang International Sports Arena from the 21st to 25th of May in 2008 was the V-Kids Convention where over 124 children of different ages and nationalities were treated to three days of fun and learning. Aside from the V-Kids Convention, other highlights of the convention included the spectacular Gala and Welcome Night and an exhibit that showcased the whole gamut of products and services from The V and its sister companies.
@@ -210,7 +212,7 @@
             </div>
 
             <!-- VCON 2009 -->
-            <div id="vcon-2009" class="content-wrapper">
+            <div id="vcon-2009" class="content-wrapper inactive">
                 <h3 id="vcon-2009-title">V-Malaysia 2009</h3>
                 <p id="vcon-2009-par">
                     Held in Shah Alam, Malaysia, this V-Con carried the theme "Change Begins."
@@ -218,7 +220,7 @@
             </div>
 
             <!-- VCON 2010 -->
-            <div id="vcon-2010" class="content-wrapper">
+            <div id="vcon-2010" class="content-wrapper inactive">
                 <h3 id="vcon-2010-title">V-Malaysia 2010</h3>
                 <p id="vcon-2010-par">
                     Motivational speaker born with tetra-amelia syndrome, Nick Vujicic spoke at V-Malaysia 2010.
@@ -226,7 +228,7 @@
             </div>
 
             <!-- VCON 2011 -->
-            <div id="vcon-2011" class="content-wrapper">
+            <div id="vcon-2011" class="content-wrapper inactive">
                 <h3 id="vcon-2011-title">V-Malaysia 2011</h3>
                 <p id="vcon-2011-par">
                     In 2011, V-Con heralded with the theme, "Belief."
@@ -234,7 +236,7 @@
             </div>
 
             <!-- VCON 2012 -->
-            <div id="vcon-2012" class="content-wrapper">
+            <div id="vcon-2012" class="content-wrapper inactive">
                 <h3 id="vcon-2012-title">V-Indonesia 2012</h3>
                 <p id="vcon-2012-par">
                     V-Con once again found a home in Jakarta, Indonesia for V-Indonesia 2012, where it had "Make A Difference" as compelling theme.
@@ -242,7 +244,7 @@
             </div>
 
             <!-- VCON 2013 -->
-            <div id="vcon-2013" class="content-wrapper">
+            <div id="vcon-2013" class="content-wrapper inactive">
                 <h3 id="vcon-2013-title">V-Malaysia 2013</h3>
                 <p id="vcon-2013-par">
                     Dreamers from all parts of the globe gathered once again in Malaysia in 2013 for V-Malaysia 2013, which headlined as "RYTHM Nation."
@@ -250,7 +252,7 @@
             </div>
 
             <!-- VCON 2014 -->
-            <div id="vcon-2014" class="content-wrapper">
+            <div id="vcon-2014" class="content-wrapper inactive">
                 <h3 id="vcon-2014-title">V-Malaysia 2014</h3>
                 <p id="vcon-2014-par">
                     This year, V-Con took on a theme that called upon dreamers to "Arise. Awake. Achieve." It was also the very first V-Con that proudly introduced QNET's place in the world of football after signing with Manchester City Football Club as its exclusive direct selling partner.
@@ -258,7 +260,7 @@
             </div>
 
             <!-- VCON 2015 -->
-            <div id="vcon-2015" class="content-wrapper">
+            <div id="vcon-2015" class="content-wrapper inactive">
                 <h3 id="vcon-2015-title">V-Malaysia 2015 and V-UAE 2015</h3>
                 <p id="vcon-2015-par">
                     As a pivotal year for the network and the company, the 2015 V-Con took on "Game Changer" as theme. It was also the advent of The V's continuing streak in holding two V-Conventions every year, with the first in Penang, Malaysia, and the second one in Dubai, UAE.
@@ -266,7 +268,7 @@
             </div>
 
             <!-- VCON 2016 -->
-            <div id="vcon-2016" class="content-wrapper">
+            <div id="vcon-2016" class="content-wrapper inactive">
                 <h3 id="vcon-2016-title">V-Malaysia 2016 and V-UAE 2016</h3>
                 <p id="vcon-2016-par">
                     A record breaking number of delegates attended V-Malaysia in Penang. The arena was filled to the rafters with over fifteen thousand participants, echoing the theme "Evolve. Empower. Enrich.""
@@ -276,7 +278,7 @@
             </div>
 
             <!-- VCON 2017 -->
-            <div id="vcon-2017" class="content-wrapper">
+            <div id="vcon-2017" class="content-wrapper inactive">
                 <h3 id="vcon-2017-title">V-Malaysia 2017 and V-UAE 2017</h3>
                 <p id="vcon-2017-par">
                     For the 3rd straight year, V-Con was held in both Penang, Malaysia and Dubai, UAE, with both record-breaking attendance. A rousing "DO IT NOW" theme headlined the two V-Conventions. Muniba Mazari, an inspirational woman whose life story drew much love and admiration from thousands of dreamers at V-Malaysia and V-UAE, added to a growing list of superstars that joined our family to be part of an unbelievable V-Con experience.
