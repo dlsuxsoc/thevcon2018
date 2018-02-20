@@ -20,10 +20,10 @@ $(document).ready(function() {
                 }
     */
 
-    document.getElementById("chosen_lang_sticky").onchange = function() {
-        var temp = document.getElementById("chosen_lang_sticky");
+    document.getElementById("chosen_lang").onchange = function() {
+        var temp = document.getElementById("chosen_lang");
         var x = temp.options[temp.selectedIndex].value;
-        $("#chosen_lang").val(x);
+        //$("#chosen_lang").val(x);
 
         //////////*  ENGLISH  *//////////done
         if (x === '0') {

@@ -3,8 +3,8 @@
 header{
     background-color: var(--theme-purple);
     background-image: url('../../assets/svg/festive.svg');
-    background-position: -200px -400px;
-    background-size: 100%;
+    background-position: -200px center;
+    background-size: cover;
     background-attachment: fixed;
 }
 

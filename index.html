@@ -16,6 +16,8 @@
         <link href="css/framework-stylesheet/wrapper.css" rel="stylesheet" type="text/css" />
         <link href="css/framework-stylesheet/mediaquery.css" rel="stylesheet" type="text/css" />
         <link href="css/framework-stylesheet/responsive.css" rel="stylesheet" type="text/css" />
+        <link href="css/framework-stylesheet/nav.css" rel="stylesheet" type="text/css" />
+        <link href="css/framework-stylesheet/select.css" rel="stylesheet" type="text/css" />
 
         <!-- section stylesheet links -->
         <link href="css/section-stylesheet/hero.css" rel="stylesheet" type="text/css" />
@@ -35,28 +37,21 @@
         <!--<script src="js/translate.js" type="text/javascript"></script>-->
         <script src="js/faqs.js" type="text/javascript"></script>
         <script src="js/timeline.js" type="text/javascript"></script>
+        <script src="js/scroll.js" type="text/javascript"></script>
 
         <!-- view information -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <!--
-        <nav class="flex-between simple sticky" id="sticky-nav">
+        <nav class="flex-between">
             <ul>
-                <li><img src="assets/svg/asset-board_v-logo.svg" id="sticky-brand-logo"/></li>
-                <li class="hamburger-icon"><i class="fa fa-bars fa-2x"></i></li>
-                <div class="nav-items">
-                    <li href="#about">ABOUT</li>
-                    <li href="#history">HISTORY</li>
-                    <li href="#cta-title">WE ARE ONE</li>
-                    <li href="#news-and-updates">NEWS & UPDATES</li>
-                    <li href="#faqs">FAQs</li>
-                    <li href="#contact-us">CONTACT US</li>
-                </div>
+                <li id="nav-vlogo">
+                    <a href="http://the-v.net"><img src="assets/svg/asset-board_v-white-logo.svg"/></a>
+                </li>
             </ul>
             <ul>
                 <li>
-                    <select id="chosen_lang_sticky" class="white">
+                    <select id="chosen_lang">
                         <option value="0">English</option>
                         <option value="1">Arabic</option>
                         <option value="2">Turkish</option>
@@ -64,14 +59,19 @@
                         <option value="4">Russian</option>
                         <option value="5">Indonesian</option>
                     </select>
-                    <button  id="btn-ticket4">BUY TICKETS</button>
+                </li>
+                <li>
+                    <a href="http://the-v.net/vshoppe/product?title=v-malaysia-2018-ticket" target="_blank">
+                        <button id="btn-ticket2" class="hallow-white radius-full">BUT TICKETS</button>
+                    </a>
                 </li>
             </ul>
         </nav>
-        -->
-
         <!-- HERO SECTION -->
-        <header id="hero" class="flex-center">
+        <header id="hero" class="flex-start">
+            <!-- aesthetics -->
+            <img src="assets/png/asset-board_gradient-and-simple-lines.png" id="gradient-lines-1" class="aesthetics" />
+
             <img src="assets/svg/asset-board_festive-logo.svg" id="main-logo" />
             <div id="hero-content">
                 <h2 class="white" id="main-tagline">
@@ -95,12 +95,20 @@
                         <span>Secs</span>
                     </div>
                 </div>
-                <button id="btn-ticket1" class="radius-full">BUY TICKETS</button>
+                <a href="http://the-v.net/vshoppe/product?title=v-malaysia-2018-ticket" target="_blank">
+                    <button id="btn-ticket2" class="radius-full">BUT TICKETS</button>
+                </a>
             </div>
         </header>
 
         <!-- ALL ABOUT V-MALAYSIA 2018 -->
         <section id="about">
+            <!-- aesthetics -->
+            <img src="assets/svg/asset-board_simple-lines-blue.svg" id="lines-blue-1" class="aesthetics" />
+            <img src="assets/svg/asset-board_simple-lines-blue.svg" id="lines-blue-2" class="aesthetics" />
+            <img src="assets/svg/asset-board_orange-planet.svg" id="planet-1" class="aesthetics" />
+            <img src="assets/svg/asset-board_blue-planet.svg" id="planet-2" class="aesthetics" />
+
             <h1 id="about-title">WHO, WHAT, WHY</h1>
 
             <div id="about-what-div" class="flex-between">
@@ -312,15 +320,20 @@
 
         <!-- WE ARE ONE & BUY TICKETS CALL-TO-ACTION -->
         <section id="call-to-action" class="flex-column">
+            <!-- aesthetics -->
+            <img src="assets/svg/asset-board_simple-lines-blue.svg" id="lines-blue-3" class="aesthetics" />
+            <img src="assets/svg/asset-board_simple-lines-blue.svg" id="lines-blue-4" class="aesthetics" />
+
             <!-- Insert logo here -->
-            <img src="assets/svg/asset-board_main-logo.svg" id="festive-logo" />
+            <img src="assets/svg/asset-board_main-logo.svg" id="original-logo" />
             <div class="content-wrapper">
                 <h1 id="cta-title">We Are One</h1>
                 <p id="cta-par">
                     Get to know the family. Enter our home. Follow the calling. If you must make one great decision today, let this be THE ONE. Book your V-Malaysia 2018 tickets here!
                 </p>
-
-                <button id="btn-ticket2" class="radius-full">BUY TICKETS</button>
+                <a href="http://the-v.net/vshoppe/product?title=v-malaysia-2018-ticket" target="_blank">
+                    <button id="btn-ticket2" class="radius-full">BUT TICKETS</button>
+                </a>
                 <!-- links to rationale -->
             </div>
         </section>
@@ -332,8 +345,9 @@
                 <p id="room-reservation-par">
                     Looking for hotel reservations and transportation transfers in Penang, Malaysia from 24 to 28 April for you and your team? Apollo got you covered!
                 </p>
-
-                <button id='btn-apollo' class="radius-full hallow-white">SEARCH APOLLO NOW</button>
+                <a href="https://vcon.apolloasiab2b.com/" target="_blank">
+                    <button id='btn-apollo' class="radius-full hallow-white">SEARCH APOLLO NOW</button>
+                </a>
             </div>
         </section>
 

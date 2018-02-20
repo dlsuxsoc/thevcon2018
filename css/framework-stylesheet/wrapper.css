@@ -17,6 +17,7 @@
 
 header, section{
     padding: 7em 15%;
+    position: relative;
 }
 
 header{
@@ -32,7 +33,7 @@ footer{
     padding: 5em 15%;
     box-sizing: border-box;
     /*border-top: thin solid #ccc;*/
-    background-color: #eee;
+    background-color: #dedede;
     position: relative;
     background-image: url('../../assets/svg/asset-board_bridge.svg');
     background-size: 100%;
@@ -70,8 +71,8 @@ footer > div h5{
 }
 
 footer > div h5:hover{
-    border: 0.15em solid #666;
-    color: #666;
+    border: 0.15em solid var(--theme-blue);
+    color: var(--theme-blue);
 }
 
 footer #faqs > div{

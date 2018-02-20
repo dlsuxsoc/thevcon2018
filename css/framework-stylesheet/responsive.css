@@ -2,6 +2,10 @@
 
 @media (max-width: 1043px) {
 
+    .aesthetics{
+        display: none !important;
+    }
+
     /* about section */
     #about div.flex-between{
         flex-direction: column;
@@ -19,17 +23,50 @@
 }
 
 @media (max-width: 837px) {
+
     h1{
         font-size: 1.7em;
     }
 
+    nav{
+        padding-left: 3% !important;
+        padding-right: 3% !important;
+    }
+
+    nav li{
+        margin: 0 !important;
+    }
+
     section{
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+
+    header{
+        background-size: cover !important;
+        flex-direction: column;
+        padding: 5em 5%;
+    }
+
+    header #hero-content{
+        text-align: center !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #main-logo{
+        margin: 1em 0 !important;
+        width: 80% !important;
+    }
+
+    #countdown div{
+        margin: 1em 0 !important;
     }
 
     #about div.content-wrapper{
         margin: 0 !important;
+        text-align: left !important;
     }
 
     #history-tagline{
@@ -47,6 +84,14 @@
 
     #call-to-action div.content-wrapper{
         padding: 0 !important;
+    }
+
+    #call-to-action p{
+        font-size: 1em !important;
+    }
+
+    #original-logo{
+        width: 60% !important;
     }
 
     #room-reservation div.content-wrapper p{
