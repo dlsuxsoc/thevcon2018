@@ -53,9 +53,28 @@
         padding: 0 !important;
     }
 
+    #news-and-updates div#nu-dock{
+        flex-direction: column;
+    }
+
+    #news-and-updates div#nu-dock div.content-wrapper{
+        margin: 0.5em 0;
+        padding: 3em 5%;
+        width: 90%;
+    }
+
+    #ig-dock{
+        flex-wrap: wrap;
+    }
+
+    #ig-dock blockquote{
+        max-width: 100% !important;
+    }
+
     footer > div{
         flex-direction: column;
         align-items: center;
+        padding-bottom: 10em;
     }
 
     footer > div > div{
