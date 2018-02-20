@@ -1,1 +1,15 @@
 /* instagram dock section stylesheet */
+
+#instagram{
+    background: linear-gradient(#fff, #fff, #fff, #dedede);
+    padding: 9em 15%;
+}
+
+#ig-dock blockquote{
+    max-width: 30% ;
+}
+
+#instagram p.see-more{
+    cursor: pointer;
+    text-align: center;
+}
