@@ -63,4 +63,8 @@
     footer #faqs h5{
         padding: 1em;
     }
+
+    footer #faqs ol{
+        text-align: left !important;
+    }
 }
