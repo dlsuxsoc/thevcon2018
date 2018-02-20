@@ -66,33 +66,36 @@
 }
 
 #lines-blue-1{
-    width: 40em;
+    width: 35em;
     left: -7em;
     top: 35em;
+    opacity: 0.5;
 }
 
 #lines-blue-2{
     width: 45em;
     right: -7em;
     bottom: -10em;
+    opacity: 0.5;
 }
 
-#lines-yellow-1{
-    width: 65em;
-    right: -17em;
-    top: 120em;
+#lines-blue-3{
+    width: 45em;
+    left: -17em;
+    top: 10em;
 }
 
-#lines-yellow-2{
+#lines-blue-4{
     width: 55em;
     right: -17em;
-    bottom: 25em;
+    bottom: 0em;
 }
 
 #gradient-lines-1{
-    width: 50em;
-    left: -7em;
-    bottom: 40em;
+    width: 50%;
+    top: -30%;
+    right: -27%;
+    opacity: 0.5;
 }
 
 #space-1{

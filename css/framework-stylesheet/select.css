@@ -17,20 +17,21 @@ select{
     padding-left: 10px;
     width: 100px;
     padding-right: 25px;
-    margin-right: 1em;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
     background-color: transparent;
-    border:  thin solid var(--theme-purple);
-    border-radius: 3px;
+    border-radius: 0;
+    border: none;
+    /*border:  thin solid var(--theme-purple);*/
     outline: none;
     font-weight: normal;
-    color: var(--theme-purple);
+    color: white;
     cursor: pointer;
 
-    background-image: url("../assets/icons/angle-arrow-down.svg");
+    background-image: url("../../assets/svg/angle-arrow-down-white.svg");
     background-size: 11px;
     background-repeat: no-repeat;
-    background-position: calc(100% - 5%);
+    background-position: calc(100% - 15%);
 }
 
 select.white{
