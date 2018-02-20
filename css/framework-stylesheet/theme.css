@@ -17,12 +17,19 @@ body, html{
     margin: 0;
     padding: 0;
     font-family: 'Nunito', 'Open Sans', sans-serif;
-    background-color: #EFF3F6;
+    background-color: white;
     overflow-x: hidden;
+
+    /*EFF3F6*/
 }
 
 body{
     margin-bottom: -15px;
+}
+
+hr{
+    border: none;
+    border-top: thin solid #ccc;
 }
 
 h1, h2, h3, h4, h5, h6{
