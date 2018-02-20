@@ -1,1 +1,6 @@
 /* instagram dock section stylesheet */
+
+#instagram p.see-more{
+    cursor: pointer;
+    text-align: center;
+}
