@@ -50,6 +50,7 @@ $(document).ready(function(){
 function toEnglish(){
     $('button.buy-tickets').html('BUY TICKETS');
     $('#btn-apollo').html('SEARCH APOLLO NOW');
+    $('.see-more').html('<a href="https://www.instagram.com/thev_official/" target="_blank">See more...</a>');
 
     $('#ct-days').html('Days');
     $('#ct-hours').html('Hours');
@@ -173,6 +174,7 @@ function toEnglish(){
 function toArabic(){
     document.getElementById('tagline').innerHTML = "لا تبحث أكثر من ذلك.استمر في التقدم، وغيّر حياتك إلى الأبد.";
     $('button.buy-tickets').html("اشتر تذكرة");
+    $('.see-more').html('<a href="https://www.instagram.com/thev_official/" target="_blank">شاهد المزيد...</a>');
 
     $('#ct-days').html('أيام');
     $('#ct-hours').html('ساعات');
