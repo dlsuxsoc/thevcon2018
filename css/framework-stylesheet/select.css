@@ -39,3 +39,7 @@ select.white{
     border:  thin solid white;
     color: white;
 }
+
+option{
+    background-color: black;
+}

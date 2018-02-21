@@ -111,3 +111,11 @@ p a:hover{
     -o-transition: ease all 0.3s;
     -ms-transition: ease all 0.3s;
 }
+
+.ui-loader-header, .ui-selectmenu-button-text{
+    display: none;
+}
+
+.arabic-read{
+    text-align: right;
+}
