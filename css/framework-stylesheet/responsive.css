@@ -110,10 +110,12 @@
 
     #ig-dock{
         flex-wrap: wrap;
+        flex-direction: column !important;
     }
 
     #ig-dock blockquote{
         max-width: 100% !important;
+        width: 100% !important;
     }
 
     footer > div{
