@@ -10,6 +10,8 @@ $(document).ready(function(){
 
         $("#history div.content-wrapper").addClass("inactive");
         $("#" + targetInfo).removeClass("inactive");
+
+        swipeIndex = shiftIndex(targetInfo);
     });
 
     $("#history").on("swipeleft", function(){
@@ -36,3 +38,25 @@ $(document).ready(function(){
         $("#" + activeIndex).removeClass("inactive");
     });
 });
+
+function shiftIndex(targetInfo){
+    switch(targetInfo){
+        case 'vcon-2001': return 0;
+        case 'vcon-2002': return 1;
+        case 'vcon-2003': return 2;
+        case 'vcon-2004': return 3;
+        case 'vcon-2005': return 4;
+        case 'vcon-2006': return 5;
+        case 'vcon-2007': return 6;
+        case 'vcon-2008': return 7;
+        case 'vcon-2009': return 8;
+        case 'vcon-2010': return 9;
+        case 'vcon-2011': return 10;
+        case 'vcon-2012': return 11;
+        case 'vcon-2013': return 12;
+        case 'vcon-2014': return 13;
+        case 'vcon-2015': return 14;
+        case 'vcon-2016': return 15;
+        case 'vcon-2017': return 16;
+    }
+}
