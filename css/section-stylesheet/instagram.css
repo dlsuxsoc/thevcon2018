@@ -1,8 +1,8 @@
 /* instagram dock section stylesheet */
 
 #instagram{
-    background: linear-gradient(#fff, #fff, #fff, #dedede);
-    padding: 9em 15%;
+    /*background: linear-gradient(#fff, #fff, #fff, #dedede);*/
+    background-color: #fff;
 }
 
 #ig-dock{
