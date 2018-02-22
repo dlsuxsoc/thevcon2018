@@ -14,7 +14,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
         var windowScroll = $(this).scrollTop();
         for(var x = 0; x < sections.length; x++){
-            if(windowScroll >= $(sections[x]).offset().top - 300){
+            if(windowScroll >= $(sections[x]).offset().top - 500){
                 $(sections[x]).removeClass('invisible');
                 $(sections[x]).addClass('show-visible');
             }

@@ -1,5 +1,11 @@
 /* NOTE: repsosive web design framework */
 
+@media (max-width: 1100px){
+    #ig-dock{
+        flex-direction: column !important;
+    }
+}
+
 @media (max-width: 1043px) {
 
     .aesthetics{
@@ -79,6 +85,10 @@
     }
 
     #history div.ball p{
+        display: none;
+    }
+
+    #arrow-left, #arrow-right{
         display: none;
     }
 

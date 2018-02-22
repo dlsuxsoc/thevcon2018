@@ -5,6 +5,10 @@
     padding: 9em 15%;
 }
 
+#ig-dock{
+    align-items: flex-start;
+}
+
 #ig-dock blockquote{
     max-width: 30% ;
 }
