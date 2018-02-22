@@ -3,6 +3,9 @@
 $(document).ready(function(){
     var swipeIndex = 0;
     var points = $("div.ball");
+
+    $("#vcon-2001").removeClass("inactive");
+
     $("div.ball").click(function(){
         var targetInfo = $(this).attr("data-id");
         $("div.ball").removeClass("active");
