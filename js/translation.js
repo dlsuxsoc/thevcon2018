@@ -480,12 +480,12 @@ function toFrench(){
     /* NEWS AND UPDATES */
     document.getElementById('news-and-updates-title').innerHTML = "ACTUALITÉS ET MISES À JOUR";
     //document.getElementById('news-and-updates-par').innerHTML = "LIRE | REGARDER | AFFICHER";
-    $('#nu-news').html('NOUVELLES');
-    $('#nu-read').html('Lis');
+    $('#nu-news').html('ACTUALITÉS');
+    $('#nu-read').html('Lire');
     $('#nu-videos').html('VIDÉO');
     $('#nu-watch').html('Regarder');
     $('#nu-gallery').html('GALERIE');
-    $('#nu-view').html('Vue');
+    $('#nu-view').html('Afficher');
 
 
     /* INSTAGRAM POSTS */
