@@ -51,13 +51,9 @@ section#history div.content-wrapper{
 div.content-wrapper.inactive{
     margin: 0 !important;
     padding: 0 !important;
-    max-height: 0;
+    /*max-height: 0;*/
     opacity: 0;
-}
-
-/* NOTE: temporary */
-section#history div#vcon-2001{
-    display: block;
+    display: none;
 }
 
 div#timelane{
