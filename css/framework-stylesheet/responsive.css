@@ -105,6 +105,8 @@
 
     #history div.logo-container{
         margin-bottom: 2em;
+        display: flex;
+        flex-direction: column;
     }
 
     #history div.content-wrapper{
