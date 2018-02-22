@@ -1,9 +1,11 @@
 /* NOTE: news and updates section stylesheet */
 
 #news-and-updates{
+    /*
     border-top: thin solid #ccc;
     border-bottom: thin solid #ccc;
-    background-color: #f4f4f4;
+    */
+    background-color: #fff;
 }
 
 #news-and-updates-title, #news-and-updates-par{

@@ -118,4 +118,22 @@ p a:hover{
 
 .arabic-read{
     text-align: right;
+    direction: rtl;
+}
+
+#history div.content-wrapper h3.arabic-read,
+#history div.content-wrapper p.arabic-read{
+    direction: ltr;
+}
+
+ol.arabic-read{
+    position: relative;
+    list-style-position: outside;
+    direction: rtl;
+}
+
+ol.arabic-read li{
+    list-style-position: outside;
+    direction: rtl;
+    text-align: right;
 }
