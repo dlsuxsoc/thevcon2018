@@ -248,7 +248,7 @@ function toArabic(){
 
     /* ROOM RESERVATION */
 
-    document.getElementById('room-reservation-title').innerHTML = "أكمل رحلتك في V-MALAYSIA 2018";
+    document.getElementById('room-reservation-title').innerHTML = "V-Malaysia 2018 أكمل رحلتك في";
     document.getElementById('room-reservation-par').innerHTML = "تبحث عن حجز فندق وترحيلات نقل في بينانج، ماليزيا في الفترة من 24 إلى 28 أبريل لك ولفريقك؟ أبولو تغطي احتياجك!";
     document.getElementById('btn-apollo').innerHTML = "ابحث في أبولو الآن";
 
@@ -264,7 +264,8 @@ function toArabic(){
     $('#nu-view').html('رأي');
 
     /* INSTAGRAM POSTS */
-    document.getElementById('ig-dock-title').innerHTML = "سحر #VCON18 يستولي على العالم";
+    // document.getElementById('ig-dock-title').innerHTML = "سحر #VCON18 يستولي على العالم";
+    document.getElementById('ig-dock-title').innerHTML =  "العالم " + "على " + "يستولي #VCON18 سحر";    
 
     /* FAQ */
     document.getElementById('faqs-title').innerHTML = "أسئلة متكررة";
