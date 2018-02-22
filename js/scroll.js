@@ -31,5 +31,17 @@ $(document).ready(function(){
             $(footer).removeClass('invisible');
             $(footer).addClass('show-visible');
         }
+
+        if(windowScroll >= 700){
+            $("#back-to-top").css("right", "1em");
+        }
+
+        else $("#back-to-top").css("right", "-8em");
+    });
+
+    $("#back-to-top").click(function(){
+        $('body, html').animate({
+            scrollTop: 0
+        }, 1000);
     });
 });
