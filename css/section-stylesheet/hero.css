@@ -16,6 +16,7 @@ header{
 #tagline{
     font-size: 1.3em;
     max-width: 17em;
+    text-transform: uppercase;
 }
 
 #countdown{
