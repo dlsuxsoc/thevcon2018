@@ -539,7 +539,7 @@ function toRussian(){
     $('.see-more').html('<a href="https://www.instagram.com/explore/tags/vcon2018/" target="_blank">Узнать больше...</a>');
 
     document.getElementById('tagline').innerHTML = "БОЛЬШЕ НЕ ИЩИТЕ. ПРОДОЛЖАЙТЕ ИДТИ И МЕНЯТЬ СВОЮ ЖИЗНЬ НАВСЕГДА.";
-    $('button.buy-tickets').html('AКУПИТЬ БИЛЕТ');
+    $('button.buy-tickets').html('КУПИТЬ БИЛЕТ');
 
     /* HISTORY */
     document.getElementById('history-title').innerHTML = "V-CON В ИСТОРИИ";
