@@ -44,6 +44,7 @@ $(document).ready(function(){
             $("h4").removeClass('arabic-read');
             $("h5").removeClass('arabic-read');
             $("h6").removeClass('arabic-read');
+            $("#faqs ol").removeClass('arabic-read');
         }
     });
 });
