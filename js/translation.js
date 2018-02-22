@@ -397,9 +397,9 @@ function toTurkish(){
 
     /* WHO, WHAT, WHY*/
     document.getElementById('about-title').innerHTML = "KİM, NE, NEDEN";
-    document.getElementById('about-what').innerHTML = "V-Con <b>NEDİR?</b>";
+    document.getElementById('about-what').innerHTML = "V-CON <b>NEDİR?</b>";
     document.getElementById('about-what-p').innerHTML = "V-Con, inanılmaz, büyülü ve yaşamı değiştiren kelimelerle birlikte sık sık kullanılan bir deneyimdir. 2001'deki anlayışından bu yana dokuz farklı ülkede düzenlenen V-Convention, The V tarafından barındırılan yıllık kapsamlı bir toplantıdır ve burada profesyonel networkerlar için gerekli olan bir dizi dünya çapında motivasyonel konuşmalar ve eğitim oturumları bekleyebilirsiniz. En yeni sergiler, özel eşyalar almak, ürünler hakkında daha fazla bilgi sahibi olmak ve özel promosyon almak isteyenler için kurulmuştur.";
-    document.getElementById('about-who').innerHTML = "V-Con’a <b>KİM</b> gider?";
+    document.getElementById('about-who').innerHTML = "V-CON’A <b>KİM</b> GİDER?";
     document.getElementById('about-who-p').innerHTML = "Network pazarlama yolculuğunu daha iyi anlamak isteyen QNET'in tüm IR'lerine açıktır. Bugüne kadar V-Con, dünyanın çeşitli yerlerinden gelen binlerce katılımcıyı bir araya getirmeyi başardı.";
     document.getElementById('about-why').innerHTML = "<b>NEDEN</b> V-Con’da olmalısınız?";
     document.getElementById('about-why-p').innerHTML = "Network pazarlama yolculuğunuz boyunca sizinle birlikte olacak bir ortak olarak The V, mali özgürlüğü kazanma nihai hedefinizi talep etmenize yardımcı olmak için bu 5 günlük toplantıyı en üst düzeye çıkarmayı amaçlıyor. İster birkaç yıldır bu işin içinde olun ya da yeni kaydolmuş olun, evinize V-Con'a gelip sınırsız mükemmeliyet potansiyelinizi gerçekleştirmekten daha iyi bir karar veremezsiniz.";
@@ -407,7 +407,7 @@ function toTurkish(){
 
 function toFrench(){
 
-    $('#ct-days').html('Journées');
+    $('#ct-days').html('Jours');
     $('#ct-hours').html('Heures');
     $('#ct-mins').html('Minutes');
     $('#ct-secs').html('Secondes');
@@ -498,7 +498,7 @@ function toFrench(){
 
     /* FOLLOW US */
     document.getElementById('follow-us-title').innerHTML = "NOUS SUIVRE!";
-    document.getElementById('follow-us-par').innerHTML = "AIMER. TAG. PARTAGER.";
+    document.getElementById('follow-us-par').innerHTML = "AIMER. TAGUER. PARTAGER.";
 
      /* FAQ */
      document.getElementById('faqs-title').innerHTML = "Questions Fréquemment Posées";
@@ -530,10 +530,10 @@ function toFrench(){
 
 function toRussian(){
 
-    $('#ct-days').html('дней');
-    $('#ct-hours').html('часов');
-    $('#ct-mins').html('минут');
-    $('#ct-secs').html('секунд');
+    $('#ct-days').html('д');
+    $('#ct-hours').html('ч');
+    $('#ct-mins').html('м');
+    $('#ct-secs').html('с');
 
     $('.see-more').html('<a href="https://www.instagram.com/explore/tags/vcon2018/" target="_blank">Узнать больше...</a>');
 
@@ -554,15 +554,15 @@ function toRussian(){
     document.getElementById('vcon-2004-title').innerHTML = "2004: V-Dubai 2004 и Euro V-Con 2004";
     document.getElementById('vcon-2004-par').innerHTML = "V-Dubai в 2004 году ознаменовала 6-ю годовщину компании, и в ней приняли участие более 700 нетворкеров.<br/><br/> В том же году The V провела свою первую V-Con в Европе - в отеле Rodos Palace Hotel на острове Родос, Греция. С 6 по 9 июня 2004 года на мероприятии присутствовали 200 участников с целью открыть новую сеть в Европе.";
     document.getElementById('vcon-2005-title').innerHTML = "2005: V-Thailand 2005";
-    document.getElementById('vcon-2005-par').innerHTML = "На V-Thailand 2005 были представлены мероприятия, которые подчеркнули нашу заинтересованность к формированию лидеров мирового уровня.<br/><br/>Поскольку The V верила в то, что нужно начинать смолоду, на V-Thailand стартовало специальное мероприятие, в котором участвовали маленькие дети наших лидеров. Событие, известное теперь как V-Kids, началось с небольшой группы детей, с которыми мы работали супруги наших V Partners и других V Ambassadors.";
+    document.getElementById('vcon-2005-par').innerHTML = "На V-Thailand 2005 были представлены мероприятия, которые подчеркнули нашу заинтересованность к формированию лидеров мирового уровня.<br/><br/>Поскольку The V верила в то, что нужно начинать смолоду, на V-Thailand стартовало специальное мероприятие, в котором участвовали маленькие дети наших лидеров. Событие, известное теперь как V-Kids, началось с небольшой группы детей, с которыми работали супруги наших V Partners и других V Ambassadors.";
     document.getElementById('vcon-2006-title').innerHTML = "2006: V-Malaysia 2006 и Euro V-Con Madrid 2006";
     document.getElementById('vcon-2006-par').innerHTML = "V-Malaysia 2006, ставшая 7-й V-Convention, состоялась в конференц-центре Sunway Pyramid Convention Center и была посвящена теме «Over the Top» (Выше вверх).<br/><br/>Спустя два года после первой V-Con в Европе, The V начала интенсивную программу экспансии, разработанную специально для европейского рынка в том же году. Euro-VCon Madrid также ознаменовала два других этапа в истории компании: (1) 8-я годовщина основания группы компаний Qi; и (2) генеральное спонсорство Чемпионата мира по бадминтону (IBF) 2006 года, что стало значимым заявлением о надежности, престиже и стабильности компании.";
     document.getElementById('vcon-2007-title').innerHTML = "2007: V-Jakarta 2007 и V-Africa 2007";
-    document.getElementById('vcon-2007-par').innerHTML = "При участии боле 3000 нетворкеров из 40 разных стран, V-Jakarta 2007 состоялась в Jakarta Convention Center, где The V укрепила свою приверженность к успеху сети.<br/><br/>В том же году The V организовала ставшее широко известным событие в Кении - V-Africa 2007 собрала под своим крылом более 2000 участников";
+    document.getElementById('vcon-2007-par').innerHTML = "При участии болеe 3000 нетворкеров из 40 разных стран, V-Jakarta 2007 состоялась в Jakarta Convention Center, где The V укрепила свою приверженность к успеху сети.<br/><br/>В том же году The V организовала ставшее широко известным событие в Кении - V-Africa 2007 собрала под своим крылом более 2000 участников";
     document.getElementById('vcon-2008-title').innerHTML = "2008: V-Malaysia 2008 и V-Africa 2008";
     document.getElementById('vcon-2008-par').innerHTML = "Компания отметила свой 10-летний юбилей. Одним из основных моментов V-Con, которая проходила в Penang International Sports Arena с 21 по 25 мая 2008 года, была конвенция V-Kids, где 124 детей разного возраста и национальностей провели три дня, веселясь и познавая новое. Помимо V-Kids Convention, другие основные моменты конвенции включали впечатляющее гала-представление и Welcome Night, а также выставку, где была продемонстрирована вся гамма продуктов и услуг от The V и ее дочерних компаний.<br><br/>Уганда в Восточной Африке, Кампала также стала широко известной в связи с тем, что стала домом для V-Africa в том же году, и в ней приняли участие 1600 нетворкеров.";
     document.getElementById('vcon-2009-title').innerHTML = "2009: V-Malaysia 2009";
-    document.getElementById('vcon-2009-par').innerHTML = "Эта V-Con, состоявшаяся в Шах-Аламе (Малайзия) прошла под теглайном “Change Begins” (Change Begins).";
+    document.getElementById('vcon-2009-par').innerHTML = "Эта V-Con, состоявшаяся в Шах-Аламе (Малайзия) прошла под теглайном “Change Begins” (Начало перемен).";
     document.getElementById('vcon-2010-title').innerHTML = "2010: V-Malaysia 2010";
     document.getElementById('vcon-2010-par').innerHTML = "На V-Malaysia 2010 выступил приглашенный мотивационный оратор с синдромом тетраамелии Ник Вуйчич.";
     document.getElementById('vcon-2011-title').innerHTML = "2011: V-Malaysia 2011";
@@ -576,9 +576,9 @@ function toRussian(){
     document.getElementById('vcon-2015-title').innerHTML = "2015: V-Malaysia 2015 и V-UAE 2015";
     document.getElementById('vcon-2015-par').innerHTML = "Этот год стал важным для компании, поэтому в 2015-м теглайном V-Con стала фраза “Game Changer” (Менять правила игры). The V продолжила традицию проведения двух V-Convention в год, таким образом одна из них состоялась в Пинанге (Малайзия), а вторая – в Дубае (ОАЭ).<br><br/>В дни одной из самых памятных V-Con, состоявшихся в Дубае, на сцену вышла чемпионка мирового женского тенниса Мартина Хингис, ставшая новейшим лицом нашей компании.";
     document.getElementById('vcon-2016-title').innerHTML = "2016: V-Malaysia 2016 и V-UAE 2016";
-    document.getElementById('vcon-2016-par').innerHTML = "Рекордное число нетворкеров посетило V-Malaysia в Пинанге. Стадион был заполнен до самых стропил, вмещая в себя более пятнадцати тысяч участников, которые в унисон повторяли слоган “Evolve. Empower. Enrich.” (Будь смелей. Развивайся. Богатей).<br><br/>Анил Капур, индийский актер и продюсер, который сыграл во множестве фильмов Болливуда и в международных проектах; Джеки Шрофф, который уже почти четыре десятилетия снимается в фильмах на хинди и появился в 207 фильмах на девяти языках; и Вивек Оберой, который сделал свой дебютный фильм о хинди, вышли на сцену V-UAE в 2016 году, чтобы поделиться тем, как они совершили большой скачок, чтобы быть там, где они есть сегодня.";
+    document.getElementById('vcon-2016-par').innerHTML = "Рекордное число нетворкеров посетило V-Malaysia в Пинанге. Стадион был заполнен до самых стропил, вмещая в себя более пятнадцати тысяч участников, которые в унисон повторяли слоган “Evolve. Empower. Enrich.” (Будь смелей. Развивайся. Богатей).<br><br/>Анил Капур, индийский актер и продюсер, который сыграл во множестве фильмов Болливуда и в международных проектах; Джеки Шрофф, который уже почти четыре десятилетия снимается в фильмах на хинди и появился в 207 фильмах на девяти языках; и Вивек Оберой, который сделал свой дебютный фильм на хини, вышли на сцену V-UAE в 2016 году, чтобы поделиться тем, как они совершили большой скачок, чтобы быть там, где они есть сегодня.";
     document.getElementById('vcon-2017-title').innerHTML = "2017: V-Malaysia 2017 и V-UAE 2017";
-    document.getElementById('vcon-2017-par').innerHTML = "Третий год подряд V-Con состоялась и в Пинанге (Малайзия), и в Дубае (ОАЭ), и число участников на обоих мероприятиях побило все рекорды. Теглайном обоих конвенций стала фраза “DO IT NOW” (Делай это сейчас). На сцену вышла мотивационный оратор Муниба Мазари, и рассказанная история ее жизни вызвала огромное чувство любви и восхищения у тысяч мечтателей на at V-Malaysia и V-UAE, таким образом ее имя было добавлено в созвездие невероятных людей, присоединившихся в нашей семье, что делает опыт участия в V-Con поистине уникальным.";
+    document.getElementById('vcon-2017-par').innerHTML = "Третий год подряд V-Con состоялась и в Пинанге (Малайзия), и в Дубае (ОАЭ), и число участников на обоих мероприятиях побило все рекорды. Теглайном обоих конвенций стала фраза “DO IT NOW” (Делай это сейчас). На сцену вышла мотивационный оратор Муниба Мазари, и рассказанная история ее жизни вызвала огромное чувство любви и восхищения у тысяч мечтателей на V-Malaysia и V-UAE, таким образом ее имя было добавлено в созвездие невероятных людей, присоединившихся в нашей семье, что делает опыт участия в V-Con поистине уникальным.";
 
 
     /* Call-to-Action */
