@@ -14,6 +14,7 @@ $(document).ready(function(){
             $("h4").addClass('arabic-read');
             $("h5").addClass('arabic-read');
             $("h6").addClass('arabic-read');
+            $("#faqs p").addClass('arabic-read');
             $("#faqs ol").addClass('arabic-read');
 
             $("#call-to-action h1").removeClass('arabic-read');
