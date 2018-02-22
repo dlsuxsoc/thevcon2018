@@ -37,6 +37,30 @@ $(document).ready(function(){
         $("#history div.content-wrapper").addClass("inactive");
         $("#" + activeIndex).removeClass("inactive");
     });
+
+    $("#arrow-right").on("click", function(){
+        if(swipeIndex + 1 <= 16)
+            swipeIndex++;
+
+        var activeIndex = $(points[swipeIndex]).attr("data-id");
+        $("div.ball").removeClass("active");
+        $(points[swipeIndex]).addClass("active");
+
+        $("#history div.content-wrapper").addClass("inactive");
+        $("#" + activeIndex).removeClass("inactive");
+    });
+
+    $("#arrow-left").on("click", function(){
+        if(swipeIndex - 1 >= 0)
+            swipeIndex--;
+
+        var activeIndex = $(points[swipeIndex]).attr("data-id");
+        $("div.ball").removeClass("active");
+        $(points[swipeIndex]).addClass("active");
+
+        $("#history div.content-wrapper").addClass("inactive");
+        $("#" + activeIndex).removeClass("inactive");
+    });
 });
 
 function shiftIndex(targetInfo){
