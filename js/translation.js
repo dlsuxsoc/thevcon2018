@@ -480,12 +480,12 @@ function toFrench(){
     /* NEWS AND UPDATES */
     document.getElementById('news-and-updates-title').innerHTML = "ACTUALITÉS ET MISES À JOUR";
     //document.getElementById('news-and-updates-par').innerHTML = "LIRE | REGARDER | AFFICHER";
-    $('#nu-news').html('NOUVELLES');
-    $('#nu-read').html('Lis');
+    $('#nu-news').html('ACTUALITÉS');
+    $('#nu-read').html('Lire');
     $('#nu-videos').html('VIDÉO');
     $('#nu-watch').html('Regarder');
     $('#nu-gallery').html('GALERIE');
-    $('#nu-view').html('Vue');
+    $('#nu-view').html('Afficher');
 
 
     /* INSTAGRAM POSTS */
@@ -539,7 +539,7 @@ function toRussian(){
     $('.see-more').html('<a href="https://www.instagram.com/explore/tags/vcon2018/" target="_blank">Узнать больше...</a>');
 
     document.getElementById('tagline').innerHTML = "БОЛЬШЕ НЕ ИЩИТЕ. ПРОДОЛЖАЙТЕ ИДТИ И МЕНЯТЬ СВОЮ ЖИЗНЬ НАВСЕГДА.";
-    $('button.buy-tickets').html('AКУПИТЬ БИЛЕТ');
+    $('button.buy-tickets').html('КУПИТЬ БИЛЕТ');
 
     /* HISTORY */
     document.getElementById('history-title').innerHTML = "V-CON В ИСТОРИИ";
@@ -657,34 +657,34 @@ function toIndonesian(){
 
     /* HISTORY **/
     document.getElementById('history-title').innerHTML = "V-CON MELALUI SEJARAH";
-    document.getElementById('history-tagline').innerHTML = "Sebelum V-Con yang ke 26 kita datang tanggal 24-28 April 2018 di SPICE Arena di Penang, Malaysia, di sinilah kita telah mengubah kehidupan sejak tahun 2001";
+    document.getElementById('history-tagline').innerHTML = "Sebelum V-Con ke 26 kita yang akan dilangsungkan pada tanggal 24-28 April 2018 di SPICE Arena di Penang, Malaysia, di sinilah kita telah mengubah kehidupan sejak tahun 2001";
 
     document.getElementById('vcon-2001-title').innerHTML = "2001: V-Con Bali 2001";
-    document.getElementById('vcon-2001-par').innerHTML = "Kita melihat kelahiran acara The V terbesar dan event yang paling dinanti-nanti: V-Convention, atau V-Con. Dari sekurangnya seratus peserta dalam acara awal di Bali, Indonesia, V-Cons hari ini dihadiri oleh lebih dari lima belas ribu peserta yang mewakili 80 negara di seluruh dunia.";
+    document.getElementById('vcon-2001-par').innerHTML = "Kita telah menyaksikan kelahiran acara The V yang terbesar dan yang paling dinanti-nantikan: V-Convention, atau V-Con. Dari sekurangnya seratus peserta dalam acara awal di Bali, Indonesia, V-Con saat ini dihadiri oleh lebih dari lima belas ribu peserta yang mewakili 80 negara dari seluruh dunia.";
     document.getElementById('vcon-2002-title').innerHTML = "2002: V-Con Goa 2002";
-    document.getElementById('vcon-2002-par').innerHTML = "Dengan 500 peserta dari berbagai belahan dunia, V-Con 2002 di India memamerkan tema 'Inti dari Kepemimpinan' (The Essence of Leadership). Dengan perhatian menariknya, V-Con Goa diadakan dua kali untuk mengakomodasi semua peserta yang ingin mengikuti pengalaman yang luar biasa.";
+    document.getElementById('vcon-2002-par').innerHTML = 'Dengan 500 peserta dari berbagai belahan dunia, V-Con 2002 di India memamerkan tema "Inti dari Kepemimpinan" (The Essence of Leadership). Dengan perhatian menariknya, V-Con Goa diadakan dua kali untuk mengakomodasi semua peserta yang ingin mengikuti pengalaman yang luar biasa.';
     document.getElementById('vcon-2003-title').innerHTML = "2003: V-Con Kota Kinabalu 2003";
-    document.getElementById('vcon-2003-par').innerHTML = "Pada tahun 2003, V-Con berhasil menuju Kota Kinabalu, Sabah, Malaysia, di mana V-Con ini telah mengumpulkan lebih dari 500 peserta dari 26 negara yang berbeda. Ini diarak dengan tema, 'Inti dari Kesuksesan' (The Essence of Success).";
+    document.getElementById('vcon-2003-par').innerHTML = 'Pada tahun 2003, V-Con berhasil menembus Kota Kinabalu, Sabah, Malaysia, yang mana V-Con ini telah mengumpulkan lebih dari 500 peserta dari 26 negara yang berbeda. Acara ini di pamerkan dengan tema, "Inti dari Kesuksesan" (The Essence of Success).';
     document.getElementById('vcon-2004-title').innerHTML = "2004: V-Dubai 2004 dan Euro V-Con 2004";
-    document.getElementById('vcon-2004-par').innerHTML = "V-Dubai pada tahun 2004 menandai hari jadi perusahaan yang ke-6, dimana lebih dari 700 peserta hadir. Pada tahun yang sama, The V mengadakan V-Con pertamanya di Eropa di Rodos Palace Hotel di pulau Rhodes, Yunani. Dari tanggal 6 sampai 9 Juni 2004, 200 peserta berkumpul untuk membuka jaringan baru di Eropa.";
+    document.getElementById('vcon-2004-par').innerHTML = "V-Dubai pada tahun 2004 menandai hari jadi perusahaan yang ke-6, dimana lebih dari 700 peserta yang hadir. Di tahun yang sama, The V mengadakan V-Con pertamanya di Eropa di Rodos Palace Hotel di pulau Rhodes, Yunani. Dari tanggal 6 sampai 9 Juni 2004, 200 peserta berkumpul untuk membuka jaringan baru di Eropa.";
     document.getElementById('vcon-2005-title').innerHTML = "2005: V-Thailand 2005";
-    document.getElementById('vcon-2005-par').innerHTML = "V-Thailand 2005 menampilkan kegiatan yang menyoroti semangat kita untuk mengembangkan kepemimpinan dan keunggulan kelas dunia. Karena The V percaya memulai mereka sejak muda, sebuah acara khusus yang melayani anak-anak muda pemimpin kami dimulai di V-Thailand. Acara yang sekarang dikenal dengan V-Kids dimulai dengan sekelompok kecil anak-anak yang ditangani oleh pasangan V Partners dan V Ambassadors lainnya.";
+    document.getElementById('vcon-2005-par').innerHTML = "V-Thailand 2005 menampilkan kegiatan yang menyoroti semangat kita untuk mengembangkan kepemimpinan dan keunggulan kelas dunia. Karena The V percaya untuk memulai mereka sejak muda, sebuah acara khusus yang melayani anak-anak dari leader-leader kami dimulai di VThailand. Acara yang sekarang dikenal dengan VKids dimulai dengan sekelompok kecil anak-anak yang ditangani oleh pasangan V Partners dan V Ambassadors lainnya.";
     document.getElementById('vcon-2006-title').innerHTML = "2006: V-Malaysia 2006 dan Euro V-Con Madrid 2006";
-    document.getElementById('vcon-2006-par').innerHTML = "Ditandai sebagai V-Konvensi ke-7, V-Malaysia 2006 diadakan di Sunway Pyramid Convention Center dan diberi tema 'Melebihi puncak' (Over The Top). Dua tahun setelah V-Con Eropa pertama mereka, The V juga memulai program perluasan intensif yang dirancang khusus untuk pasar Eropa pada tahun yang sama. Euro-VCon Madrid juga bertugas untuk merayakan dua tonggak sejarah lainnya dalam sejarah perusahaan: (1) ulang tahun ke 8 berdirinya Grup Perusahaan Qi; dan (2) pemberian gelar Qi pada Kejuaraan Dunia Bulutangkis Internasional (IBF) tahun 2006 - yang berfungsi sebagai pernyataan tegas kredibilitas, wibawa dan stabilitas perusahaan.";
+    document.getElementById('vcon-2006-par').innerHTML = 'Ditandai sebagai V- Convention ke-7, V-Malaysia 2006 diadakan di Sunway Pyramid Convention Center dan diberi tema "Melampaui puncak" (Over The Top). Dua tahun setelah V-Con Eropa pertama mereka, The V juga memulai program perluasan intensif yang dirancang khusus untuk pasar Eropa di tahun yang sama. Euro-VCon Madrid juga bertujuan untuk merayakan dua tonggak sejarah lainnya dalam sejarah perusahaan: (1) ulang tahun ke 8 berdirinya Grup Perusahaan Qi; dan (2) pemberian gelar Qi pada Kejuaraan Dunia Bulutangkis Internasional (IBF) tahun 2006 - yang berfungsi sebagai pernyataan tegas kredibilitas, wibawa dan stabilitas perusahaan.';
     document.getElementById('vcon-2007-title').innerHTML = "2007: V-Jakarta 2007 dan V-Africa 2007";
-    document.getElementById('vcon-2007-par').innerHTML = "Dengan lebih dari 3.000 peserta dari 40 negara yang berbeda, V-Jakarta 2007 diadakan di Jakarta Convention Center, di mana The V memperkuat gairahnya untuk kesuksesan jaringan. Pada tahun yang sama, The V membawa banyak acara tentang Kenya dan berhasil menyelenggarakan V-Africa 2007, mengumpulkan lebih dari 2.000 peserta.";
+    document.getElementById('vcon-2007-par').innerHTML = "Dengan lebih dari 3.000 peserta dari 40 negara yang berbeda, V-Jakarta 2007 diadakan di Jakarta Convention Center, di mana The V memperkuat gairahnya untuk kesuksesan jaringan. Di tahun yang sama, The V membawa banyak acara pembicaraan ke Kenya dan berhasil menyelenggarakan V-Africa 2007, mengumpulkan lebih dari 2.000 peserta.";
     document.getElementById('vcon-2008-title').innerHTML = "2008: V-Malaysia 2008 dan V-Africa 2008";
-    document.getElementById('vcon-2008-par').innerHTML = "Perusahaan merayakan hari jadinya yang ke-10. Salah satu yang menarik dari V-Con yang diadakan di Penang International Sports Arena dari tanggal 21 sampai 25 Mei tahun 2008 adalah Konvensi V-Kids dimana lebih dari 124 anak-anak dari berbagai usia dan kebangsaan disuguhi tiga hari kesenangan dan pembelajaran. Selain Konvensi V-Kids, sorotan lain dari konvensi tersebut mencakup Pesta besar and Welcome Night (Selamat Datang Malam) yang spektakuler dan sebuah pameran yang memamerkan keseluruhan produk dan layanan dari The V dan perusahaan sejenisnya. Uganda di Afrika Timur, Kampala juga menjadi pembicaraan tentang kota tersebut karena V-Africa diadakan pada tahun yang sama, dengan 1.600 peserta.";
+    document.getElementById('vcon-2008-par').innerHTML = "Perusahaan merayakan hari jadinya yang ke-10. Salah satu yang menarik dari V-Con yang diadakan di Penang International Sports Arena dari tanggal 21 sampai 25 Mei tahun 2008 adalah Kongres V-Kids dimana lebih dari 124 anak-anak dari berbagai usia dan kebangsaan disuguhi tiga hari kegembiraan dan pembelajaran. Selain Kongres V-Kids, sorotan lain dari kongres tersebut mencakup Pesta besar and Welcome Night (Selamat Datang Malam) yang spektakuler dan sebuah pameran yang memamerkan keseluruhan produk dan layanan dari The V dan perusahaan sejenisnya. Uganda di Afrika Timur, Kampala juga menjadi pembicaraan tentang kota tersebut karena V-Africa diadakan pada tahun yang sama, dengan 1.600 peserta.";
     document.getElementById('vcon-2009-title').innerHTML = "2009: V-Malaysia 2009";
-    document.getElementById('vcon-2009-par').innerHTML = "Diadakan di Shah Alam, Malaysia, V-Con ini mengusung tema 'Change Begins' (Perubahan Dimulai).";
+    document.getElementById('vcon-2009-par').innerHTML = 'Diadakan di Shah Alam, Malaysia, V-Con ini mengusung tema "Change Begins" (Perubahan Dimulai).';
     document.getElementById('vcon-2010-title').innerHTML = "2010: V-Malaysia 2010";
-    document.getElementById('vcon-2010-par').innerHTML = "Pembicara motivasi lahir dengan sindrom tetra-amelia, Nick Vujicic berbicara di V-Malaysia 2010";
+    document.getElementById('vcon-2010-par').innerHTML = "Pembicara motivasi lahir dengan sindrom tetraamelia, Nick Vujicic berbicara di V-Malaysia 2010";
     document.getElementById('vcon-2011-title').innerHTML = "2011: V-Malaysia 2011";
-    document.getElementById('vcon-2011-par').innerHTML = "Pada tahun 2011, V-Con digembar-gemborkan dengan tema, 'Belief' (Percaya).";
+    document.getElementById('vcon-2011-par').innerHTML = 'Pada tahun 2011, V-Con digembar-gemborkan dengan tema, "Belief" (Percaya).';
     document.getElementById('vcon-2012-title').innerHTML = "2012: V-Indonesia 2012";
-    document.getElementById('vcon-2012-par').innerHTML = "V-Con sekali lagi menemukan sebuah rumah di Jakarta, Indonesia untuk V-Indonesia 2012, di mana ia memiliki 'Make A Difference' (Tema Perbedaan) sebagai tema yang menarik.";
+    document.getElementById('vcon-2012-par').innerHTML = 'V-Con V-Con sekali lagi menemukan sebuah rumah di Jakarta, Indonesia untuk V-Indonesia 2012, di mana ia memiliki "Make A Difference" (Tema Perbedaan) sebagai tema yang menarik.';
     document.getElementById('vcon-2013-title').innerHTML = "2013: V-Malaysia 2013";
-    document.getElementById('vcon-2013-par').innerHTML = "Pemimpi dari seluruh penjuru dunia berkumpul kembali di Malaysia pada tahun 2013 untuk V-Malaysia 2013, yang berjudul 'RYTHM Nation' (Rakyat RYTHM).";
+    document.getElementById('vcon-2013-par').innerHTML = 'Pemimpi dari seluruh penjuru dunia berkumpul kembali di Malaysia pada tahun 2013 untuk VMalaysia 2013, yang berjudul "RYTHM Nation" (Rakyat RYTHM).';
     document.getElementById('vcon-2014-title').innerHTML = "2014: V-Malaysia 2014";
     document.getElementById('vcon-2014-par').innerHTML = "Tahun ini, V-Con mengambil tema yang meminta pemimpi untuk ' Arise. Awake. Achieve. ' (Bangkit. Bangun. Mencapai) Ini juga merupakan V-Con pertama yang dengan bangga memperkenalkan tempat QNET di dunia sepak bola setelah menandatangani kontrak dengan Manchester City Football Club sebagai mitra penjualan langsung eksklusifnya.";
     document.getElementById('vcon-2015-title').innerHTML = "2015: V-Malaysia 2015 dan V-UAE 2015";
@@ -750,9 +750,9 @@ function toIndonesian(){
     /* WHO, WHAT, WHY*/
     document.getElementById('about-title').innerHTML = "SIAPA, APA, KENAPA";
     document.getElementById('about-what').innerHTML = "<b>Apa</b> itu V-Con?";
-    document.getElementById('about-what-p').innerHTML = "V-Con adalah suatu pengalaman yang sering disamakan dengan kata-kata yang luar biasa, magis, dan mengubah hidup. Diadakan di sembilan negara yang berbeda sejak konsepsinya pada tahun 2001, V-Convention adalah sebuah pertemuan tahunan yang diselenggarakan oleh The V, di mana Anda dapat mengharapkan serangkaian pidato dan sesi motivasi kelas dunia yang penting bagi para pelaku jaringan profesional. Pameran mutakhir juga disiapkan bagi mereka yang ingin mendapatkan barang dagangan eksklusif, tahu lebih banyak tentang produk, dan memanfaatkan promo khusus.";
+    document.getElementById('about-what-p').innerHTML = "V-Con adalah suatu pengalaman yang sering disamakan dengan kata-kata yang luar biasa, keajaiban, dan mengubah hidup. Diadakan di sembilan negara yang berbeda sejak konsepsinya pada tahun 2001, V-Convention adalah sebuah pertemuan tahunan yang diselenggarakan oleh The V, di mana Anda dapat mengharapkan serangkaian pidato dan sesi motivasi kelas dunia yang penting bagi para pelaku jaringan profesional. Pameran mutakhir juga disiapkan bagi mereka yang ingin mendapatkan barang dagangan eksklusif, mengetahui lebih banyak tentang produk-produk, dan memanfaatkan promo khusus.";
     document.getElementById('about-who').innerHTML = "<b>Siapa</b> yang datang ke V-Con?";
-    document.getElementById('about-who-p').innerHTML = "Ini terbuka untuk semua IR dari QNET yang ingin mendapatkan pemahaman yang lebih baik tentang perjalanan pemasaran jaringan mereka. Sampai saat ini, V-Con telah mengumpulkan ribuan peserta dari berbagai belahan dunia, dengan pemecahan rekor untuk jumlah terbesar.";
+    document.getElementById('about-who-p').innerHTML = "Acara ini terbuka untuk semua IR dari QNET yang ingin mendapatkan pemahaman yang lebih baik tentang perjalanan pemasaran jaringan mereka. Sampai saat ini, V-Con telah mengumpulkan ribuan peserta dari berbagai belahan dunia, dengan pemecahan rekor untuk jumlah terbesar.";
     document.getElementById('about-why').innerHTML = "<b>Kenapa</b> kita perlu berada di V-Con?";
-    document.getElementById('about-why-p').innerHTML = "Sebagai mitra yang akan bersama Anda disepanjang perjalanan pemasaran jaringan Anda, The V bertujuan untuk memaksimalkan konvensi 5 hari ini untuk membantu Anda menegaskan tujuan akhir Anda untuk memperoleh kebebasan finansial. Apakah itu Anda baru saja mendaftar atau telah berkecimpung dalam bisnis ini selama beberapa tahun, Anda tidak memiliki keputusan yang lebih baik selain pulang ke V-Con dan menyadari potensi tak terbatas Anda untuk kejayaan.";
+    document.getElementById('about-why-p').innerHTML = "Sebagai mitra yang akan bersama Anda disepanjang perjalanan pemasaran jaringan Anda, The V bertujuan untuk memaksimalkan kongres 5 hari ini untuk membantu Anda menegaskan tujuan akhir Anda untuk memperoleh kebebasan finansial. Baik anda baru saja mendaftar atau telah berkecimpung dalam bisnis ini selama beberapa tahun, Anda tidak memiliki keputusan yang lebih baik selain pulang ke V-Con dan menyadari potensi tak terbatas Anda untuk kejayaan.";
 }
