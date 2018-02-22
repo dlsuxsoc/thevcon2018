@@ -200,6 +200,7 @@ function toArabic(){
 
 
     document.getElementById('vcon-2001-title').innerHTML = "V-Con Bali 2001 :عام 2001";
+    document.getElementById('vcon-2001-par')["dir"] = "RTL";
     document.getElementById('vcon-2001-par').innerHTML = "شاهدنا مولد أكبر حدث في The V وأكثرها انتظاراً: وهو الـ V-Convention أو الـ V-Con. بدءاً بأقل من مائة مشارك في أول حدث في بالي، بإندونيسيا، اليوم يحضر الـ V-Cons أكثر من خمسة عشر ألف مشارك ممثلين لأكثر من 80 دولة من حول العالم.";
     document.getElementById('vcon-2002-title').innerHTML = "V-Con Goa 2002 :2002 عام";
     document.getElementById('vcon-2002-par').innerHTML = "بمشاركة 500 شخص من مختلف أجزاء العالم، قدم V-Con عام 2002 بالهند شعار 'The Essence of Leadership' (جوهر القيادة). مع الاهتمام الذي أثاره، انعقد V-Con Goa، مرتين ليستضيف كل المشاركين الذين أرادوا أن يكونوا جزءا من تجربة مذهلة كهذه.";
@@ -249,6 +250,7 @@ function toArabic(){
     /* ROOM RESERVATION */
 
     document.getElementById('room-reservation-title').innerHTML = "V-Malaysia 2018 أكمل رحلتك في";
+    document.getElementById('room-reservation-par')["dir"] = "RTL";
     document.getElementById('room-reservation-par').innerHTML = "تبحث عن حجز فندق وترحيلات نقل في بينانج، ماليزيا في الفترة من 24 إلى 28 أبريل لك ولفريقك؟ أبولو تغطي احتياجك!";
     document.getElementById('btn-apollo').innerHTML = "ابحث في أبولو الآن";
 
@@ -264,8 +266,8 @@ function toArabic(){
     $('#nu-view').html('رأي');
 
     /* INSTAGRAM POSTS */
-    // document.getElementById('ig-dock-title').innerHTML = "سحر #VCON18 يستولي على العالم";
-    document.getElementById('ig-dock-title').innerHTML =  "العالم " + "على " + "يستولي #VCON18 سحر";    
+    // document.getElementById('ig-dock-title').innerHTML = "سحر  يستولي #VCON18 على العالم";
+    document.getElementById('ig-dock-title').innerHTML =  "يستولي " + "على " + "العالم " + "#VCON18 " + "سحر";    
 
     /* FAQ */
     document.getElementById('faqs-title').innerHTML = "أسئلة متكررة";
