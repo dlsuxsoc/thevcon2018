@@ -44,6 +44,7 @@ $(document).ready(function(){
             $("h4").removeClass('arabic-read');
             $("h5").removeClass('arabic-read');
             $("h6").removeClass('arabic-read');
+            $("#faqs ol").removeClass('arabic-read');
         }
     });
 });
@@ -51,7 +52,7 @@ $(document).ready(function(){
 function toEnglish(){
     $('button.buy-tickets').html('BUY TICKETS');
     $('#btn-apollo').html('SEARCH APOLLO NOW');
-    $('.see-more').html('<a href="https://www.instagram.com/thev_official/" target="_blank">See more...</a>');
+    $('.see-more').html('<a href="https://www.instagram.com/explore/tags/vcon18/" target="_blank">See more...</a>');
 
     $('#ct-days').html('Days');
     $('#ct-hours').html('Hours');
@@ -175,7 +176,7 @@ function toEnglish(){
 function toArabic(){
     document.getElementById('tagline').innerHTML = "لا تبحث أكثر من ذلك.استمر في التقدم، وغيّر حياتك إلى الأبد.";
     $('button.buy-tickets').html("اشتر تذكرة");
-    $('.see-more').html('<a href="https://www.instagram.com/explore/tags/vcon2018/" target="_blank">شاهد المزيد...</a>');
+    $('.see-more').html('<a href="https://www.instagram.com/explore/tags/vcon18/" target="_blank">شاهد المزيد...</a>');
 
     $('#ct-days').html('أيام');
     $('#ct-hours').html('ساعات');
@@ -300,7 +301,7 @@ function toTurkish(){
     $('#ct-mins').html('Dakika');
     $('#ct-secs').html('Saniye');
 
-    $('.see-more').html('<a href="https://www.instagram.com/explore/tags/vcon2018/" target="_blank">Daha fazla gör...</a>');
+    $('.see-more').html('<a href="https://www.instagram.com/explore/tags/vcon18/" target="_blank">Daha fazla gör...</a>');
 
     document.getElementById('tagline').innerHTML = "BAŞKA YERDE ARAMA. DEVAM EDİN VE HAYATINIZI SONSUZA DEK DEĞİŞTİRİN.";
     $('button.buy-tickets').html('BİLET ALIN');
@@ -412,7 +413,7 @@ function toFrench(){
     $('#ct-mins').html('Minutes');
     $('#ct-secs').html('Secondes');
 
-    $('.see-more').html('<a href="https://www.instagram.com/explore/tags/vcon2018/" target="_blank">Voir plus...</a>');
+    $('.see-more').html('<a href="https://www.instagram.com/explore/tags/vcon18/" target="_blank">Voir plus...</a>');
 
     document.getElementById('tagline').innerHTML = "Ne cherchez pas plus loin. Continuez et changez votre vie pour toujours.";
     $('button.buy-tickets').html('ACHETER UN BILLET');
@@ -535,7 +536,7 @@ function toRussian(){
     $('#ct-mins').html('минут');
     $('#ct-secs').html('секунд');
 
-    $('.see-more').html('<a href="https://www.instagram.com/explore/tags/vcon2018/" target="_blank">Узнать больше...</a>');
+    $('.see-more').html('<a href="https://www.instagram.com/explore/tags/vcon18/" target="_blank">Узнать больше...</a>');
 
     document.getElementById('tagline').innerHTML = "БОЛЬШЕ НЕ ИЩИТЕ. ПРОДОЛЖАЙТЕ ИДТИ И МЕНЯТЬ СВОЮ ЖИЗНЬ НАВСЕГДА.";
     $('button.buy-tickets').html('AКУПИТЬ БИЛЕТ');
@@ -649,7 +650,7 @@ function toIndonesian(){
     $('#ct-mins').html('Menit');
     $('#ct-secs').html('Detik');
 
-    $('.see-more').html('<a href="https://www.instagram.com/explore/tags/vcon2018/" target="_blank">Lihat lebih lanjut...</a>');
+    $('.see-more').html('<a href="https://www.instagram.com/explore/tags/vcon18/" target="_blank">Lihat lebih lanjut...</a>');
 
     document.getElementById('tagline').innerHTML = "TIDAK TERLIHAT LAGI. MAJU TERUS, DAN RUBAH HIDUP KAMU UNTUK SELAMANYA.";
     $('button.buy-tickets').html('BELI TIKET');
