@@ -1,0 +1,179 @@
+/* NOTE: repsosive web design framework */
+
+@media (max-width: 1100px){
+    #ig-dock{
+        flex-direction: column !important;
+    }
+}
+
+@media (max-width: 1043px) {
+
+    .aesthetics{
+        /*display: none !important;*/
+        opacity: 0.5 !important;
+    }
+
+    /* about section */
+    #about div.flex-between{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about div.flex-between:nth-child(even){
+        flex-direction: column-reverse;
+    }
+
+    #about-what-div img, #about-who-div img,
+    #about-why-div img{
+        width: 70% !important;
+        margin-bottom: 2em;
+    }
+}
+
+@media (max-width: 837px) {
+
+    h1{
+        font-size: 1.7em;
+    }
+
+    nav{
+        padding-left: 3% !important;
+        padding-right: 3% !important;
+    }
+
+    nav li{
+        margin: 0 !important;
+    }
+
+    section{
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+
+    header{
+        background-size: cover !important;
+        flex-direction: column;
+        padding: 5em 5%;
+    }
+
+    header #hero-content{
+        text-align: center !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #lines-blue-3{
+        top: -6em !important;
+        left: -40em !important;
+    }
+
+    #lines-blue-4{
+        bottom: -10em;
+    }
+
+    #main-logo{
+        margin: 1em 0 !important;
+        width: 80% !important;
+    }
+
+    #countdown div{
+        margin: 1em 0 !important;
+    }
+
+    #about div.content-wrapper{
+        margin: 0 !important;
+        text-align: left !important;
+    }
+
+    #history-tagline{
+        font-size: 0.9em;
+    }
+
+    #history div.ball{
+        width: 0.5em;
+        height: 0.5em;
+    }
+
+    #history div.ball p{
+        display: none;
+    }
+
+    #history img.vcon-logo{
+        width: 100% !important;
+    }
+
+    #history div.logo-container{
+        margin-bottom: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #history div.content-wrapper{
+        max-height: none !important;
+    }
+
+    #arrow-left, #arrow-right{
+        display: none;
+    }
+
+    #call-to-action div.content-wrapper{
+        padding: 0 !important;
+    }
+
+    #call-to-action p{
+        font-size: 1em !important;
+    }
+
+    #original-logo{
+        width: 60% !important;
+    }
+
+    #room-reservation div.content-wrapper p{
+        padding: 0 !important;
+    }
+
+    #news-and-updates div#nu-dock{
+        flex-direction: column;
+    }
+
+    #news-and-updates div#nu-dock div.content-wrapper{
+        margin: 0.5em 0;
+        padding: 3em 5%;
+        width: 90%;
+    }
+
+    #ig-dock{
+        flex-wrap: wrap;
+        flex-direction: column !important;
+    }
+
+    #ig-dock blockquote{
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    footer > div{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10em;
+    }
+
+    footer > div > div{
+        max-width: 100% !important;
+        text-align: center;
+        margin: 3em 0;
+    }
+
+    footer #faqs h5{
+        padding: 1em;
+    }
+
+    footer #faqs ol{
+        text-align: left !important;
+    }
+
+    #back-to-top{
+        display: none !important;
+    }
+}
