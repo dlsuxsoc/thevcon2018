@@ -93,8 +93,8 @@ function toEnglish(){
     $('#vcon-2008-title').html('V-Malaysia 2008 and V-Africa 2008');
     $('#vcon-2008-par').html('The company celebrated its 10th anniversary. One of the highlights of V-Con held at the Penang International Sports Arena from the 21st to 25th of May in 2008 was the V-Kids Convention where over 124 children of different ages and nationalities were treated to three days of fun and learning. Aside from the V-Kids Convention, other highlights of the convention included the spectacular Gala and Welcome Night and an exhibit that showcased the whole gamut of products and services from The V and its sister companies. Uganda in East Africa, Kampala also became the talk of the town as V-Africa was held in the same year, with 1,600 participants.');
 
-    $('vcon-2009-title').html('V-Malaysia 2009');
-    $('vcon-2009-par').html('Held in Shah Alam, Malaysia, this V-Con carried the theme "Change Begins."');
+    $('#vcon-2009-title').html('V-Malaysia 2009');
+    $('#vcon-2009-par').html('Held in Shah Alam, Malaysia, this V-Con carried the theme "Change Begins."');
 
     $('#vcon-2010-title').html('V-Malaysia 2010');
     $('#vcon-2010-par').html('Motivational speaker born with tetra-amelia syndrome, Nick Vujicic spoke at V-Malaysia 2010.');
