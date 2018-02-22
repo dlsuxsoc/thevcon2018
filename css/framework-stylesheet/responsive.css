@@ -107,6 +107,10 @@
         margin-bottom: 2em;
     }
 
+    #history div.content-wrapper{
+        max-height: none !important;
+    }
+
     #arrow-left, #arrow-right{
         display: none;
     }
@@ -165,5 +169,9 @@
 
     footer #faqs ol{
         text-align: left !important;
+    }
+
+    #back-to-top{
+        display: none !important;
     }
 }
