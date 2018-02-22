@@ -6,7 +6,7 @@
 }
 
 #ig-dock{
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 #ig-dock blockquote{
