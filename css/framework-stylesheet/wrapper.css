@@ -33,7 +33,7 @@ footer{
     padding: 5em 15%;
     box-sizing: border-box;
     /*border-top: thin solid #ccc;*/
-    background-color: #dedede;
+    background-color: #f4f4f4;
     position: relative;
     background-image: url('../../assets/svg/asset-board_bridge.svg');
     background-size: 100%;
@@ -51,7 +51,7 @@ footer > div{
 footer > div > div{
     max-width: 33%;
     text-align: left;
-    background-color: rgba(222, 222, 222, 0.7);
+    background-color: rgba(222, 222, 222, 0);
 }
 
 footer > div h3{
