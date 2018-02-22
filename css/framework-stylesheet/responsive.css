@@ -99,6 +99,14 @@
         display: none;
     }
 
+    #history img.vcon-logo{
+        width: 100% !important;
+    }
+
+    #history div.logo-container{
+        margin-bottom: 2em;
+    }
+
     #arrow-left, #arrow-right{
         display: none;
     }
