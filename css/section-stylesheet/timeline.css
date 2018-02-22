@@ -101,4 +101,16 @@ div.ball.active, div.ball.active p{
 
 #history h1, #history h3, #history h4, #history p{
     color: white;
+    text-align: center;
+}
+
+#history div.logo-container{
+    margin-bottom: 3em;
+}
+
+#history img.vcon-logo{
+    max-width: 20rem;
+    max-height: 20rem;
+    display: inline-block;
+    margin: 0 auto;
 }
