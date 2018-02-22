@@ -264,8 +264,8 @@ function toArabic(){
     $('#nu-view').html('رأي');
 
     /* INSTAGRAM POSTS */
-    // document.getElementById('ig-dock-title').innerHTML = "سحر #VCON18 يستولي على العالم";
-    document.getElementById('ig-dock-title').innerHTML =  "العالم " + "على " + "يستولي #VCON18 سحر";    
+    // document.getElementById('ig-dock-title').innerHTML = "سحر  يستولي #VCON18 على العالم";
+    document.getElementById('ig-dock-title').innerHTML =  "يستولي " + "على " + "العالم " + "#VCON18 " + "سحر";    
 
     /* FAQ */
     document.getElementById('faqs-title').innerHTML = "أسئلة متكررة";
