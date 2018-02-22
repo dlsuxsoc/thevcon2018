@@ -51,6 +51,7 @@ footer > div{
 footer > div > div{
     max-width: 33%;
     text-align: left;
+    background-color: rgba(222, 222, 222, 0.7);
 }
 
 footer > div h3{
@@ -73,6 +74,16 @@ footer > div h5{
 footer > div h5:hover{
     border: 0.15em solid var(--theme-blue);
     color: var(--theme-blue);
+}
+
+#faq-tab-one, #faq-tab-two, #faq-tab-three,
+#faq-tab-four, #faq-tab-five{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently*/
 }
 
 footer #faqs > div{
