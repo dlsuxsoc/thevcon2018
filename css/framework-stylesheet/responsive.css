@@ -32,6 +32,17 @@
 
 @media (max-width: 837px) {
 
+    #alternative-bg{
+        top: -12em !important;
+        right: 0 !important;
+        left: 0 !important;
+        transform: rotateZ(180deg);
+        z-index: 0 !important;
+        width: 150% !important;
+        position: absolute !important;
+        display: block !important;
+    }
+
     h1{
         font-size: 1.7em;
     }
@@ -52,7 +63,7 @@
 
     header{
         background-size: cover !important;
-        background: linear-gradient(45deg, #00abd4, #1595c7, #3a6fb1, #5751a0, #6b3b94, #782e8c, #7c2a8a);
+        background-image: none !important;
         flex-direction: column;
         padding: 5em 5%;
     }

@@ -114,4 +114,5 @@ div.ball.active, div.ball.active p{
     max-height: 20rem;
     display: inline-block;
     margin: 0 auto;
+    margin-bottom: 1em;
 }
