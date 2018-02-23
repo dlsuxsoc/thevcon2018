@@ -1,9 +1,12 @@
 $(document).ready(function(){
+    $('#arabic-2001-par').hide();
     $("#chosen_lang").change(function(){
         var mode = this.value;
 
         switch(mode){
             case '0': toEnglish();
+            $('#vcon-2001-par').show();
+            $('#arabic-2001-par').hide();
             break;
 
             case '1': toArabic();
@@ -22,18 +25,29 @@ $(document).ready(function(){
             $("#room-reservation h1").removeClass('arabic-read');
             $("#room-reservation p").removeClass('arabic-read');
             $("#instagram h1").removeClass('arabic-read');
+
+            $('#vcon-2001-par').hide();
+            $('#arabic-2001-par').show();
             break;
 
             case '2': toTurkish();
+            $('#vcon-2001-par').show();
+            $('#arabic-2001-par').hide();
             break;
 
             case '3': toFrench();
+            $('#vcon-2001-par').show();
+            $('#arabic-2001-par').hide();
             break;
 
             case '4': toRussian();
+            $('#vcon-2001-par').show();
+            $('#arabic-2001-par').hide();
             break;
 
             case '5': toIndonesian();
+            $('#vcon-2001-par').show();
+            $('#arabic-2001-par').hide();
             break;
         }
 
@@ -200,8 +214,9 @@ function toArabic(){
 
 
     document.getElementById('vcon-2001-title').innerHTML = "V-Con Bali 2001 :عام 2001";
-    document.getElementById('vcon-2001-par')["dir"] = "RTL";
-    document.getElementById('vcon-2001-par').innerHTML = "شاهدنا مولد أكبر حدث في The V وأكثرها انتظاراً: وهو الـ V-Convention أو الـ V-Con. بدءاً بأقل من مائة مشارك في أول حدث في بالي، بإندونيسيا، اليوم يحضر الـ V-Cons أكثر من خمسة عشر ألف مشارك ممثلين لأكثر من 80 دولة من حول العالم.";
+    //document.getElementById('vcon-2001-par').innerHTML = "شاهدنا مولد أكبر حدث في The V وأكثرها انتظاراً: وهو الـ V-Convention أو الـ V-Con. بدءاً بأقل من مائة مشارك في أول حدث في بالي، بإندونيسيا، اليوم يحضر الـ V-Cons أكثر من خمسة عشر ألف مشارك ممثلين لأكثر من 80 دولة من حول العالم.";
+    // document.getElementById('vcon-2001-par').innerHTML = "شاهدنا مولد أكبر حدث في The V وأكثرها انتظاراً: وهو الـ V-Convention أو الـ V-Con. بدءاً بأقل من مائة مشارك في أول حدث في بالي، بإندونيسيا، اليوم يحضر الـ V-Cons أكثر من خمسة عشر ألف مشارك ممثلين لأكثر من 80 دولة من حول العالم.";
+    // document.getElementById('vcon-2001-par').innerHTML = "شاهدنا مولد أكبر حدث في The V وأكثرها انتظاراً: وهو الـ V-" + "Convention أو الـ V-Con. " + "بدءاً بأقل من مائة مشارك في أول حدث في بالي، بإندونيسيا، اليوم " + "يحضر الـ V-Cons أكثر من خمسة عشر ألف مشارك ممثلين ";
     document.getElementById('vcon-2002-title').innerHTML = "V-Con Goa 2002 :2002 عام";
     document.getElementById('vcon-2002-par').innerHTML = "بمشاركة 500 شخص من مختلف أجزاء العالم، قدم V-Con عام 2002 بالهند شعار 'The Essence of Leadership' (جوهر القيادة). مع الاهتمام الذي أثاره، انعقد V-Con Goa، مرتين ليستضيف كل المشاركين الذين أرادوا أن يكونوا جزءا من تجربة مذهلة كهذه.";
     document.getElementById('vcon-2003-title').innerHTML = "V-Con Kota Kinabalu 2003 :2003 عام";
