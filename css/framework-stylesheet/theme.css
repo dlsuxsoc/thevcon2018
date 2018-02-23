@@ -167,6 +167,14 @@ ol.arabic-read li{
     text-align: right;
 }
 
+
+#img-2001-par {
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 50%;
+    min-height: 100%;
+}
+
 #back-to-top{
     right: -8em;
     bottom: 1em;
