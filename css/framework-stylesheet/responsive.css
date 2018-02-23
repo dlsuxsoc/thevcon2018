@@ -32,6 +32,10 @@
 
 @media (max-width: 837px) {
 
+    #img-2001-par-mobile{
+        width: 100% !important;
+    }
+
     #alternative-bg{
         top: -12em !important;
         right: 0 !important;
