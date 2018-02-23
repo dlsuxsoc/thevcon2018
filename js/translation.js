@@ -214,6 +214,7 @@ function toArabic(){
 
 
     document.getElementById('vcon-2001-title').innerHTML = "V-Con Bali 2001 :عام 2001";
+    //document.getElementById('vcon-2001-par').innerHTML = "شاهدنا مولد أكبر حدث في V The وأكثرها " + "ا: وهو الـ Convention-V أو الـ Con-V ً .ا " + "انتظار" + "بدءا بأقل من مائة مشارك في أول حدث في بالي،" + "بإندونيسيا، اليوم يحضر الـ Cons-V أكثر من" + "خمسة عشر ألف مشارك ممثلين ألكثر من 80" + "دولة من حول العالم.";
     //document.getElementById('vcon-2001-par').innerHTML = "شاهدنا مولد أكبر حدث في The V وأكثرها انتظاراً: وهو الـ V-Convention أو الـ V-Con. بدءاً بأقل من مائة مشارك في أول حدث في بالي، بإندونيسيا، اليوم يحضر الـ V-Cons أكثر من خمسة عشر ألف مشارك ممثلين لأكثر من 80 دولة من حول العالم.";
     // document.getElementById('vcon-2001-par').innerHTML = "شاهدنا مولد أكبر حدث في The V وأكثرها انتظاراً: وهو الـ V-Convention أو الـ V-Con. بدءاً بأقل من مائة مشارك في أول حدث في بالي، بإندونيسيا، اليوم يحضر الـ V-Cons أكثر من خمسة عشر ألف مشارك ممثلين لأكثر من 80 دولة من حول العالم.";
     // document.getElementById('vcon-2001-par').innerHTML = "شاهدنا مولد أكبر حدث في The V وأكثرها انتظاراً: وهو الـ V-" + "Convention أو الـ V-Con. " + "بدءاً بأقل من مائة مشارك في أول حدث في بالي، بإندونيسيا، اليوم " + "يحضر الـ V-Cons أكثر من خمسة عشر ألف مشارك ممثلين ";
@@ -282,7 +283,7 @@ function toArabic(){
 
     /* INSTAGRAM POSTS */
     // document.getElementById('ig-dock-title').innerHTML = "سحر  يستولي #VCON18 على العالم";
-    document.getElementById('ig-dock-title').innerHTML =  "يستولي " + "على " + "العالم " + "#VCON18 " + "سحر";    
+    document.getElementById('ig-dock-title').innerHTML =  "يستولي " + "على " + "العالم " + "#VCON18 " + "سحر";
 
     /* FAQ */
     document.getElementById('faqs-title').innerHTML = "أسئلة متكررة";
