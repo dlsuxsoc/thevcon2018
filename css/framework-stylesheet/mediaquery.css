@@ -19,6 +19,24 @@
     grid-gap: 20px;
 }
 
+#img-2001-par-mobile {
+    visibility: initial;
+}
+
+#img-2001-par {
+    visibility: hidden;
+}
+
+@media (min-width: 600px) {
+    #img-2001-par-mobile {
+        visibility: hidden;
+    }
+
+    #img-2001-par {
+        visibility: initial;
+    }
+}
+
 /* Columns for extra small devices (smartphones) */
 
 .col-xs-12 {
