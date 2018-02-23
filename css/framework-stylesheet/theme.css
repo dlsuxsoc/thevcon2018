@@ -175,6 +175,16 @@ ol.arabic-read li{
     min-height: 100%;
 }
 
+
+#img-2001-par-mobile {
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 50%;
+    min-height: 100%;
+    display: block;
+    margin: auto;
+}
+
 #back-to-top{
     right: -8em;
     bottom: 1em;
