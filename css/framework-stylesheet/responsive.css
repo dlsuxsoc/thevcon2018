@@ -52,6 +52,7 @@
 
     header{
         background-size: cover !important;
+        background: linear-gradient(45deg, #00abd4, #1595c7, #3a6fb1, #5751a0, #6b3b94, #782e8c, #7c2a8a);
         flex-direction: column;
         padding: 5em 5%;
     }
@@ -107,6 +108,7 @@
         margin-bottom: 2em;
         display: flex;
         flex-direction: column;
+        min-height: 0 !important;
     }
 
     #history div.content-wrapper{
