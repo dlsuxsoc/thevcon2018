@@ -21,7 +21,7 @@
 }
 
 #arrow-left, #arrow-right{
-    width: 3em;
+    width: 3.0em;
     opacity: 0.5;
     cursor: pointer;
     transition: ease all 0.3s;
@@ -38,8 +38,12 @@
 section#history div.content-wrapper{
     margin: 0;
     padding: 4em 10%;
-    border: thin solid white;
+    /*border: thin solid white;*/
     border-radius: 5px;
+    box-sizing: border-box;
+    min-width: 100%;
+    min-height: 40em;
+    max-height: 40em;
 
     transition: ease all 0.3s;
     -webkit-transition: ease all 0.3s;
@@ -59,6 +63,7 @@ div.content-wrapper.inactive{
 div#timelane{
     padding: 2em 0;
     padding-top: 4em;
+    align-items: center;
 }
 
 div.ball{
