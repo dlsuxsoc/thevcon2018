@@ -429,11 +429,11 @@ function toTurkish(){
     document.getElementById('news-and-updates-title').innerHTML = "HABERLER & GÜNCELLEMELER";
     //document.getElementById('news-and-updates-par').innerHTML = "OKUYUN | İZLEYİN | GÖRÜNTÜLEYİN";
     $('#nu-news').html('HABER');
-    $('#nu-read').html('Okumak');
+    $('#nu-read').html('OKUYUN');
     $('#nu-videos').html('VİDEO');
-    $('#nu-watch').html('İzlemek');
+    $('#nu-watch').html('İZLEYİN');
     $('#nu-gallery').html('GALERİSİ');
-    $('#nu-view').html('Görünüm');
+    $('#nu-view').html('GÖRÜNTÜLEYİN');
 
 
     /* INSTAGRAM POSTS */
@@ -551,11 +551,11 @@ function toFrench(){
     document.getElementById('news-and-updates-title').innerHTML = "ACTUALITÉS ET MISES À JOUR";
     //document.getElementById('news-and-updates-par').innerHTML = "LIRE | REGARDER | AFFICHER";
     $('#nu-news').html('ACTUALITÉS');
-    $('#nu-read').html('Lire');
+    $('#nu-read').html('LIRE');
     $('#nu-videos').html('VIDÉO');
-    $('#nu-watch').html('Regarder');
+    $('#nu-watch').html('REGARDER');
     $('#nu-gallery').html('GALERIE');
-    $('#nu-view').html('Afficher');
+    $('#nu-view').html('AFFICHER');
 
 
     /* INSTAGRAM POSTS */
@@ -666,11 +666,11 @@ function toRussian(){
     document.getElementById('news-and-updates-title').innerHTML = "НОВОСТИ И ОБЪЯВЛЕНИЯ";
     //document.getElementById('news-and-updates-par').innerHTML = "ЧИТАТЬ | СЛЕДИТЬ | СМОТРЕТЬ";
     $('#nu-news').html('НОВОСТИ');
-    $('#nu-read').html('Читать');
+    $('#nu-read').html('ЧИТАТЬ');
     $('#nu-videos').html('ВИДЕО');
-    $('#nu-watch').html('Смотреть');
+    $('#nu-watch').html('СЛЕДИТЬ');
     $('#nu-gallery').html('ГАЛЕРЕЯ');
-    $('#nu-view').html('Посмотреть');
+    $('#nu-view').html('СМОТРЕТЬ');
 
 
     /* INSTAGRAM POSTS */
@@ -779,11 +779,11 @@ function toIndonesian(){
     document.getElementById('news-and-updates-title').innerHTML = "BERITA & UPDATE";
     //document.getElementById('news-and-updates-par').innerHTML = "MEMBACA | MENONTON | MEMANDANG";
     $('#nu-news').html('BERITA');
-    $('#nu-read').html('Baca baca');
+    $('#nu-read').html('MEMBACA');
     $('#nu-videos').html('VIDEO');
-    $('#nu-watch').html('Menonton');
+    $('#nu-watch').html('MENONTON');
     $('#nu-gallery').html('GALERI');
-    $('#nu-view').html('Melihat');
+    $('#nu-view').html('MEMANDANG');
 
 
     /* INSTAGRAM POSTS */
