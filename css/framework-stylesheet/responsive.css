@@ -32,10 +32,6 @@
 
 @media (max-width: 837px) {
 
-    #img-2001-par-mobile{
-        width: 100% !important;
-    }
-
     #alternative-bg{
         top: -12em !important;
         right: 0 !important;
@@ -45,6 +41,10 @@
         width: 150% !important;
         position: absolute !important;
         display: block !important;
+    }
+
+    .arabic-par-desktop{
+        width: 100% !important;
     }
 
     h1{
