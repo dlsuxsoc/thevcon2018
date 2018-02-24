@@ -19,35 +19,25 @@ $(document).ready(function(){
             $("h6").addClass('arabic-read');
             $("#faqs p").addClass('arabic-read');
             $("#faqs ol").addClass('arabic-read');
+            $("#history div.content-wrapper").addClass('arabic-read');
 
             $("#call-to-action h1").removeClass('arabic-read');
             $("#call-to-action p").removeClass('arabic-read');
             $("#room-reservation h1").removeClass('arabic-read');
             $("#room-reservation p").removeClass('arabic-read');
             $("#instagram h1").removeClass('arabic-read');
-
-            $('#vcon-2001-par').hide();
-            $('#arabic-2001-par').show();
             break;
 
             case '2': toTurkish();
-            $('#vcon-2001-par').show();
-            $('#arabic-2001-par').hide();
             break;
 
             case '3': toFrench();
-            $('#vcon-2001-par').show();
-            $('#arabic-2001-par').hide();
             break;
 
             case '4': toRussian();
-            $('#vcon-2001-par').show();
-            $('#arabic-2001-par').hide();
             break;
 
             case '5': toIndonesian();
-            $('#vcon-2001-par').show();
-            $('#arabic-2001-par').hide();
             break;
         }
 
@@ -60,6 +50,51 @@ $(document).ready(function(){
             $("h5").removeClass('arabic-read');
             $("h6").removeClass('arabic-read');
             $("#faqs ol").removeClass('arabic-read');
+            $("#history div.content-wrapper").removeClass('arabic-read');
+        }
+    });
+
+    $(window).resize(function(){
+        var windowSize = $(window).width();
+
+        if(windowSize <= 837){
+            document.getElementById('vcon-2001-title').innerHTML = ":عام 2001 <br/>V-Con Bali 2001 ";
+            document.getElementById('vcon-2002-title').innerHTML = ":2002 عام <br/>V-Con Goa 2002";
+            document.getElementById('vcon-2003-title').innerHTML = ":2003 عام <br/>V-Con Kota Kinabalu 2003";
+            document.getElementById('vcon-2004-title').innerHTML = ":2004 عام <br/>V-Dubai 2004 وEuro V-Con 2004";
+            document.getElementById('vcon-2005-title').innerHTML = ":2005 عام <br/>V-Thailand 2005";
+            document.getElementById('vcon-2006-title').innerHTML = ":2006 عام <br/>V-Malaysia 2006 وEuro V-Con Madrid 2006";
+            document.getElementById('vcon-2007-title').innerHTML = ":2007 عام <br/>V-Jakarta 2007 وV-Africa 2007";
+            document.getElementById('vcon-2008-title').innerHTML = ":2008 عام <br/>V-Malaysia 2008 وV-Africa 2008";
+            document.getElementById('vcon-2009-title').innerHTML = ":2009 عام <br/>V-Malaysia 2009";
+            document.getElementById('vcon-2010-title').innerHTML = ":2010 عام <br/>V-Malaysia 2010";
+            document.getElementById('vcon-2011-title').innerHTML = ":2011 عام <br/>V-Malaysia 2011";
+            document.getElementById('vcon-2012-title').innerHTML = ":2012 عام <br/>V-Indonesia 2012";
+            document.getElementById('vcon-2013-title').innerHTML = ":2013 عام <br/>V-Malaysia 2013";
+            document.getElementById('vcon-2014-title').innerHTML = ":2014 عام <br/>V-Malaysia 2014";
+            document.getElementById('vcon-2015-title').innerHTML = ":2015 عام <br/>V-Malaysia 2015 وV-UAE 2015";
+            document.getElementById('vcon-2016-title').innerHTML = ":2016 عام <br/>V-Malaysia 2016 وV-UAE 2016";
+            document.getElementById('vcon-2017-title').innerHTML = ":2017 عام <br/>V-Malaysia 2017 وV-UAE 2017";
+        }
+
+        else{
+            document.getElementById('vcon-2001-title').innerHTML = "V-Con Bali 2001 :عام 2001";
+            document.getElementById('vcon-2002-title').innerHTML = "V-Con Goa 2002 :2002 عام";
+            document.getElementById('vcon-2003-title').innerHTML = "V-Con Kota Kinabalu 2003 :2003 عام";
+            document.getElementById('vcon-2004-title').innerHTML = "V-Dubai 2004 وEuro V-Con 2004 :2004 عام";
+            document.getElementById('vcon-2005-title').innerHTML = "V-Thailand 2005 :2005 عام";
+            document.getElementById('vcon-2006-title').innerHTML = "V-Malaysia 2006 وEuro V-Con Madrid 2006 :2006 عام";
+            document.getElementById('vcon-2007-title').innerHTML = "V-Jakarta 2007 وV-Africa 2007 :2007 عام";
+            document.getElementById('vcon-2008-title').innerHTML = "V-Malaysia 2008 وV-Africa 2008 :2008 عام";
+            document.getElementById('vcon-2009-title').innerHTML = "V-Malaysia 2009 :2009 عام";
+            document.getElementById('vcon-2010-title').innerHTML = "V-Malaysia 2010 :2010 عام";
+            document.getElementById('vcon-2011-title').innerHTML = "V-Malaysia 2011 :2011 عام";
+            document.getElementById('vcon-2012-title').innerHTML = "V-Indonesia 2012 :2012 عام";
+            document.getElementById('vcon-2013-title').innerHTML = "V-Malaysia 2013 :2013 عام";
+            document.getElementById('vcon-2014-title').innerHTML = "V-Malaysia 2014 :2014 عام";
+            document.getElementById('vcon-2015-title').innerHTML = "V-Malaysia 2015 وV-UAE 2015 :2015 عام";
+            document.getElementById('vcon-2016-title').innerHTML = "V-Malaysia 2016 وV-UAE 2016 :2016 عام";
+            document.getElementById('vcon-2017-title').innerHTML = "V-Malaysia 2017 وV-UAE 2017 :2017 عام";
         }
     });
 });
@@ -214,47 +249,62 @@ function toArabic(){
 
 
     document.getElementById('vcon-2001-title').innerHTML = "V-Con Bali 2001 :عام 2001";
+    document.getElementById('vcon-2001-par').innerHTML = '<img src="assets/arabic/vcon-2001-par.png" class="arabic-par-desktop" />';
     //document.getElementById('vcon-2001-par').innerHTML = "شاهدنا مولد أكبر حدث في V The وأكثرها " + "ا: وهو الـ Convention-V أو الـ Con-V ً .ا " + "انتظار" + "بدءا بأقل من مائة مشارك في أول حدث في بالي،" + "بإندونيسيا، اليوم يحضر الـ Cons-V أكثر من" + "خمسة عشر ألف مشارك ممثلين ألكثر من 80" + "دولة من حول العالم.";
     //document.getElementById('vcon-2001-par').innerHTML = "شاهدنا مولد أكبر حدث في The V وأكثرها انتظاراً: وهو الـ V-Convention أو الـ V-Con. بدءاً بأقل من مائة مشارك في أول حدث في بالي، بإندونيسيا، اليوم يحضر الـ V-Cons أكثر من خمسة عشر ألف مشارك ممثلين لأكثر من 80 دولة من حول العالم.";
     // document.getElementById('vcon-2001-par').innerHTML = "شاهدنا مولد أكبر حدث في The V وأكثرها انتظاراً: وهو الـ V-Convention أو الـ V-Con. بدءاً بأقل من مائة مشارك في أول حدث في بالي، بإندونيسيا، اليوم يحضر الـ V-Cons أكثر من خمسة عشر ألف مشارك ممثلين لأكثر من 80 دولة من حول العالم.";
     // document.getElementById('vcon-2001-par').innerHTML = "شاهدنا مولد أكبر حدث في The V وأكثرها انتظاراً: وهو الـ V-" + "Convention أو الـ V-Con. " + "بدءاً بأقل من مائة مشارك في أول حدث في بالي، بإندونيسيا، اليوم " + "يحضر الـ V-Cons أكثر من خمسة عشر ألف مشارك ممثلين ";
     document.getElementById('vcon-2002-title').innerHTML = "V-Con Goa 2002 :2002 عام";
-    document.getElementById('vcon-2002-par').innerHTML = "بمشاركة 500 شخص من مختلف أجزاء العالم، قدم V-Con عام 2002 بالهند شعار 'The Essence of Leadership' (جوهر القيادة). مع الاهتمام الذي أثاره، انعقد V-Con Goa، مرتين ليستضيف كل المشاركين الذين أرادوا أن يكونوا جزءا من تجربة مذهلة كهذه.";
+    document.getElementById('vcon-2002-par').innerHTML = '<img src="assets/arabic/vcon-2002-par.png" class="arabic-par-desktop" />';
     document.getElementById('vcon-2003-title').innerHTML = "V-Con Kota Kinabalu 2003 :2003 عام";
-    document.getElementById('vcon-2003-par').innerHTML = "في عام 2003، اتجه الـ V-Con إلى مدينة كوتا كانيبالو، في ولاية صباح، بماليزيا، حيث جمع أكثر من 500 مشارك من 26 دولة مختلفة. وقد حمل شعار 'The Essence of Success' (جوهر النجاح).";
+    document.getElementById('vcon-2003-par').innerHTML = '<img src="assets/arabic/vcon-2003-par.png" class="arabic-par-desktop" />';
     document.getElementById('vcon-2004-title').innerHTML = "V-Dubai 2004 وEuro V-Con 2004 :2004 عام";
-    document.getElementById('vcon-2004-par').innerHTML = "شهد V-Dubai في 2004 الذكرى السادسة لتأسيس الشركة، حيث حضر أكثر من 700 مشارك.في نفس العام عقد The V أول V-Con له في أوربا في فندق Rodos Palace في جزيرة رودس في اليونان. في الفترة من 6 إلى 9 يونيو، 2004، تجمع 200 مشارك لافتتاح شبكة جديدة في أوربا.";
+    document.getElementById('vcon-2004-par').innerHTML = '<img src="assets/arabic/vcon-2004-par.png" class="arabic-par-desktop" />';
+    //document.getElementById('vcon-2004-par').innerHTML = "شهد V-Dubai في 2004 الذكرى السادسة لتأسيس الشركة، حيث حضر أكثر من 700 مشارك.في نفس العام عقد The V أول V-Con له في أوربا في فندق Rodos Palace في جزيرة رودس في اليونان. في الفترة من 6 إلى 9 يونيو، 2004، تجمع 200 مشارك لافتتاح شبكة جديدة في أوربا.";
     document.getElementById('vcon-2005-title').innerHTML = "V-Thailand 2005 :2005 عام";
-    document.getElementById('vcon-2005-par').innerHTML = "V-Thailand 2005 قدم نشطة أبرزت شغفنا بتطوير قيادة عالمية الطراز بامتياز. ولما كان The V يؤمن بالبدء معهم وهم صغار، تم تدشين فعالية خاصة للاهتمام بأطفال قادتنا في V-Thailand. الفعالية التي تعرف الآن بـ V-Kids بدأت الفعالية بمجموعة صغيرة من الأطفال يتم الاعتناء بها من قبل زوجات V Partners وV Ambassadors الآخرين.";
+    document.getElementById('vcon-2005-par').innerHTML = '<img src="assets/arabic/vcon-2005-par.png" class="arabic-par-desktop" />';
+    //document.getElementById('vcon-2005-par').innerHTML = "V-Thailand 2005 قدم نشطة أبرزت شغفنا بتطوير قيادة عالمية الطراز بامتياز. ولما كان The V يؤمن بالبدء معهم وهم صغار، تم تدشين فعالية خاصة للاهتمام بأطفال قادتنا في V-Thailand. الفعالية التي تعرف الآن بـ V-Kids بدأت الفعالية بمجموعة صغيرة من الأطفال يتم الاعتناء بها من قبل زوجات V Partners وV Ambassadors الآخرين.";
     document.getElementById('vcon-2006-title').innerHTML = "V-Malaysia 2006 وEuro V-Con Madrid 2006 :2006 عام";
-    document.getElementById('vcon-2006-par').innerHTML = "2006 V-Malaysia الذي كان الـ V-Convention السابع،￼￼￼￼ انعقد في مركز مؤتمرات Sunway Pyramid، وقد حمل شعار \"Over The Top\" (فوق القمة).بعد مضي عامين من أول V-Con له في أوربا، دخل The V في العام في برنامج مكثف للتوسع مصمم بصفة خاصة للسوق ا وربية. Euro-VCon Madrid خدم أيضاً كمحطة ل حتفال باثنين من إنجازات الشركة التاريخية: (1) الذكرى الثامنة لتأسيس مجموعة شركات Qi؛ و (2) حصول Qi على لقب رعاية البطولة العالمية ل تحاد الدولي لتنس الريشة - (IBF) والذي مثّل بياناً تأكيدياً لمصداقية الشركة، ومكانتها واستقرارها.";
+    document.getElementById('vcon-2006-par').innerHTML = '<img src="assets/arabic/vcon-2006-par.png" class="arabic-par-desktop" />';
+    //document.getElementById('vcon-2006-par').innerHTML = "2006 V-Malaysia الذي كان الـ V-Convention السابع،￼￼￼￼ انعقد في مركز مؤتمرات Sunway Pyramid، وقد حمل شعار \"Over The Top\" (فوق القمة).بعد مضي عامين من أول V-Con له في أوربا، دخل The V في العام في برنامج مكثف للتوسع مصمم بصفة خاصة للسوق ا وربية. Euro-VCon Madrid خدم أيضاً كمحطة ل حتفال باثنين من إنجازات الشركة التاريخية: (1) الذكرى الثامنة لتأسيس مجموعة شركات Qi؛ و (2) حصول Qi على لقب رعاية البطولة العالمية ل تحاد الدولي لتنس الريشة - (IBF) والذي مثّل بياناً تأكيدياً لمصداقية الشركة، ومكانتها واستقرارها.";
     document.getElementById('vcon-2007-title').innerHTML = "V-Jakarta 2007 وV-Africa 2007 :2007 عام";
-    document.getElementById('vcon-2007-par').innerHTML = "بمشاركة أكثر من 3000 مشارك من 40 دولة مختلفة، انعقد V-Jakarta 2007 في مركز جاكارتا للمؤتمرات، حيث قام The V بتقوية شغفه لنجاح الشبكة.<br/>"+
-    "في نفس العام، أحضر The V فعاليته الأكثر مثاراً للحديث إلى كينيا وعقد بنجاح V-Africa 2007 باجتماع أكثر من 2000 مشارك.";
+    document.getElementById('vcon-2007-par').innerHTML = '<img src="assets/arabic/vcon-2007-par.png" class="arabic-par-desktop" />';
+    //document.getElementById('vcon-2007-par').innerHTML = "بمشاركة أكثر من 3000 مشارك من 40 دولة مختلفة، انعقد V-Jakarta 2007 في مركز جاكارتا للمؤتمرات، حيث قام The V بتقوية شغفه لنجاح الشبكة.<br/>"+
+    //"في نفس العام، أحضر The V فعاليته الأكثر مثاراً للحديث إلى كينيا وعقد بنجاح V-Africa 2007 باجتماع أكثر من 2000 مشارك.";
     document.getElementById('vcon-2008-title').innerHTML = "V-Malaysia 2008 وV-Africa 2008 :2008 عام";
-    document.getElementById('vcon-2008-par').innerHTML = "احتفلت الشركة بالذكرى السنوية العاشرة لها.<br/>"+
-    "كان أحد أبرز الأحداث للـ V-Con الذي انعقد في مركز بينانج الدولي للمؤتمرات Penang International Sports Arena في الفترة من 21 إلى 25 مايو 2018 هو مؤتمر الـ V-Kids حيث تم الاهتمام بأكثر من 124 طفل من مختلف الأعمار والجنسيات خلال ثلاثة أيام من المرح والتعلّم. بجانب مؤتمر الـ V-Kids، الأحداث الاير الأخرى في المؤتمر تضمنت حفلاً استعراضياً وليلة ترحيب ومعرض تم فيه استعراض السلسلة الكاملة من المنتجات والخدمات من The V والشركات الشقيقة.<br/>"+
-    "كمبالا، يوغندا، في شرق أفريقيا، أصبحت هي أيضاً حديث المدينة عندما استضافت V-Africa في نفس العام بحضور 1600 مشارك.";
+    document.getElementById('vcon-2008-par').innerHTML = '<img src="assets/arabic/vcon-2008-par.png" class="arabic-par-desktop" />';
+    //document.getElementById('vcon-2008-par').innerHTML = "احتفلت الشركة بالذكرى السنوية العاشرة لها.<br/>"+
+    //"كان أحد أبرز الأحداث للـ V-Con الذي انعقد في مركز بينانج الدولي للمؤتمرات Penang International Sports Arena في الفترة من 21 إلى 25 مايو 2018 هو مؤتمر الـ V-Kids حيث تم الاهتمام بأكثر من 124 طفل من مختلف الأعمار والجنسيات خلال ثلاثة أيام من المرح والتعلّم. بجانب مؤتمر الـ V-Kids، الأحداث الاير الأخرى في المؤتمر تضمنت حفلاً استعراضياً وليلة ترحيب ومعرض تم فيه استعراض السلسلة الكاملة من المنتجات والخدمات من The V والشركات الشقيقة.<br/>"+
+    //"كمبالا، يوغندا، في شرق أفريقيا، أصبحت هي أيضاً حديث المدينة عندما استضافت V-Africa في نفس العام بحضور 1600 مشارك.";
     document.getElementById('vcon-2009-title').innerHTML = "V-Malaysia 2009 :2009 عام";
-    document.getElementById('vcon-2009-par').innerHTML = "عقد في شاه علم، بماليزيا، حمل هذا الـ V-Con شعار \"Change Begins\" (التغيير يبدأ).";
+    document.getElementById('vcon-2009-par').innerHTML = '<img src="assets/arabic/vcon-2009-par.png" class="arabic-par-desktop" />';
+    //document.getElementById('vcon-2009-par').innerHTML = "عقد في شاه علم، بماليزيا، حمل هذا الـ V-Con شعار \"Change Begins\" (التغيير يبدأ).";
     document.getElementById('vcon-2010-title').innerHTML = "V-Malaysia 2010 :2010 عام";
-    document.getElementById('vcon-2010-par').innerHTML = "المتحدث التحفيزي الذي ولد بمتلازمة انعدام الأطراف tetra-amelia، نك فوجيسيتش Nick Vujicic، تحدث في V-Malaysia 2010.";
+    document.getElementById('vcon-2010-par').innerHTML = '<img src="assets/arabic/vcon-2010-par.png" class="arabic-par-desktop" />';
+    //document.getElementById('vcon-2010-par').innerHTML = "المتحدث التحفيزي الذي ولد بمتلازمة انعدام الأطراف tetra-amelia، نك فوجيسيتش Nick Vujicic، تحدث في V-Malaysia 2010.";
     document.getElementById('vcon-2011-title').innerHTML = "V-Malaysia 2011 :2011 عام";
-    document.getElementById('vcon-2011-par').innerHTML = "في عام 2011، أعلن عن الـ V-Con بشعار \"Belief\" (الإيمان).";
+    document.getElementById('vcon-2011-par').innerHTML = '<img src="assets/arabic/vcon-2011-par.png" class="arabic-par-desktop" />';
+    //document.getElementById('vcon-2011-par').innerHTML = "في عام 2011، أعلن عن الـ V-Con بشعار \"Belief\" (الإيمان).";
     document.getElementById('vcon-2012-title').innerHTML = "V-Indonesia 2012 :2012 عام";
-    document.getElementById('vcon-2012-par').innerHTML = "مرة أخرى حط الـ V-Con رحاله في جاكارتا، إندونيسيا، لعقد V-Indonesia 2012، حيث وضع \"Make A Difference\" (اصنع فرق) كشعار دافع له.";
+    document.getElementById('vcon-2012-par').innerHTML = '<img src="assets/arabic/vcon-2012-par.png" class="arabic-par-desktop" />';
+    //document.getElementById('vcon-2012-par').innerHTML = "مرة أخرى حط الـ V-Con رحاله في جاكارتا، إندونيسيا، لعقد V-Indonesia 2012، حيث وضع \"Make A Difference\" (اصنع فرق) كشعار دافع له.";
     document.getElementById('vcon-2013-title').innerHTML = "V-Malaysia 2013 :2013 عام";
-    document.getElementById('vcon-2013-par').innerHTML = "تجمع الحالمون من كل أجزاء الكرة الأرضية مرة أخرى في ماليزيا في العام 2013 من أجل V-Malaysia 2013 الذي تصدره شعاره \"RYTHM Nation\" (أمة RYTHM)";
+    document.getElementById('vcon-2013-par').innerHTML = '<img src="assets/arabic/vcon-2013-par.png" class="arabic-par-desktop" />';
+    //document.getElementById('vcon-2013-par').innerHTML = "تجمع الحالمون من كل أجزاء الكرة الأرضية مرة أخرى في ماليزيا في العام 2013 من أجل V-Malaysia 2013 الذي تصدره شعاره \"RYTHM Nation\" (أمة RYTHM)";
     document.getElementById('vcon-2014-title').innerHTML = "V-Malaysia 2014 :2014 عام";
-    document.getElementById('vcon-2014-par').innerHTML = "في هذا العام، اتخذ الـ V-Con شعاراً دعا الحالمين إلى \"Arise. Awake. Achieve.\" (أنهض. استيقظ. أنجز.) أيضاً كان أول V-Con قام بفخر بالتعريف بمكانة QNET في كرة القدم العالمية بعد توقيعها على عقد مع فريقManchester City  لكرة القدم كشريك البيع المباشر الحصري له.";
+    document.getElementById('vcon-2014-par').innerHTML = '<img src="assets/arabic/vcon-2014-par.png" class="arabic-par-desktop" />';
+    //document.getElementById('vcon-2014-par').innerHTML = "في هذا العام، اتخذ الـ V-Con شعاراً دعا الحالمين إلى \"Arise. Awake. Achieve.\" (أنهض. استيقظ. أنجز.) أيضاً كان أول V-Con قام بفخر بالتعريف بمكانة QNET في كرة القدم العالمية بعد توقيعها على عقد مع فريقManchester City  لكرة القدم كشريك البيع المباشر الحصري له.";
     document.getElementById('vcon-2015-title').innerHTML = "V-Malaysia 2015 وV-UAE 2015 :2015 عام";
-    document.getElementById('vcon-2015-par').innerHTML = "باعتباره عاماً انتقالياً بالنسبة للشبكة وللشركة، اتخذ V-Con 2015، \"Game Changer\" (مغيّر مجرى اللعب) كشعار له. كان أيضاً مقدمة للمخطط المستمر لـ The V بعقد اثنين من الـ V-Conventions كل عام يعقد الأول في بينانج، بماليزيا، والثاني في دبي، بالإمارات العربية المتحدة.<br/>"+
-    "خلال أحد أبرز الـ V-Cons والذي انعقد في دبي، تم الترحيب ببطلة النساء في التنس، مارتينا هينجيز كأحدث سفيرة لعلامتنا التجارية.";
+    document.getElementById('vcon-2015-par').innerHTML = '<img src="assets/arabic/vcon-2015-par.png" class="arabic-par-desktop" />';
+    //document.getElementById('vcon-2015-par').innerHTML = "باعتباره عاماً انتقالياً بالنسبة للشبكة وللشركة، اتخذ V-Con 2015، \"Game Changer\" (مغيّر مجرى اللعب) كشعار له. كان أيضاً مقدمة للمخطط المستمر لـ The V بعقد اثنين من الـ V-Conventions كل عام يعقد الأول في بينانج، بماليزيا، والثاني في دبي، بالإمارات العربية المتحدة.<br/>"+
+    //"خلال أحد أبرز الـ V-Cons والذي انعقد في دبي، تم الترحيب ببطلة النساء في التنس، مارتينا هينجيز كأحدث سفيرة لعلامتنا التجارية.";
     document.getElementById('vcon-2016-title').innerHTML = "V-Malaysia 2016 وV-UAE 2016 :2016 عام";
-    document.getElementById('vcon-2016-par').innerHTML = "عدد الحضور حطم الأرقام القياسية في V-Malaysia في بينانج. امتلأت الساحة حتى الأطراف بما يفوق خمسة عشر ألف من المشاركين، صداهم يتردد بشعار \"Evolve. Empower. Enrich.\" (تطوير. تعزيّز. إثراء.)<br/>"+
-    "صعد على منصة V-UAE كل من أنيل كابور، الممثل والمنتج الهندي الذي ظهر في مرات لا تحصى في أفلام بوليوود وأفلام عالمية؛ جاكي شروف الذي ظل في السينما الهندية لما يقارب أربعة عقود وظهر في 207 فيلم بتسعة لغات؛ وفيفيك أوبيروي الذي صنع أول ظهور له في الأفلام الهندية على منصة V-UAE 2016 لمشاركة كيف قاموا بالقفزة الكبرى كي يصلوا إلى ما وصلوا إليه اليوم.";
+    document.getElementById('vcon-2016-par').innerHTML = '<img src="assets/arabic/vcon-2016-par.png" class="arabic-par-desktop" />';
+    //document.getElementById('vcon-2016-par').innerHTML = "عدد الحضور حطم الأرقام القياسية في V-Malaysia في بينانج. امتلأت الساحة حتى الأطراف بما يفوق خمسة عشر ألف من المشاركين، صداهم يتردد بشعار \"Evolve. Empower. Enrich.\" (تطوير. تعزيّز. إثراء.)<br/>"+
+    //"صعد على منصة V-UAE كل من أنيل كابور، الممثل والمنتج الهندي الذي ظهر في مرات لا تحصى في أفلام بوليوود وأفلام عالمية؛ جاكي شروف الذي ظل في السينما الهندية لما يقارب أربعة عقود وظهر في 207 فيلم بتسعة لغات؛ وفيفيك أوبيروي الذي صنع أول ظهور له في الأفلام الهندية على منصة V-UAE 2016 لمشاركة كيف قاموا بالقفزة الكبرى كي يصلوا إلى ما وصلوا إليه اليوم.";
     document.getElementById('vcon-2017-title').innerHTML = "V-Malaysia 2017 وV-UAE 2017 :2017 عام";
-    document.getElementById('vcon-2017-par').innerHTML = "للعام الثالث على التوالي، انعقد V-Con في كل من بينانج، ماليزيا، ودبي، الإمارات العربية المتحدة، بحضور محطم للأرقام القياسية في كلاهما. تصدر شعار مثير \"DO IT NOW\" (افعلها الآن) كلا الـ V-Conventions. منيبة مزاري، امرأة ملهمة اجتذبت قصة حياتها الكثير من الحب والإعجاب من آلاف الحالمين في V-Malaysia و V-UAE، بالإضافة إلى قائمة متنامية من كبار النجوم الذين انضموا إلى عائلتنا ليكونوا جزءاً من تجربة لا تصدق في الـ V-Con.";
+    document.getElementById('vcon-2017-par').innerHTML = '<img src="assets/arabic/vcon-2017-par.png" class="arabic-par-desktop" />';
+    //document.getElementById('vcon-2017-par').innerHTML = "للعام الثالث على التوالي، انعقد V-Con في كل من بينانج، ماليزيا، ودبي، الإمارات العربية المتحدة، بحضور محطم للأرقام القياسية في كلاهما. تصدر شعار مثير \"DO IT NOW\" (افعلها الآن) كلا الـ V-Conventions. منيبة مزاري، امرأة ملهمة اجتذبت قصة حياتها الكثير من الحب والإعجاب من آلاف الحالمين في V-Malaysia و V-UAE، بالإضافة إلى قائمة متنامية من كبار النجوم الذين انضموا إلى عائلتنا ليكونوا جزءاً من تجربة لا تصدق في الـ V-Con.";
 
 
 
@@ -277,9 +327,9 @@ function toArabic(){
     $('#nu-news').html('أخبار');
     $('#nu-read').html('اقرأ');
     $('#nu-videos').html('فيديو');
-    $('#nu-watch').html('راقب');
+    $('#nu-watch').html('شاهد');
     $('#nu-gallery').html('صالة عرض');
-    $('#nu-view').html('رأي');
+    $('#nu-view').html('اطلع');
 
     /* INSTAGRAM POSTS */
     // document.getElementById('ig-dock-title').innerHTML = "سحر  يستولي #VCON18 على العالم";
