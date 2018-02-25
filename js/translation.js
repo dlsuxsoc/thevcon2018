@@ -26,6 +26,7 @@ $(document).ready(function(){
             $("#room-reservation h1").removeClass('arabic-read');
             $("#room-reservation p").removeClass('arabic-read');
             $("#instagram h1").removeClass('arabic-read');
+            checkArabic();
             break;
 
             case '2': toTurkish();
@@ -55,15 +56,21 @@ $(document).ready(function(){
     });
 
     $(window).resize(function(){
-        var windowSize = $(window).width();
+        checkArabic();
+    });
+});
 
+function checkArabic(){
+    var windowSize = $(window).width();
+    var mode = document.getElementById('chosen_lang').value;
+    if(mode == '1'){
         if(windowSize <= 837){
             document.getElementById('vcon-2001-title').innerHTML = ":عام 2001 <br/>V-Con Bali 2001 ";
             document.getElementById('vcon-2002-title').innerHTML = ":2002 عام <br/>V-Con Goa 2002";
             document.getElementById('vcon-2003-title').innerHTML = ":2003 عام <br/>V-Con Kota Kinabalu 2003";
             document.getElementById('vcon-2004-title').innerHTML = ":2004 عام <br/>V-Dubai 2004 وEuro V-Con 2004";
             document.getElementById('vcon-2005-title').innerHTML = ":2005 عام <br/>V-Thailand 2005";
-            document.getElementById('vcon-2006-title').innerHTML = ":2006 عام <br/>V-Malaysia 2006 وEuro V-Con Madrid 2006";
+            document.getElementById('vcon-2006-title').innerHTML = ":2006 عام V-Malaysia 2006<br/> Euro V-Con Madrid 2006 و";
             document.getElementById('vcon-2007-title').innerHTML = ":2007 عام <br/>V-Jakarta 2007 وV-Africa 2007";
             document.getElementById('vcon-2008-title').innerHTML = ":2008 عام <br/>V-Malaysia 2008 وV-Africa 2008";
             document.getElementById('vcon-2009-title').innerHTML = ":2009 عام <br/>V-Malaysia 2009";
@@ -75,6 +82,14 @@ $(document).ready(function(){
             document.getElementById('vcon-2015-title').innerHTML = ":2015 عام <br/>V-Malaysia 2015 وV-UAE 2015";
             document.getElementById('vcon-2016-title').innerHTML = ":2016 عام <br/>V-Malaysia 2016 وV-UAE 2016";
             document.getElementById('vcon-2017-title').innerHTML = ":2017 عام <br/>V-Malaysia 2017 وV-UAE 2017";
+
+            document.getElementById('ig-dock-title').innerHTML = "";
+            $('#ig-dock-title').append("#VCON18 " + "سحر" + "<br/>");
+            $('#ig-dock-title').append("يستولي " + "على " + "العالم ");
+
+            document.getElementById('room-reservation-title').innerHTML = "";
+            $('#room-reservation-title').append('أكمل رحلتك في' + "</br>");
+            $('#room-reservation-title').append('V-Malaysia 2018');
         }
 
         else{
@@ -95,9 +110,12 @@ $(document).ready(function(){
             document.getElementById('vcon-2015-title').innerHTML = "V-Malaysia 2015 وV-UAE 2015 :2015 عام";
             document.getElementById('vcon-2016-title').innerHTML = "V-Malaysia 2016 وV-UAE 2016 :2016 عام";
             document.getElementById('vcon-2017-title').innerHTML = "V-Malaysia 2017 وV-UAE 2017 :2017 عام";
+
+            document.getElementById('ig-dock-title').innerHTML =  "يستولي " + "على " + "العالم " + "#VCON18 " + "سحر";
+            document.getElementById('room-reservation-title').innerHTML = "V-Malaysia 2018 أكمل رحلتك في";
         }
-    });
-});
+    }
+}
 
 function toEnglish(){
     $('button.buy-tickets').html('BUY TICKETS');

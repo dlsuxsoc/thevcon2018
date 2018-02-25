@@ -32,7 +32,6 @@ body {
 }
 
 #back_button {
-    position: absolute;
     border-radius: 0px;
 }
 
@@ -53,9 +52,9 @@ body {
 .tabs {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    box-sizing: border-box;
     margin: 0 auto;
-    width: 27%;
 }
 
 
