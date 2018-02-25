@@ -1,64 +1,74 @@
 $(document).ready(function(){
-    $('#arabic-2001-par').hide();
-    $("#chosen_lang").change(function(){
-        var mode = this.value;
+    //$('#arabic-2001-par').hide();
 
-        switch(mode){
-            case '0': toEnglish();
-            $('#vcon-2001-par').show();
-            $('#arabic-2001-par').hide();
-            break;
+    if(localStorage.vconLang == null)
+        localStorage.vconLang = '0';
 
-            case '1': toArabic();
-            $("p").addClass('arabic-read');
-            $("h1").addClass('arabic-read');
-            $("h2").addClass('arabic-read');
-            $("h3").addClass('arabic-read');
-            $("h4").addClass('arabic-read');
-            $("h5").addClass('arabic-read');
-            $("h6").addClass('arabic-read');
-            $("#faqs p").addClass('arabic-read');
-            $("#faqs ol").addClass('arabic-read');
-            $("#history div.content-wrapper").addClass('arabic-read');
+    else $("#chosen_lang").val(localStorage.vconLang);
+    console.log($('#chosen_lang').val());
+    applyLanguage();
 
-            $("#call-to-action h1").removeClass('arabic-read');
-            $("#call-to-action p").removeClass('arabic-read');
-            $("#room-reservation h1").removeClass('arabic-read');
-            $("#room-reservation p").removeClass('arabic-read');
-            $("#instagram h1").removeClass('arabic-read');
-            checkArabic();
-            break;
-
-            case '2': toTurkish();
-            break;
-
-            case '3': toFrench();
-            break;
-
-            case '4': toRussian();
-            break;
-
-            case '5': toIndonesian();
-            break;
-        }
-
-        if(mode != '1'){
-            $("p").removeClass('arabic-read');
-            $("h1").removeClass('arabic-read');
-            $("h2").removeClass('arabic-read');
-            $("h3").removeClass('arabic-read');
-            $("h4").removeClass('arabic-read');
-            $("h5").removeClass('arabic-read');
-            $("h6").removeClass('arabic-read');
-            $("#faqs ol").removeClass('arabic-read');
-            $("#history div.content-wrapper").removeClass('arabic-read');
-        }
-    });
+    $("#chosen_lang").change(applyLanguage);
 
     $(window).resize(function(){
         checkArabic();
     });
 });
+
+function applyLanguage(){
+    localStorage.vconLang = document.getElementById('chosen_lang').value;
+
+    switch(localStorage.vconLang){
+        case '0': toEnglish();
+        $('#vcon-2001-par').show();
+        $('#arabic-2001-par').hide();
+        break;
+
+        case '1': toArabic();
+        $("p").addClass('arabic-read');
+        $("h1").addClass('arabic-read');
+        $("h2").addClass('arabic-read');
+        $("h3").addClass('arabic-read');
+        $("h4").addClass('arabic-read');
+        $("h5").addClass('arabic-read');
+        $("h6").addClass('arabic-read');
+        $("#faqs p").addClass('arabic-read');
+        $("#faqs ol").addClass('arabic-read');
+        $("#history div.content-wrapper").addClass('arabic-read');
+
+        $("#call-to-action h1").removeClass('arabic-read');
+        $("#call-to-action p").removeClass('arabic-read');
+        $("#room-reservation h1").removeClass('arabic-read');
+        $("#room-reservation p").removeClass('arabic-read');
+        $("#instagram h1").removeClass('arabic-read');
+        checkArabic();
+        break;
+
+        case '2': toTurkish();
+        break;
+
+        case '3': toFrench();
+        break;
+
+        case '4': toRussian();
+        break;
+
+        case '5': toIndonesian();
+        break;
+    }
+
+    if(localStorage.vconLang != '1'){
+        $("p").removeClass('arabic-read');
+        $("h1").removeClass('arabic-read');
+        $("h2").removeClass('arabic-read');
+        $("h3").removeClass('arabic-read');
+        $("h4").removeClass('arabic-read');
+        $("h5").removeClass('arabic-read');
+        $("h6").removeClass('arabic-read');
+        $("#faqs ol").removeClass('arabic-read');
+        $("#history div.content-wrapper").removeClass('arabic-read');
+    }
+}
 
 function checkArabic(){
     var windowSize = $(window).width();
