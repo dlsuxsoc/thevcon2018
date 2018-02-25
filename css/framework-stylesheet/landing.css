@@ -15,9 +15,8 @@
     .tabs {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center !important;
         margin: 0 auto;
-        width: 27%;
     }
 }
 
@@ -40,7 +39,7 @@ body {
     border-radius: 0px;
     background-color: transparent;
     text-transform: capitalize;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 .container {
@@ -54,7 +53,6 @@ body {
     flex-direction: row;
     justify-content: center;
     box-sizing: border-box;
-    margin: 0 auto;
 }
 
 
