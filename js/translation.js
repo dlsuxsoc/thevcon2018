@@ -78,20 +78,20 @@ function checkArabic(){
             document.getElementById('vcon-2001-title').innerHTML = ":عام 2001 <br/>V-Con Bali 2001 ";
             document.getElementById('vcon-2002-title').innerHTML = ":2002 عام <br/>V-Con Goa 2002";
             document.getElementById('vcon-2003-title').innerHTML = ":2003 عام <br/>V-Con Kota Kinabalu 2003";
-            document.getElementById('vcon-2004-title').innerHTML = ":2004 عام <br/>V-Dubai 2004 وEuro V-Con 2004";
+            document.getElementById('vcon-2004-title').innerHTML = ":2004 عام <br/>V-Dubai 2004 <br/>Euro V-Con 2004";
             document.getElementById('vcon-2005-title').innerHTML = ":2005 عام <br/>V-Thailand 2005";
-            document.getElementById('vcon-2006-title').innerHTML = ":2006 عام V-Malaysia 2006<br/> Euro V-Con Madrid 2006 و";
-            document.getElementById('vcon-2007-title').innerHTML = ":2007 عام <br/>V-Jakarta 2007 وV-Africa 2007";
-            document.getElementById('vcon-2008-title').innerHTML = ":2008 عام <br/>V-Malaysia 2008 وV-Africa 2008";
+            document.getElementById('vcon-2006-title').innerHTML = ":2006 عام <br/>V-Malaysia 2006<br/> Euro V-Con Madrid 2006";
+            document.getElementById('vcon-2007-title').innerHTML = ":2007 عام <br/>V-Jakarta 2007 <br/>V-Africa 2007";
+            document.getElementById('vcon-2008-title').innerHTML = ":2008 عام <br/>V-Malaysia 2008 <br/>V-Africa 2008";
             document.getElementById('vcon-2009-title').innerHTML = ":2009 عام <br/>V-Malaysia 2009";
             document.getElementById('vcon-2010-title').innerHTML = ":2010 عام <br/>V-Malaysia 2010";
             document.getElementById('vcon-2011-title').innerHTML = ":2011 عام <br/>V-Malaysia 2011";
             document.getElementById('vcon-2012-title').innerHTML = ":2012 عام <br/>V-Indonesia 2012";
             document.getElementById('vcon-2013-title').innerHTML = ":2013 عام <br/>V-Malaysia 2013";
             document.getElementById('vcon-2014-title').innerHTML = ":2014 عام <br/>V-Malaysia 2014";
-            document.getElementById('vcon-2015-title').innerHTML = ":2015 عام <br/>V-Malaysia 2015 وV-UAE 2015";
-            document.getElementById('vcon-2016-title').innerHTML = ":2016 عام <br/>V-Malaysia 2016 وV-UAE 2016";
-            document.getElementById('vcon-2017-title').innerHTML = ":2017 عام <br/>V-Malaysia 2017 وV-UAE 2017";
+            document.getElementById('vcon-2015-title').innerHTML = ":2015 عام <br/>V-Malaysia 2015<br/>V-UAE 2015";
+            document.getElementById('vcon-2016-title').innerHTML = ":2016 عام <br/>V-Malaysia 2016<br/>V-UAE 2016";
+            document.getElementById('vcon-2017-title').innerHTML = ":2017 عام <br/>V-Malaysia 2017<br/>V-UAE 2017";
 
             document.getElementById('ig-dock-title').innerHTML = "";
             $('#ig-dock-title').append("#VCON18 " + "سحر" + "<br/>");
