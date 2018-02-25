@@ -11,7 +11,9 @@
         <link href="css/framework-stylesheet/wrapper.css" rel="stylesheet" type="text/css" />
         <link href="css/framework-stylesheet/mediaquery.css" rel="stylesheet" type="text/css" />
         <link href="css/framework-stylesheet/landing.css" rel="stylesheet" type="text/css" />
-        <link href="css/follow-us.css" rel="stylesheet" type="text/css" />
+        <link href="css/framework-stylesheet/nav.css" rel="stylesheet" type="text/css" />
+        <link href="css/framework-stylesheet/select.css" rel="stylesheet" type="text/css" />
+        <link href="css/framework-stylesheet/responsive.css" rel="stylesheet" type="text/css" />
 
         <!-- section stylesheet links -->
         <link href="css/section-stylesheet/hero.css" rel="stylesheet" type="text/css" />
@@ -36,16 +38,39 @@
     </head>
 
     <body>
-        <a href="https://dlsuxsoc.github.io/thevcon2018">
-            <button id="back_button">Back to V-CON 2018</button>
-        </a>
+        <nav class="flex-between">
+            <ul>
+                <li>
+                    <a href="https://dlsuxsoc.github.io/thevcon2018">
+                        <button id="back_button" class="hallow-white">Back to V-CON 2018</button>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <select id="chosen_lang">
+                        <option value="0">English</option>
+                        <option value="1">عربى</option>
+                        <option value="2">Türk</option>
+                        <option value="3">français</option>
+                        <option value="4">русский</option>
+                        <option value="5">bahasa Indonesia</option>
+                    </select>
+                </li>
+                <li>
+                    <a href="http://the-v.net/vshoppe/product?title=v-malaysia-2018-ticket" target="_blank">
+                        <button id="btn-ticket2" class="hallow-white radius-full buy-tickets">BUY TICKETS</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <div class="purple-blue-gradient container">
             <h1 id="news-title">NEWS</h1>
             <div class="tabs">
-                <button id="all-tab" class="tab">All</button>
-                <button id="news-tab" class="tab">News</button>
-                <button id="videos-tab" class="tab">Videos</button>
-                <button id="gallery-tab" class="tab">Gallery</button>
+                <button id="all-tab" class="tab">ALL</button>
+                <button id="news-tab" class="tab">NEWS</button>
+                <button id="videos-tab" class="tab">VIDEOS</button>
+                <button id="gallery-tab" class="tab">GALLERY</button>
             </div>
             <div id="news-fold">
                 <div class="news-row">
