@@ -13,6 +13,10 @@
     max-width: 30% ;
 }
 
+#ig-dock iframe{
+    margin: 0.5em;
+}
+
 #instagram p.see-more{
     cursor: pointer;
     text-align: center;

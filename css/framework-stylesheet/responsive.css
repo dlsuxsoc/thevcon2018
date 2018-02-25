@@ -170,6 +170,10 @@
         width: 100% !important;
     }
 
+    #ig-dock iframe{
+        margin: 0 !important;
+    }
+
     footer > div{
         flex-direction: column;
         align-items: center;
