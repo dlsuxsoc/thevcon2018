@@ -32,6 +32,10 @@
 
 @media (max-width: 837px) {
 
+    #lines-blue-4{
+        display: none !important;
+    }
+
     #alternative-bg{
         top: -12em !important;
         right: 0 !important;
