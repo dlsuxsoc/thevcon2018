@@ -121,7 +121,7 @@ p a:hover{
     direction: rtl;
     font-family: Arial, sans-serif;
 }
-
+/*
 h1.arabic-read {
     font-size: 2.7em;
 }
@@ -149,6 +149,7 @@ h6.arabic-read {
 p.arabic-read {
     font-size: 1.3em;
 }
+*/
 
 #history div.content-wrapper h3.arabic-read,
 #history div.content-wrapper p.arabic-read{
