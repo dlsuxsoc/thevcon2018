@@ -218,7 +218,7 @@ function toEnglish(){
 
     $('#faqs-title').html('Frequently Asked Questions');
     document.getElementById('faq-tab-one').innerHTML = "How do I purchase a ticket?";
-    document.getElementById('faq-tab-one-par').innerHTML = "Click to buy your V-Malaysia 2018 ticket.";
+    document.getElementById('faq-tab-one-par').innerHTML = "Click <a href=\"http://the-v.net/vshoppe/product?title=v-malaysia-2018-ticket\" target=\"_blank\">here</a> to buy your V-Malaysia 2018 ticket.";
     document.getElementById('faq-tab-two').innerHTML = "What are the available payment terms?";
     document.getElementById('faq-tab-two-par').innerHTML = "Currently, you can pay with cash or credit card (Visa and MasterCard).";
     document.getElementById('faq-tab-three').innerHTML = "What to bring?";
