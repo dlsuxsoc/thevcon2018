@@ -1,1 +1,63 @@
 /* NOTE: hero section stylesheet */
+
+header{
+    background-color: var(--theme-purple);
+    background-image: url('../../assets/svg/festive.svg');
+    background-position: -200px center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+#alternative-bg{
+    bottom: -12em;
+    left: -10em;
+    z-index: 0;
+    width: 100%;
+    position: fixed;
+    display: none;
+}
+
+#main-logo{
+    margin-right: 3em;
+    width: 25em;
+    z-index: 10;
+}
+
+#hero-content{
+    z-index: 10;
+}
+
+#tagline{
+    font-size: 1.3em;
+    max-width: 17em;
+    text-transform: uppercase;
+}
+
+#countdown{
+    margin-bottom: 2em;
+}
+
+#countdown span, #countdown h1{
+    color: white;
+}
+
+#countdown > div{
+    margin-right: 2.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+#countdown > div h1, #countdown > div span{
+    color: white;
+    text-align: center;
+}
+
+#countdown > div h1{
+    font-size: 3em;
+    margin-bottom: 0em;
+}
+
+#hero-content button{
+    padding: 1em 8em;
+}

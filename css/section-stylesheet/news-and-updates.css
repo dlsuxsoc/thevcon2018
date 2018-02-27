@@ -1,1 +1,65 @@
 /* NOTE: news and updates section stylesheet */
+
+#news-and-updates{
+    /*
+    border-top: thin solid #ccc;
+    border-bottom: thin solid #ccc;
+    */
+    background-color: #fff;
+}
+
+#news-and-updates-title, #news-and-updates-par{
+    text-align: center;
+}
+
+#news-and-updates-par{
+    margin-bottom: 3em;
+}
+
+div#nu-dock div.content-wrapper{
+    width: 21%;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    padding: 4em 3em;
+
+    transition: ease all 0.3s;
+    -webkit-transition: ease all 0.3s;
+    -moz-transition: ease all 0.3s;
+    -o-transition: ease all 0.3s;
+    -ms-transition: ease all 0.3s;
+}
+
+div#nu-dock div.content-wrapper:hover{
+    background-size: 180%;
+}
+
+div#nu-dock div.content-wrapper h2,
+div#nu-dock div.content-wrapper p{
+    color: white;
+}
+
+#news-and-updates div.content-wrapper hr{
+    border: thin solid white;
+}
+
+div#news{
+    background-image: url('../../assets/jpg/th-news.jpg');
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div#gallery{
+    background-image: url('../../assets/jpg/th-gallery.jpg');
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div#videos{
+    background-image: url('../../assets/jpg/th-video.jpg');
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+}

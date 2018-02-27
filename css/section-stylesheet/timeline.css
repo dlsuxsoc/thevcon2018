@@ -1,1 +1,120 @@
 /* NOTE: timeline history section stylesheet */
+
+#history{
+    background-color: var(--theme-purple);
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently*/
+}
+
+#history-title{
+    text-align: center;
+}
+
+#history-tagline{
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+}
+
+#arrow-left, #arrow-right{
+    width: 3.0em;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: ease all 0.3s;
+    -webkit-transition: ease all 0.3s;
+    -moz-transition: ease all 0.3s;
+    -o-transition: ease all 0.3s;
+    -ms-transition: ease all 0.3s;
+}
+
+#arrow-left:hover, #arrow-right:hover{
+    opacity: 1;
+}
+
+section#history div.content-wrapper{
+    margin: 0;
+    padding: 4em 1%;
+    /*border: thin solid white;*/
+    border-radius: 5px;
+    box-sizing: border-box;
+    min-width: 100%;
+    /*
+    min-height: 40em;
+    max-height: 40em;
+    */
+
+    transition: ease all 0.3s;
+    -webkit-transition: ease all 0.3s;
+    -moz-transition: ease all 0.3s;
+    -o-transition: ease all 0.3s;
+    -ms-transition: ease all 0.3s;
+}
+
+div.content-wrapper.inactive{
+    margin: 0 !important;
+    padding: 0 !important;
+    /*max-height: 0;*/
+    opacity: 0;
+    display: none;
+}
+
+div#timelane{
+    padding: 2em 0;
+    padding-top: 4em;
+    align-items: center;
+}
+
+div.ball{
+    background-color: #fff;
+    border-radius: 200px;
+    width: 0.9em;
+    height: 0.9em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    opacity: 0.3;
+
+    transition: ease all 0.3s;
+    -webkit-transition: ease all 0.3s;
+    -moz-transition: ease all 0.3s;
+    -o-transition: ease all 0.3s;
+    -ms-transition: ease all 0.3s;
+}
+
+div.ball p{
+    opacity: 0.3;
+    text-align: center;
+    font-size: 0.9em;
+
+    transition: ease all 0.3s;
+    -webkit-transition: ease all 0.3s;
+    -moz-transition: ease all 0.3s;
+    -o-transition: ease all 0.3s;
+    -ms-transition: ease all 0.3s;
+}
+
+div.ball:hover, div.ball:hover p,
+div.ball.active, div.ball.active p{
+    opacity: 1;
+}
+
+#history h1, #history h3, #history h4, #history p{
+    color: white;
+    text-align: center;
+}
+
+#history div.logo-container{
+    margin-bottom: 3em;
+}
+
+#history img.vcon-logo{
+    max-width: 20rem;
+    max-height: 20rem;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}

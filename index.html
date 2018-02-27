@@ -5,6 +5,8 @@
 
         <!-- external links for ftypefaces and font icons -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
         <!-- stylesheet framework links -->
@@ -13,6 +15,9 @@
         <link href="css/framework-stylesheet/flex.css" rel="stylesheet" type="text/css" />
         <link href="css/framework-stylesheet/wrapper.css" rel="stylesheet" type="text/css" />
         <link href="css/framework-stylesheet/mediaquery.css" rel="stylesheet" type="text/css" />
+        <link href="css/framework-stylesheet/responsive.css" rel="stylesheet" type="text/css" />
+        <link href="css/framework-stylesheet/nav.css" rel="stylesheet" type="text/css" />
+        <link href="css/framework-stylesheet/select.css" rel="stylesheet" type="text/css" />
 
         <!-- section stylesheet links -->
         <link href="css/section-stylesheet/hero.css" rel="stylesheet" type="text/css" />
@@ -25,396 +30,566 @@
         <link href="css/section-stylesheet/faqs.css" rel="stylesheet" type="text/css" />
         <link href="css/section-stylesheet/contact-us.css" rel="stylesheet" type="text/css" />
         <link href="css/section-stylesheet/follow-us.css" rel="stylesheet" type="text/css" />
+        <link href="css/section-stylesheet/icons.css" rel="stylesheet" type="text/css" />
 
         <!-- javascript sources -->
         <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
-        <script src="js/translate.js" type="text/javascript"></script>
+        <script src="js/translation.js" type="text/javascript"></script>
+        <script src="js/faqs.js" type="text/javascript"></script>
+        <script src="js/timeline.js" type="text/javascript"></script>
+        <script src="js/scroll.js" type="text/javascript"></script>
+        <script src="js/countdown.js" type="text/javascript"></script>
 
         <!-- view information -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- jQuery Mobile links and scripts -->
+        <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
     </head>
     <body>
-        <!--
-        <nav class="flex-between simple sticky" id="sticky-nav">
+        <nav class="flex-between">
             <ul>
-                <li><img src="assets/svg/asset-board_v-logo.svg" id="sticky-brand-logo"/></li>
-                <li class="hamburger-icon"><i class="fa fa-bars fa-2x"></i></li>
-                <div class="nav-items">
-                    <li href="#about">ABOUT</li>
-                    <li href="#history">HISTORY</li>
-                    <li href="#cta-title">WE ARE ONE</li>
-                    <li href="#news-and-updates">NEWS & UPDATES</li>
-                    <li href="#faqs">FAQs</li>
-                    <li href="#contact-us">CONTACT US</li>
-                </div>
+                <li id="nav-vlogo">
+                    <a href="http://the-v.net"><img src="assets/svg/asset-board_v-white-logo.svg"/></a>
+                </li>
             </ul>
             <ul>
                 <li>
-                    <select id="chosen_lang_sticky" class="white">
+                    <select id="chosen_lang">
                         <option value="0">English</option>
-                        <option value="1">Arabic</option>
-                        <option value="2">Turkish</option>
-                        <option value="3">French</option>
-                        <option value="4">Russian</option>
-                        <option value="5">Indonesian</option>
+                        <option value="1">عربى</option>
+                        <option value="2">Türk</option>
+                        <option value="3">français</option>
+                        <option value="4">русский</option>
+                        <option value="5">bahasa Indonesia</option>
                     </select>
-                    <button  id="btn-ticket4">BUY TICKETS</button>
+                </li>
+                <li>
+                    <a href="http://the-v.net/vshoppe/product?title=v-malaysia-2018-ticket" target="_blank">
+                        <button id="btn-ticket2" class="hallow-white radius-full buy-tickets">BUY TICKETS</button>
+                    </a>
                 </li>
             </ul>
         </nav>
-        -->
-
         <!-- HERO SECTION -->
-        <header id="hero">
+        <header id="hero" class="flex-start">
+            <!-- aesthetics -->
+            <img src="assets/png/asset-board_gradient-and-simple-lines.png" id="gradient-lines-1" class="aesthetics" />
+            <img src="assets/svg/festive.svg" id="alternative-bg" />
 
+            <img src="assets/svg/asset-board_festive-logo.svg" id="main-logo" />
+            <div id="hero-content">
+                <h2 class="white" id="tagline">
+                    Look no further. Keep going and change your life forever.
+                </h2>
+                <div id="countdown" class="flex-between">
+                    <div>
+                        <h1 id="days-left"></h1>
+                        <span id="ct-days">Days</span>
+                    </div>
+                    <div>
+                        <h1 id="hours-left"></h1>
+                        <span id="ct-hours">Hours</span>
+                    </div>
+                    <div>
+                        <h1 id="minutes-left"></h1>
+                        <span id="ct-mins">Minutes</span>
+                    </div>
+                    <div>
+                        <h1 id="seconds-left"></h1>
+                        <span id="ct-secs">Seconds</span>
+                    </div>
+                </div>
+                <a href="http://the-v.net/vshoppe/product?title=v-malaysia-2018-ticket" target="_blank">
+                    <button id="btn-ticket2" class="radius-full buy-tickets">BUY TICKETS</button>
+                </a>
+            </div>
         </header>
 
         <!-- ALL ABOUT V-MALAYSIA 2018 -->
         <section id="about">
-            <!--<h1 id="about-title" >WHO, WHAT, WHY</h1>-->
-            <div>
+            <!-- aesthetics -->
+            <img src="assets/svg/asset-board_simple-lines-blue.svg" id="lines-blue-1" class="aesthetics" />
+            <img src="assets/svg/asset-board_simple-lines-blue.svg" id="lines-blue-2" class="aesthetics" />
+            <img src="assets/svg/asset-board_orange-planet.svg" id="planet-1" class="aesthetics" />
+            <img src="assets/svg/asset-board_blue-planet.svg" id="planet-2" class="aesthetics" />
+
+            <h1 id="about-title">WHO, WHAT, WHY</h1>
+
+            <div id="about-what-div" class="flex-between">
+                <div class="content-wrapper">
+                    <h2 id="about-what"><b>WHAT</b> is V-Con?</h2>
+                    <p id="about-what-p">
+                        V-Con is an experience that is often equated with the words unbelievable, magical, and life-changing. Held in nine different countries since its conception in 2001, the V-Convention is an annual grand gathering hosted by The V, where you can expect a series of world-class motivational speeches and training sessions that are essential for professional networkers. State-of-the-art exhibitions are also set up for those who wish to get exclusive merchandise, know more about products, and avail of special promos.
+                    </p>
+                </div>
+                <img src="assets/svg/asset-board_one-planet.svg" id="one-planet" />
+            </div>
+
+            <div id="about-who-div" class="flex-between">
+                <img src="assets/svg/asset-board_one-people.svg" id="one-people" />
+                <div class="content-wrapper">
+                    <h2 id="about-who"><b>WHO</b> goes to V-Con?</h2>
+                    <p  id="about-who-p">
+                        It is open to all IRs of QNET who wish to gain a better sense of their network marketing journey. To date, V-Con has gathered thousands of attendees from different parts of world, with record-breaking numbers to boot.
+                    </p>
+                </div>
+            </div>
+
+            <div id="about-why-div" class="flex-between">
+                <div class="content-wrapper">
+                    <h2 id="about-why"><b>WHY</b> do you need to be at V-Con?</h3>
+                    <p id="about-why-p">
+                        As a partner who will be with you throughout your network marketing journey, The V aims to maximize this 5-day convention to help you claim your ultimate goal of gaining financial freedom. Whether you just signed up or have been in the business for several years, you have no better decision but to come home to V-Con and realize your limitless potential for greatness.
+                    </p>
+                </div>
+                <img src="assets/svg/asset-board_one-purpose.svg" id="one-purpose" />
+            </div>
+        </section>
+
+        <!-- HISTORY OF VCON (THE TIMELINE) FROM 2001 TO 2017 -->
+        <section id="history">
+            <h1 id="history-title">V-CON THROUGH HISTORY</h1>
+            <h4 id="history-tagline">
+                Before our 26th V-Con this coming 24 to 28 April 2018 at SPICE Arena in Penang Malaysia, here's where we've been changing lives since 2001
+            </h4>
+
+            <div class="flex-between" id="timelane">
+                <img src="assets/svg/angle-arrow-left-white.svg" id="arrow-left" />
+                <div class="ball active" data-id="vcon-2001"><p>2001</p></div>
+                <div class="ball" data-id="vcon-2002"><p>2002</p></div>
+                <div class="ball" data-id="vcon-2003"><p>2003</p></div>
+                <div class="ball" data-id="vcon-2004"><p>2004</p></div>
+                <div class="ball" data-id="vcon-2005"><p>2005</p></div>
+                <div class="ball" data-id="vcon-2006"><p>2006</p></div>
+                <div class="ball" data-id="vcon-2007"><p>2007</p></div>
+                <div class="ball" data-id="vcon-2008"><p>2008</p></div>
+                <div class="ball" data-id="vcon-2009"><p>2009</p></div>
+                <div class="ball" data-id="vcon-2010"><p>2010</p></div>
+                <div class="ball" data-id="vcon-2011"><p>2011</p></div>
+                <div class="ball" data-id="vcon-2012"><p>2012</p></div>
+                <div class="ball" data-id="vcon-2013"><p>2013</p></div>
+                <div class="ball" data-id="vcon-2014"><p>2014</p></div>
+                <div class="ball" data-id="vcon-2015"><p>2015</p></div>
+                <div class="ball" data-id="vcon-2016"><p>2016</p></div>
+                <div class="ball" data-id="vcon-2017"><p>2017</p></div>
+                <img src="assets/svg/angle-arrow-right-white.svg" id="arrow-right" />
+            </div>
+            <div class="flex-center">
                 <div>
-                    <div>
-                        <h3 id="about-what"><b>WHAT</b> is V-Con?</h3>
-                        <p id="about-what-p">
-                            V-Con is an experience that is often equated with the words unbelievable, magical, and life-changing. Held in nine different countries since its conception in 2001, the V-Convention is an annual grand gathering hosted by The V, where you can expect a series of world-class motivational speeches and training sessions that are essential for professional networkers. State-of-the-art exhibitions are also set up for those who wish to get exclusive merchandise, know more about products, and avail of special promos.
-                        </p>
+                    <!-- VCON 2001 -->
+                    <div id="vcon-2001" class="content-wrapper">
+                        <div class="logo-container flex-center">
+                            <img src="assets/logos/vcon2001.png" class="vcon-logo" />
+                        </div>
+                        <div>
+                            <h3 id="vcon-2001-title">V-Con Bali 2001</h3>
+                            <p id="vcon-2001-par">
+                                We saw the birth of the V's biggest and most anticipated event: The V-Convention, or V-Con. From less than a hundred participants in the initial event in <b>Bali, Indonesia,</b> today's V-Con are attended by more than fifteen thousand participants representing as much as 80 countries around the world.
+                            </p>
+                            <!--
+                            <div id="arabic-2001-par">
+                                <br />
+                                <img src="assets/png/vcon-2001-par.png" id="img-2001-par" />
+                                <img src="assets/png/vcon-2001-par-mobile.png" id="img-2001-par-mobile" />
+                            </div>
+                            -->
+                        </div>
                     </div>
-                    <img src="assets/svg/asset-board_one-planet.svg" id="one-planet" />
-                </div>
 
-                <div id="about-who-div">
-                    <img src="assets/svg/asset-board_one-people.svg" id="one-people" />
-                    <div>
-                        <h3 id="about-who"><b>WHO</b> goes to V-Con?</h3>
-                        <p  id="about-who-p">
-                            It is open to all IRs of QNET who wish to gain a better sense of their network marketing journey. To date, V-Con has gathered thousands of attendees from different parts of world, with record-breaking numbers to boot.
-                        </p>
+                    <!-- VCON 2002 -->
+                    <div id="vcon-2002" class="content-wrapper inactive">
+                        <div class="logo-container flex-center">
+                            <img src="assets/logos/vcon2002.png" class="vcon-logo" />
+                        </div>
+                        <div>
+                            <h3 id="vcon-2002-title">V-Con Goa 2002</h3>
+                            <p id="vcon-2002-par">
+                                With 500 participants from different parts of the world, the 2002 V-Con in India showcased the theme "The Essence of Leadership". With the attention it drew, V-Con Goa was held twice to accommodate all the participants who wanted to take part in such an amazing experience.
+                            </p>
+                        </div>
                     </div>
-                </div>
 
-                <div id="about-why-div">
-                    <div>
-                        <h3 id="about-why"><b>WHY</b> do you need to be at V-Con?</h3>
-                        <p id="about-why-p">
-                            As a partner who will be with you throughout your network marketing journey, The V aims to maximize this 5-day convention to help you claim your ultimate goal of gaining financial freedom. Whether you just signed up or have been in the business for several years, you have no better decision but to come home to V-Con and realize your limitless potential for greatness.
+                    <!-- VCON 2003 -->
+                    <div id="vcon-2003" class="content-wrapper inactive">
+                        <div class="logo-container flex-center">
+                            <img src="assets/logos/vcon2003.png" class="vcon-logo" />
+                        </div>
+                        <div>
+                            <h3 id="vcon-2003-title">V-Con Kota Kinabalu 2003</h3>
+                            <p id="vcon-2003-par">
+                                In 2003, V-Con made its way to Kota Kinabalu, Sabah, Malaysia, where it gathered over 500 participants from 26 different countries. It paraded with the theme, "The Essence of Success."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- VCON 2004 -->
+                    <div id="vcon-2004" class="content-wrapper inactive">
+                        <div class="logo-container flex-center">
+                            <img src="assets/logos/vcon2004.png" class="vcon-logo" />
+                            <img src="assets/logos/vcon-euro-2004.png" class="vcon-logo" />
+                        </div>
+                        <div>
+                            <h3 id="vcon-2004-title">V-Dubai 2004 and Euro V-Con 2004</h3>
+                            <p id="vcon-2004-par">
+                                V-Dubai in 2004 marked the 6th anniversary of the company, where over 700 participants attended.
+
+                                On the same year, The V held its first <b>V-Con in Europe at the Rodos Palace Hotel in the island of Rhodes, Greece</b>. From June 6 to 9 2004, 200 participants gathered to open a new network in Europe.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- VCON 2005 -->
+                    <div id="vcon-2005" class="content-wrapper inactive">
+                        <div class="logo-container flex-center">
+                            <img src="assets/logos/vcon2005.png" class="vcon-logo" />
+                        </div>
+                        <div>
+                            <h3 id="vcon-2005-title">V-Thailand 2005</h3>
+                            <p id="vcon-2005-par">
+                                V-Thailand 2005 featured activities that highlighted our passion for developing world-class leadership and excellence.
+
+                                Since The V believed in starting them young, a special event catering to our leaders' young children kicked off at V-Thailand. The event now known as V-Kids started with a small group of children handled by spouses of our V-Partners and other V-Ambassadors.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- VCON 2006 -->
+                    <div id="vcon-2006" class="content-wrapper inactive">
+                        <div class="logo-container flex-center">
+                            <img src="assets/logos/vcon2006.png" class="vcon-logo" />
+                            <img src="assets/logos/vcon-madrid-2006.png" class="vcon-logo" />
+                        </div>
+                        <div>
+                            <h3 id="vcon-2006-title">V-Malaysia 2006 and Euro V-Con Madrid 2006</h3>
+                            <p id="vcon-2006-par">
+                                Marked as the 7th V-Convention, V-Malaysia 2006 was held at Sunway Pyramid Convention Center and bore the theme, "Over The Top".
+
+                                Two years after their first European V-Con, The V also embarked in an intensive expansion program designed especially for the European market on the same year. Euro-VCon Madrid also served to celebrate two other milestones in the company's history: (1) the 8th anniversary of the founding of the Qi Group of Companies; and (2) Qi's title sponsorship of the 2006 International Badminton Federation (IBF) World Championships—which served as a firm statement of the company's credibility, prestige and stability.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- VCON 2007 -->
+                    <div id="vcon-2007" class="content-wrapper inactive">
+                        <div class="logo-container flex-center">
+                            <img src="assets/logos/vcon2007.png" class="vcon-logo" />
+                            <img src="assets/logos/vcon-jakarta-2007.jpg" class="vcon-logo" />
+                        </div>
+                        <div>
+                            <h3 id="vcon-2007-title">V-Jakarta 2007 and V-Africa 2007</h3>
+                            <p id="vcon-2007-par">
+                                With over 3,000 participants from 40 different countries, V-Jakarta 2007 was held at the Jakarta Convention Center, where The V strengthened its passion for the network’s success.
+
+                                In the same year, The V brought its much talked about event to Kenya and successfully held V-Africa 2007, gathering over 2,000 participants.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- VCON 2008 -->
+                    <div id="vcon-2008" class="content-wrapper inactive">
+                        <div class="logo-container flex-center">
+                            <img src="assets/logos/vcon2008.png" class="vcon-logo" />
+                            <img src="assets/logos/vcon-africa-2008.png" class="vcon-logo" />
+                        </div>
+                        <h3 id="vcon-2008-title">V-Malaysia 2008 and V-Africa 2008</h3>
+                        <p id="vcon-2008-par">
+                            The company celebrated its 10th anniversary. One of the highlights of V-Con held at the Penang International Sports Arena from the 21st to 25th of May in 2008 was the V-Kids Convention where over 124 children of different ages and nationalities were treated to three days of fun and learning. Aside from the V-Kids Convention, other highlights of the convention included the spectacular Gala and Welcome Night and an exhibit that showcased the whole gamut of products and services from The V and its sister companies.
+
+                            Uganda in East Africa, Kampala also became the talk of the town as V-Africa was held in the same year, with 1,600 participants.
                         </p>
                     </div>
-                    <img src="assets/svg/asset-board_one-purpose.svg" id="one-purpose" />
+
+                    <!-- VCON 2009 -->
+                    <div id="vcon-2009" class="content-wrapper inactive">
+                        <div class="logo-container flex-center">
+                            <img src="assets/logos/vcon2009.png" class="vcon-logo" />
+                        </div>
+                        <h3 id="vcon-2009-title">V-Malaysia 2009</h3>
+                        <p id="vcon-2009-par">
+                            Held in Shah Alam, Malaysia, this V-Con carried the theme "Change Begins."
+                        </p>
+                    </div>
+
+                    <!-- VCON 2010 -->
+                    <div id="vcon-2010" class="content-wrapper inactive">
+                        <div class="logo-container flex-center">
+                            <img src="assets/logos/vcon2010.png" class="vcon-logo" />
+                        </div>
+                        <h3 id="vcon-2010-title">V-Malaysia 2010</h3>
+                        <p id="vcon-2010-par">
+                            Motivational speaker born with tetra-amelia syndrome, Nick Vujicic spoke at V-Malaysia 2010.
+                        </p>
+                    </div>
+
+                    <!-- VCON 2011 -->
+                    <div id="vcon-2011" class="content-wrapper inactive">
+                        <div class="logo-container flex-center">
+                            <img src="assets/logos/vcon2011.png" class="vcon-logo" />
+                        </div>
+                        <h3 id="vcon-2011-title">V-Malaysia 2011</h3>
+                        <p id="vcon-2011-par">
+                            In 2011, V-Con heralded with the theme, "Belief."
+                        </p>
+                    </div>
+
+                    <!-- VCON 2012 -->
+                    <div id="vcon-2012" class="content-wrapper inactive">
+                        <div class="logo-container flex-center">
+                            <img src="assets/logos/vcon2012.png" class="vcon-logo" />
+                        </div>
+                        <div>
+                            <h3 id="vcon-2012-title">V-Indonesia 2012</h3>
+                            <p id="vcon-2012-par">
+                                V-Con once again found a home in Jakarta, Indonesia for V-Indonesia 2012, where it had "Make A Difference" as compelling theme.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- VCON 2013 -->
+                    <div id="vcon-2013" class="content-wrapper inactive">
+                        <div class="logo-container flex-center">
+                            <img src="assets/logos/vcon2013.png" class="vcon-logo" />
+                        </div>
+                        <h3 id="vcon-2013-title">V-Malaysia 2013</h3>
+                        <p id="vcon-2013-par">
+                            Dreamers from all parts of the globe gathered once again in Malaysia in 2013 for V-Malaysia 2013, which headlined as "RYTHM Nation."
+                        </p>
+                    </div>
+
+                    <!-- VCON 2014 -->
+                    <div id="vcon-2014" class="content-wrapper inactive">
+                        <div class="logo-container flex-center">
+                            <img src="assets/logos/vcon2014.png" class="vcon-logo" />
+                        </div>
+                        <h3 id="vcon-2014-title">V-Malaysia 2014</h3>
+                        <p id="vcon-2014-par">
+                            This year, V-Con took on a theme that called upon dreamers to "Arise. Awake. Achieve." It was also the very first V-Con that proudly introduced QNET's place in the world of football after signing with Manchester City Football Club as its exclusive direct selling partner.
+                        </p>
+                    </div>
+
+                    <!-- VCON 2015 -->
+                    <div id="vcon-2015" class="content-wrapper inactive">
+                        <div class="logo-container flex-center">
+                            <img src="assets/logos/vcon2015.png" class="vcon-logo" />
+                            <img src="assets/logos/vcon-malay-2015.png" class="vcon-logo" />
+                        </div>
+                        <h3 id="vcon-2015-title">V-Malaysia 2015 and V-UAE 2015</h3>
+                        <p id="vcon-2015-par">
+                            As a pivotal year for the network and the company, the 2015 V-Con took on "Game Changer" as theme. It was also the advent of The V's continuing streak in holding two V-Conventions every year, with the first in Penang, Malaysia, and the second one in Dubai, UAE.
+                        </p>
+                    </div>
+
+                    <!-- VCON 2016 -->
+                    <div id="vcon-2016" class="content-wrapper inactive">
+                        <div class="logo-container flex-center">
+                            <img src="assets/logos/vcon2016.png" class="vcon-logo" />
+                            <img src="assets/logos/vcon-uae-2016.png" class="vcon-logo" />
+                        </div>
+                        <h3 id="vcon-2016-title">V-Malaysia 2016 and V-UAE 2016</h3>
+                        <p id="vcon-2016-par">
+                            A record breaking number of delegates attended V-Malaysia in Penang. The arena was filled to the rafters with over fifteen thousand participants, echoing the theme "Evolve. Empower. Enrich."
+
+                            Anil Kapoor, an Indian actor and producer who has appeared in countless Bollywood and international films; Jackie Shroff who has been in the Hindi cinema for almost four decades and has appeared in 207 films in nine languages; and Vivek Oberoi who made his Hindi film debut went up on the V-UAE stage in 2016 to share how they took the big leap to be where they are today.
+                        </p>
+                    </div>
+
+                    <!-- VCON 2017 -->
+                    <div id="vcon-2017" class="content-wrapper inactive">
+                        <div class="logo-container flex-center">
+                            <img src="assets/logos/vcon2017.png" class="vcon-logo" />
+                            <img src="assets/logos/vcon-uae-2017.png" class="vcon-logo" />
+                        </div>
+                        <h3 id="vcon-2017-title">V-Malaysia 2017 and V-UAE 2017</h3>
+                        <p id="vcon-2017-par">
+                            For the 3rd straight year, V-Con was held in both Penang, Malaysia and Dubai, UAE, with both record-breaking attendance. A rousing "DO IT NOW" theme headlined the two V-Conventions. Muniba Mazari, an inspirational woman whose life story drew much love and admiration from thousands of dreamers at V-Malaysia and V-UAE, added to a growing list of superstars that joined our family to be part of an unbelievable V-Con experience.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <!-- WE ARE ONE & BUY TICKETS CALL-TO-ACTION -->
+        <section id="call-to-action" class="flex-column">
+            <!-- aesthetics -->
+            <img src="assets/svg/asset-board_simple-lines-blue.svg" id="lines-blue-3" class="aesthetics" />
+            <img src="assets/svg/asset-board_simple-lines-blue.svg" id="lines-blue-4" class="aesthetics" />
 
-            <!-- HISTORY OF VCON (THE TIMELINE) FROM 2001 TO 2017 -->
-            <div id="history">
-                <h1 id="history-title">V-CON THROUGH HISTORY</h1>
-                <h4 id="history-tagline">
-                    Before our 26th V-Con this coming 24 to 28 April 2018 at SPICE Arena in Penang Malaysia, here's where we've been changing lives since 2001
-                </h4>
-
-                <!-- VCON 2001 -->
-                <div id="vcon-2001">
-                    <div><span>2001</span></div>
-                    <h3 id="vcon-2001-title">V-Con Bali 2001</h3>
-                    <p id="vcon-2001-par">
-                        We saw the birth of the V's biggest and most anticipated event: The V-Convention, or V-Con. From less than a hundred participants in the initial event in <b>Bali, Indonesia,</b> today's V-Cons are attended by more than fifteen thousand participants representing as much as 80 countries around the world.
-                    </p>
-                </div>
-
-                <!-- VCON 2002 -->
-                <div id="vcon-2002">
-                    <div><span>2002</span></div>
-                    <h3 id="vcon-2002-title">V-Con Goa 2002</h3>
-                    <p id="vcon-2002-par">
-                        With 500 participants from different parts of the world, the 2002 V-Con in India showcased the theme "The Essence of Leadership". With the attention it drew, V-Con Goa was held twice to accommodate all the participants who wanted to take part in such an amazing experience.
-                    </p>
-                </div>
-
-                <!-- VCON 2003 -->
-                <div id="vcon-2003">
-                    <div><span>2003</span></div>
-                    <h3 id="vcon-2003-title">V-Con Kota Kinabalu 2003</h3>
-                    <p id="vcon-2003-par">
-                        In 2003, V-Con made its way to Kota Kinabalu, Sabah, Malaysia, where it gathered over 500 participants from 26 different countries. It paraded with the theme, "The Essence of Success."
-                    </p>
-                </div>
-
-                <!-- VCON 2004 -->
-                <div id="vcon-2004">
-                    <div><span>2004</span></div>
-                    <h3 id="vcon-2004-title">V-Dubai 2004 and Euro V-Con 2004</h3>
-                    <p id="vcon-2004-par">
-                        V-Dubai in 2004 marked the 6th anniversary of the company, where over 700 participants attended.
-
-                        On the same year, The V held its first <b>V-Con in Europe at the Rodos Palace Hotel in the island of Rhodes, Greece</b>. From June 6 to 9 2004, 200 participants gathered to open a new network in Europe.
-                    </p>
-                </div>
-
-                <!-- VCON 2005 -->
-                <div id="vcon-2005">
-                    <div><span>2005</span></div>
-                    <h3 id="vcon-2005-title">V-Thailand 2005</h3>
-                    <p id="vcon-2005-par">
-                        V-Thailand 2005 featured activities that highlighted our passion for developing world-class leadership and excellence.
-
-                        Since The V believed in starting them young, a special event catering to our leaders' young children kicked off at V-Thailand. The event now known as V-Kids started with a small group of children handled by spouses of our V-Partners and other V-Ambassadors.
-                    </p>
-                </div>
-
-                <!-- VCON 2006 -->
-                <div id="vcon-2006">
-                    <div><span>2006</span></div>
-                    <h3 id="vcon-2006-title">V-Malaysia 2006 and Euro V-Con Madrid 2006</h3>
-                    <p id="vcon-2006-par">
-                        Marked as the 7th V-Convention, V-Malaysia 2006 was held at Sunway Pyramid Convention Center and bore the theme, "Over The Top".
-
-                        Two years after their first European V-Con, The V also embarked in an intensive expansion program designed especially for the European market on the same year. Euro-VCon Madrid also served to celebrate two other milestones in the company's history: (1) the 8th anniversary of the founding of the Qi Group of Companies; and (2) Qi's title sponsorship of the 2006 International Badminton Federation (IBF) World Championships—which served as a firm statement of the company's credibility, prestige and stability.
-                    </p>
-                </div>
-
-                <!-- VCON 2007 -->
-                <div id="vcon-2007">
-                    <div><span>2007</span></div>
-                    <h3 id="vcon-2007-title">V-Jakarta 2007 and V-Africa 2007</h3>
-                    <p id="vcon-2007-par">
-                        With over 3,000 participants from 40 different countries, V-Jakarta 2007 was held at the Jakarta Convention Center, where The V strengthened its passion for the network’s success.
-
-                        In the same year, The V brought its much talked about event to Kenya and successfully held V-Africa 2007, gathering over 2,000 participants.
-                    </p>
-                </div>
-
-                <!-- VCON 2008 -->
-                <div id="vcon-2008">
-                    <div><span>2008</span></div>
-                    <h3 id="vcon-2008-title">V-Malaysia 2008 and V-Africa 2008</h3>
-                    <p id="vcon-2008-par">
-                        The company celebrated its 10th anniversary. One of the highlights of V-Con held at the Penang International Sports Arena from the 21st to 25th of May in 2008 was the V-Kids Convention where over 124 children of different ages and nationalities were treated to three days of fun and learning. Aside from the V-Kids Convention, other highlights of the convention included the spectacular Gala and Welcome Night and an exhibit that showcased the whole gamut of products and services from The V and its sister companies.
-
-                        Uganda in East Africa, Kampala also became the talk of the town as V-Africa was held in the same year, with 1,600 participants.
-                    </p>
-                </div>
-
-                <!-- VCON 2009 -->
-                <div id="vcon-2009">
-                    <div><span>2009</span></div>
-                    <h3 id="vcon-2009-title">V-Malaysia 2009</h3>
-                    <p id="vcon-2009-par">
-                        Held in Shah Alam, Malaysia, this V-Con carried the theme "Change Begins."
-                    </p>
-                </div>
-
-                <!-- VCON 2010 -->
-                <div id="vcon-2010">
-                    <div><span>2010</span></div>
-                    <h3 id="vcon-2010-title">V-Malaysia 2010</h3>
-                    <p id="vcon-2010-par">
-                        Motivational speaker born with tetra-amelia syndrome, Nick Vujicic spoke at V-Malaysia 2010.
-                    </p>
-                </div>
-
-                <!-- VCON 2011 -->
-                <div id="vcon-2011">
-                    <div><span>2011</span></div>
-                    <h3 id="vcon-2011-title">V-Malaysia 2011</h3>
-                    <p id="vcon-2011-par">
-                        In 2011, V-Con heralded with the theme, "Belief."
-                    </p>
-                </div>
-
-                <!-- VCON 2012 -->
-                <div id="vcon-2012">
-                    <div><span>2012</span></div>
-                    <h3 id="vcon-2012-title">V-Indonesia 2012</h3>
-                    <p id="vcon-2012-par">
-                        V-Con once again found a home in Jakarta, Indonesia for V-Indonesia 2012, where it had "Make A Difference" as compelling theme.
-                    </p>
-                </div>
-
-                <!-- VCON 2013 -->
-                <div id="vcon-2013">
-                    <div><span>2013</span></div>
-                    <h3 id="vcon-2013-title">V-Malaysia 2013</h3>
-                    <p id="vcon-2013-par">
-                        Dreamers from all parts of the globe gathered once again in Malaysia in 2013 for V-Malaysia 2013, which headlined as "RYTHM Nation."
-                    </p>
-                </div>
-
-                <!-- VCON 2014 -->
-                <div id="vcon-2014">
-                    <div><span>2014</span></div>
-                    <h3 id="vcon-2014-title">V-Malaysia 2014</h3>
-                    <p id="vcon-2014-par">
-                        This year, V-Con took on a theme that called upon dreamers to "Arise. Awake. Achieve." It was also the very first V-Con that proudly introduced QNET's place in the world of football after signing with Manchester City Football Club as its exclusive direct selling partner.
-                    </p>
-                </div>
-
-                <!-- VCON 2015 -->
-                <div id="vcon-2015">
-                    <div><span>2015</span></div>
-                    <h3 id="vcon-2015-title">V-Malaysia 2015 and V-UAE 2015</h3>
-                    <p id="vcon-2015-par">
-                        As a pivotal year for the network and the company, the 2015 V-Con took on "Game Changer" as theme. It was also the advent of The V's continuing streak in holding two V-Conventions every year, with the first in Penang, Malaysia, and the second one in Dubai, UAE.
-                    </p>
-                </div>
-
-                <!-- VCON 2016 -->
-                <div id="vcon-2016">
-                    <div><span>2016</span></div>
-                    <h3 id="vcon-2016-title">V-Malaysia 2016 and V-UAE 2016</h3>
-                    <p id="vcon-2016-par">
-                        A record breaking number of delegates attended V-Malaysia in Penang. The arena was filled to the rafters with over fifteen thousand participants, echoing the theme "Evolve. Empower. Enrich.""
-
-                        Anil Kapoor, an Indian actor and producer who has appeared in countless Bollywood and international films; Jackie Shroff who has been in the Hindi cinema for almost four decades and has appeared in 207 films in nine languages; and Vivek Oberoi who made his Hindi film debut went up on the V-UAE stage in 2016 to share how they took the big leap to be where they are today.
-                    </p>
-                </div>
-
-                <!-- VCON 2017 -->
-                <div id="vcon-2017">
-                    <div><span>2017</span></div>
-                    <h3 id="vcon-2017-title">V-Malaysia 2017 and V-UAE 2017</h3>
-                    <p id="vcon-2017-par">
-                        For the 3rd straight year, V-Con was held in both Penang, Malaysia and Dubai, UAE, with both record-breaking attendance. A rousing "DO IT NOW" theme headlined the two V-Conventions. Muniba Mazari, an inspirational woman whose life story drew much love and admiration from thousands of dreamers at V-Malaysia and V-UAE, added to a growing list of superstars that joined our family to be part of an unbelievable V-Con experience.
-                    </p>
-                </div>
-            </div>
-
-            <!-- WE ARE ONE & BUY TICKETS CALL-TO-ACTION -->
-            <div id="call-to-action" >
-                <!-- Insert logo here -->
-                <img src="assets/svg/asset-board_festive-logo.svg" id="festive-logo" />
-
-                <h1 id="cta-title">WE ARE ONE</h1>
+            <!-- Insert logo here -->
+            <img src="assets/svg/asset-board_main-logo.svg" id="original-logo" />
+            <div class="content-wrapper">
+                <h1 id="cta-title">We Are One</h1>
                 <p id="cta-par">
                     Get to know the family. Enter our home. Follow the calling. If you must make one great decision today, let this be THE ONE. Book your V-Malaysia 2018 tickets here!
                 </p>
-
-                <button id="btn-ticket2">BUY TICKETS</button>
+                <a href="http://the-v.net/vshoppe/product?title=v-malaysia-2018-ticket" target="_blank">
+                    <button id="btn-ticket2" class="radius-full buy-tickets">BUY TICKETS</button>
+                </a>
                 <!-- links to rationale -->
             </div>
         </section>
 
         <!-- V-MALAYSIA 2018 JOURNEY -->
-        <section id="room-reservation" >
-            <h1 id="room-reservation-title">COMPLETE YOUR V-MALAYSIA 2018 JOURNEY</h1>
-            <p id="room-reservation-par">
-                Looking for hotel reservations and transportation transfers in Penang, Malaysia from 24 to 28 April for you and your team? Apollo got you covered!
-            </p>
-
-            <button id='btn-apollo'>SEARCH APOLLO NOW</button>
-        </section>
-
-        <!-- BLUE GREEN GRADIENT -->
-        <section>
-
-            <!-- NEWS & UPDATES -->
-            <div id="news-and-updates">
-                <h1 id="news-and-updates-title">NEWS & UPDATES</h1>
-                <p id="news-and-updates-par">READ | WATCH | VIEW</p>
-                <!-- dock for web articles, videos, and photo gallery -->
-            </div>
-
-            <!-- INSTAGRAM POSTS -->
-            <div id="ig-dock">
-                <h1 id="ig-dock-title">THE #VCON18 MAGIC TAKING OVER THE WORLD</h1>
-                <!-- dock for IG posts with #VCON18 tag -->
+        <section id="room-reservation" class="purple-blue-gradient">
+            <div class="content-wrapper">
+                <h1 id="room-reservation-title">Complete Your V-Malaysia 2018 Journey</h1>
+                <p id="room-reservation-par">
+                    Looking for hotel reservations and transportation transfers in Penang, Malaysia from 24 to 28 April for you and your team? Apollo got you covered!
+                </p>
+                <a href="https://vcon.apolloasiab2b.com/" target="_blank">
+                    <button id='btn-apollo' class="radius-full hallow-white">SEARCH APOLLO NOW</button>
+                </a>
             </div>
         </section>
 
-        <!-- FAQS -->
-        <section id="faqs">
-            <h1 id="faqs-title">FREQUENTLY ASKED QUESTIONS</h1>
+        <!-- NEWS & UPDATES -->
+        <section id="news-and-updates">
+            <h1 id="news-and-updates-title">NEWS & UPDATES</h1>
+            <!--<h4 id="news-and-updates-par">READ | WATCH | VIEW</h4>-->
 
-            <div id="faq-one">
-                <h3 id='faq-tab-one'>How do I purchase a ticket?</h3>
-                <p id="faq-tab-one-par">
-                    Click <a href="#" target="_blank">here</a> to buy your V-Malaysia 2018 ticket.
-                </p>
-            </div>
-
-            <div id="faq-two">
-                <h3 id='faq-tab-two'>What are the available payment terms?</h3>
-                <p id="faq-tab-two-par">
-                    Currently, you can pay with cash or credit card (Visa and MasterCard).
-                </p>
-            </div>
-
-            <div id="faq-three">
-                <h3 id='faq-tab-three'>What to bring?</h3>
-                <p id="faq-tab-three-par">
-                    Going to V-Con? Here are 5 important things you need to bring:
-                    <ol type="1">
-                        <li id="faq-tab-three-par-sub-one">
-                            During registration, bring one (1) valid ID and copy of the confirmation letter that will be sent to you via email right after the purchase of your ticket.
-                        </li>
-                        <li id="faq-tab-three-par-sub-two">
-                            Enough pocket money to last for 5 days, which you may spend on food, drinks, transportation, V-Con merchandise, souvenirs, etc.
-                        </li>
-                        <li id="faq-tab-three-par-sub-three">
-                            Clothes good for 5 days. Make sure to bring extra shirts or towels as it is extra warm in Penang, Malaysia around this time.
-                        </li>
-                        <li id="faq-tab-three-par-sub-four">
-                            Take a camera with you to make your precious V-Con memories last, and have something you can show to your family and future prospects when you go back home.
-                        </li>
-                        <li id="faq-tab-three-par-sub-five">
-                            As you want to savour every valuable session on stage, make sure to bring your own pen and notebook for some serious note-taking!
-                        </li>
-                    </ol>
-                </p>
-            </div>
-
-            <div id="faq-four">
-                <h3 id='faq-tab-four'>Will there be tickets for sale on the day of the event itself?</h3>
-                <p  id="faq-tab-four-par">
-                    Yes. Only transactions made thru cash and credit card will be accommodated.
-                </p>
-            </div>
-
-            <div id="faq-five">
-                <h3 id='faq-tab-five'>Will there be single-day event tickets available?</h3>
-                <p  id="faq-tab-five-par">
-                    No. The 5-day program we prepared for you is something that should be attended from Day 1 to 5 for a complete life-changing experience. It is a comprehensive, holistic event with an action-packed line-up of activities that are highly essential for your business.
-                </p>
-            </div>
-        </section>
-
-        <!-- CONTACT US -->
-        <footer id="contact-us">
-            <h1 id="contact-us-title">CONTACT US</h1>
-            <div>
-                <p id='contact-us-par-one'>
-                    If you are having trouble accessing our website, or you have further questions which are not available in our FAQ page, please get in touch with us through our following email addresses.
-                    <br/><br/>
-                    <b>Technical Support</b>: vbox@the-v.net <br/>
-                    <b>Content and Translation Concerns</b>: vcomm@the-v.net
-                </p>
-                <p id='contact-us-par-two'>
-                    <b>For inquiries:</b>
-                    <br/>
-                    Mr. Vijiyar Thevan <br/>
-                    vijiyar.thevan@the-v.net <br/>
-                    +601 2209 3793 <br/><br/>
-
-                    Ms. Kauri Subramaniam <br/>
-                    kauri.s@the-v.net <br/>
-                    +603 7965 8299
-                </p>
-            </div>
-
-            <div id="follow-us">
-                <h3 id="follow-us-title">FOLLOW US!</h3>
-                <p id="follow-us-par">LIKE. TAG. SHARE.</p>
-
-                <!-- Social media icons and links (Facebook, Twitter, Instagram) -->
-                <div id="social-icons">
-                    <a href="https://www.facebook.com/TheV.official/"><i class="fa fa-facebook fa-3x"></i></a>
-                    <a href="https://twitter.com/thev_official"><i class="fa fa-twitter fa-3x"></i></a>
-                    <a href="https://www.instagram.com/thev_official/"><i class="fa fa-instagram fa-3x"></i></a>
+            <!-- dock for web articles, videos, and photo gallery -->
+            <div class="flex-between" id="nu-dock">
+                <div class="content-wrapper" id="news">
+                    <a href="landing.html" target="_parent">
+                        <h2 id="nu-news">NEWS</h2>
+                        <hr/>
+                        <p id="nu-read">Read</p>
+                    </a>
+                </div>
+                <div class="content-wrapper" id="videos">
+                    <a href="https://dlsuxsoc.github.io/thevcon2018/landing.html" target="_parent">
+                        <h2 id="nu-videos">VIDEOS</h2>
+                        <hr/>
+                        <p id="nu-watch">Watch</p>
+                    </a>
+                </div>
+                <div class="content-wrapper" id="gallery">
+                    <a href="https://dlsuxsoc.github.io/thevcon2018/landing.html" target="_parent">
+                        <h2 id="nu-gallery">GALLERY</h2>
+                        <hr/>
+                        <p id="nu-view">View</p>
+                    </a>
                 </div>
             </div>
+        </section>
+        <!-- INSTAGRAM POSTS -->
+        <section id="instagram" >
+            <h1 id="ig-dock-title">The #VCON18 Magic Taking Over The World</h1>
 
-            <img src="assets/svg/asset-board_bridge.svg" id="bridge" />
+            <!-- dock for IG posts with #VCON18 tag -->
+            <div id="ig-dock" class="flex-between">
+                <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BfYM7cxAmRO/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 0.51em; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BfYM7cxAmRO/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Dreams are about to unfold this April. See you at V-Malaysia 2018! #VCON18 #VMAL18 #VMalaysia2018</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/thev_official/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> The V</a> (@thev_official) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-02-19T12:24:13+00:00">Feb 19, 2018 at 4:24am PST</time></p></div></blockquote> <script async defer src="https://www.instagram.com/embed.js"></script>
+
+                <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Bcl1ZHUlRua/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 0.51em;padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/Bcl1ZHUlRua/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">‪Watch out as we prepare your grand homecoming from April 24 to April 28, 2018 at SPICE Arena, Penang, Malaysia! Make sure to stay tuned to all of The V’s official channels for updates. Link on our profile! 👆🏽 #VCON18 #VMALAYSIA2018</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/thev_official/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> The V</a> (@thev_official) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-12-12T05:53:44+00:00">Dec 11, 2017 at 9:53pm PST</time></p></div></blockquote> <script async defer src="https://www.instagram.com/embed.js"></script>
+
+                <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BfNG6QTgyxM/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 0.51em; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BfNG6QTgyxM/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Take the first step of your #VCON18 experience by checking out this quick and easy Apollo guide we’ve prepared for you! Link on our profile!👆🏽 #VMAL18 #VMalaysia2018</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/thev_official/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> The V</a> (@thev_official) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-02-15T04:59:58+00:00">Feb 14, 2018 at 8:59pm PST</time></p></div></blockquote> <script async defer src="https://www.instagram.com/embed.js"></script>
+                <!--
+                <iframe width="100%" height="550" src="https://www.instagram.com/p/BfYM7cxAmRO/embed" frameborder="0"></iframe>
+                <iframe width="100%" height="550" src="https://www.instagram.com/p/Bcl1ZHUlRua/embed" frameborder="0"></iframe>
+                <iframe width="100%" height="550" src="https://www.instagram.com/p/BfNG6QTgyxM/embed" frameborder="0"></iframe>
+                -->
+            </div>
+
+            <p class="see-more"><a href="https://www.instagram.com/explore/tags/vcon18/" target="_blank">See more...</a></p>
+        </section>
+
+        <footer id="footer">
+            <div>
+                <!-- FAQS -->
+                <div id="faqs">
+                    <h3 id="faqs-title">Frequently Asked Questions</h3>
+
+                    <div id="faq-one">
+                        <h5 id='faq-tab-one'>How do I purchase a ticket?</h5>
+                        <p id="faq-tab-one-par">
+                            Click <a href="http://the-v.net/vshoppe/product?title=v-malaysia-2018-ticket">here</a> to buy your V-Malaysia 2018 ticket.
+                        </p>
+                    </div>
+
+                    <div id="faq-two">
+                        <h5 id='faq-tab-two'>What are the available payment terms?</h5>
+                        <p id="faq-tab-two-par">
+                            Currently, you can pay with cash or credit card (Visa and MasterCard).
+                        </p>
+                    </div>
+
+                    <div id="faq-three">
+                        <h5 id='faq-tab-three'>What to bring?</h5>
+                        <p id="faq-tab-three-par">
+                            Going to V-Con? Here are 5 important things you need to bring:
+                            <ol type="1">
+                                <li id="faq-tab-three-par-sub-one">
+                                    During registration, bring one (1) valid ID and copy of the confirmation letter that will be sent to you via email right after the purchase of your ticket.
+                                </li>
+                                <li id="faq-tab-three-par-sub-two">
+                                    Enough pocket money to last for 5 days, which you may spend on food, drinks, transportation, V-Con merchandise, souvenirs, etc.
+                                </li>
+                                <li id="faq-tab-three-par-sub-three">
+                                    Clothes good for 5 days. Make sure to bring extra shirts or towels as it is extra warm in Penang, Malaysia around this time.
+                                </li>
+                                <li id="faq-tab-three-par-sub-four">
+                                    Take a camera with you to make your precious V-Con memories last, and have something you can show to your family and future prospects when you go back home.
+                                </li>
+                                <li id="faq-tab-three-par-sub-five">
+                                    As you want to savour every valuable session on stage, make sure to bring your own pen and notebook for some serious note-taking!
+                                </li>
+                            </ol>
+                        </p>
+                    </div>
+
+                    <div id="faq-four">
+                        <h5 id="faq-tab-four">Will there be tickets for sale on the day of the event itself?</h5>
+                        <p  id="faq-tab-four-par">
+                            Yes. Only transactions made thru cash and credit card will be accommodated.
+                        </p>
+                    </div>
+
+                    <div id="faq-five">
+                        <h5 id='faq-tab-five'>Will there be single-day event tickets available?</h5>
+                        <p  id="faq-tab-five-par">
+                            No. The 5-day program we prepared for you is something that should be attended from Day 1 to 5 for a complete life-changing experience. It is a comprehensive, holistic event with an action-packed line-up of activities that are highly essential for your business.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CONTACT US -->
+                <div id="contact-us">
+                    <h3 id="contact-us-title">Contact us</h3>
+                    <div>
+                        <p id='contact-us-par-one'>
+                            If you are having trouble accessing our website, or you have further questions which are not available in our FAQ page, please get in touch with us through our following email addresses.
+                            <br/><br/>
+                            <b>Technical Support</b>: vbox@the-v.net <br/>
+                            <b>Content and Translation Concerns</b>: vcomm@the-v.net
+                        </p>
+                        <p id='contact-us-par-two'>
+                            <b>For inquiries:</b>
+                            <br/>
+                            Mr. Vijiyar Thevan <br/>
+                            vijiyar.thevan@the-v.net <br/>
+                            +601 2209 3793 <br/><br/>
+
+                            Ms. Kauri Subramaniam <br/>
+                            kauri.s@the-v.net <br/>
+                            +603 7965 8299
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FOLLOW US -->
+                <div id="follow-us">
+                    <h3 id="follow-us-title">Follow Us!</h3>
+                    <p id="follow-us-par">Like. Tag. Share.</p>
+
+                    <!-- Social media icons and links (Facebook, Twitter, Instagram) -->
+                    <div id="social-icons">
+                        <a href="https://www.facebook.com/TheV.official/"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="https://twitter.com/thev_official"><i class="fa fa-twitter fa-2x"></i></a>
+                        <a href="https://www.instagram.com/thev_official/"><i class="fa fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
         </footer>
+        <img src="assets/svg/top.svg" id="back-to-top" />
     </body>
 </html>

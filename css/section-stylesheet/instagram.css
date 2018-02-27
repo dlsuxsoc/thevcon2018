@@ -1,1 +1,23 @@
 /* instagram dock section stylesheet */
+
+#instagram{
+    /*background: linear-gradient(#fff, #fff, #fff, #dedede);*/
+    background-color: #fff;
+}
+
+#ig-dock{
+    align-items: stretch;
+}
+
+#ig-dock blockquote{
+    max-width: 30% ;
+}
+
+#ig-dock iframe{
+    margin: 0.5em;
+}
+
+#instagram p.see-more{
+    cursor: pointer;
+    text-align: center;
+}
