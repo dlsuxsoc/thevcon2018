@@ -105,4 +105,5 @@ body {
 .article-container .article-title{
     margin-top: 0.8em;
     word-wrap: break-word;
+    font-family: 'Nunito Sans', 'Open Sans', sans-serif;
 }
