@@ -67,10 +67,14 @@ body {
     text-transform: none;
     font-weight: normal;
     font-family: 'Open Sans';
+    text-align: center;
 }
 
-.article-thumb {
+.article-thumb{
     border: 0.5px solid black;
+    height: 15em;
+    background: url('https://lh3.googleusercontent.com/h5xNdaQM0LVSDjxEoVbZIyrdkoJp_VgnFL11fhbuhZ1SK3KBWwCiW-Eo-XlcPJAEZmgN_7AqvCdPzysRrv4hxxPC4RKiWWPUevb-6ZcYhcJLooeFkJ1r3df76ICm9tOyOhTAnEdDrvOC2SQT1CjzYMVzHpkD5qUL1bLFbk76XQhgQEf1e_z76toVLEyjNPIYwF7c-HFkVBQy5_6i3OGApSVpI1r9BfOkdgS7RF3qLS8F6CvEv9LztpIu0Lr487rPjOBf815REUWGRGOAgNQ55z3d9LeOlcG9E3d1Aw4NMRApCrVPe_b3gU3Ioizal694OK4jGBdoxfJRXjiNX9pHlXJdYIAMC8pILMc9vjunu2vDzArX9QE3Yh_KXZP0x1udUUiwXNm0TS-ZHR2XnEfU-5MXUAsvmQG2qjLbafZoZYI7JaQKvovN3Ox8He19HkG7HABjVkjx20ZY9XLZ_RpQqLUK5w86JlkWRbf1ByRSvw91CzVOlE4U0031mnnaMF5MnB0LvopCTyPBJqgpfxXD9q4mm2AMpziHVYwUFiZAqVxoDij2FYHxMCyroqZKt0Mj1d--rVPKdnl63e0hxLmq6BqDe8DnMoCa8_N4gW4=w694-h362-no');
+    background-size: cover;
 }
 
 #news-fold {
@@ -84,10 +88,10 @@ body {
     display:flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    flex-basis: 60%;
+    flex-basis: 90%;
 }
 
 .article-container {
-    padding: 35px;
-    margin: 0 25px;
+    width: 25%;
+    margin: 5em 2em;
 }
