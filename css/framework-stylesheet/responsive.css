@@ -185,7 +185,7 @@
 
     #ig-dock iframe:last-of-type{
         display: block !important;
-        height: 400px !important;
+        height: 330px !important;
     }
 
     #ig-dock iframe{
