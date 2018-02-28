@@ -15,9 +15,19 @@
 
 #ig-dock iframe{
     margin: 0.5em;
+    height: inherit;
 }
 
 #instagram p.see-more{
     cursor: pointer;
     text-align: center;
+}
+
+#instagram iframe:first-of-type{
+    display: block;
+    height: 1000px;
+}
+
+#instagram iframe:last-of-type{
+    display: none;
 }

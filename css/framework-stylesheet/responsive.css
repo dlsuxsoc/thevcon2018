@@ -159,14 +159,19 @@
     }
 
     #news-and-updates div#nu-dock div.content-wrapper{
-        margin: 0.5em 0;
+        margin: 0.5em 5%;
         padding: 3em 5%;
         width: 90%;
+    }
+
+    #instagram{
+        padding: 3em 5% !important;
     }
 
     #ig-dock{
         flex-wrap: wrap;
         flex-direction: column !important;
+        justify-content: center !important;
     }
 
     #ig-dock blockquote{
@@ -174,8 +179,27 @@
         width: 100% !important;
     }
 
+    #ig-dock iframe:first-of-type{
+        display: none !important;
+    }
+
+    #ig-dock iframe:last-of-type{
+        display: block !important;
+        height: 400px !important;
+    }
+
     #ig-dock iframe{
-        margin: 0 !important;
+        margin: 0 auto !important;
+        max-width: 100% !important;
+        padding: 0 5% !important;
+    }
+
+    #ig-dock iframe .wrapper{
+        padding: 0 !important;
+    }
+
+    .image-box{
+        max-width: 30% !important;
     }
 
     footer > div{
