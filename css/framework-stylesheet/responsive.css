@@ -181,6 +181,7 @@
 
     #ig-dock iframe:first-of-type{
         display: none !important;
+        height: 800px !important;
     }
 
     #ig-dock iframe:last-of-type{
