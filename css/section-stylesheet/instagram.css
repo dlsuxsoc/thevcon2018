@@ -25,7 +25,7 @@
 
 #instagram iframe:first-of-type{
     display: block;
-    height: 1000px;
+    height: 800px !important;
 }
 
 #instagram iframe:last-of-type{
