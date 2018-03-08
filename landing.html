@@ -28,125 +28,60 @@
         <!-- view information -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body>
-        <nav class="flex-between">
+    <body class="purple-blue-gradient">
+
+        <img src="assets/svg/festive.svg" id="alternative-bg" />
+        <nav class="flex-start">
             <ul>
                 <li>
-                    <a href="https://dlsuxsoc.github.io/thevcon2018"></a>
-                    <button class="hallow-white">V-Malaysia 2018</button>
+                    <a href="https://dlsuxsoc.github.io/thevcon2018">
+                        <button class="hallow-white">V-Malaysia 2018</button>
+                    </a>
                 </li>
             </ul>
-            <ul id="landing-nav">
-                <li><a href="#news">News</a></li>
-                <li><a href="#video">Video</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-            </ul>
         </nav>
-        <section class="purple-blue-gradient" id="news">
-            <img src="assets/svg/festive.svg" id="alternative-bg" />
-            <h1 id="news-title">News & Updates</h1>
-            <hr/>
-            <div class="flex-between" id="news-content">
-                <div class="featured-image"></div>
-                <div id="article-wrapper">
-                    <h3 id="newsArticleMainTitle">
-                        <p dir="RTL" style="text-align: right;">V-Malaysia 2018، حيث يتحد الحالمون كعائلة واحدة</p>
-                    </h3>
-                    <div id="newsArticleContent" class="article">
-                        <p dir="RTL" style="text-align: right;">إن التسويق الشبكي هو أكثر من مجرد رحلة من أجل تحقيق هدف الفرد. كما تذكر المقولة، "لا أحد جزيرة منعزلة". هذا هو نوع المغامرة حيث تدع الأبلاينات يرشدونك. تذكر أن شغفهم هو تحقيق أفضل ما هو في صالحك. اسمح لنفسك بأن تخلق أحلاماً أكبر من أي شيء حظيت به في الماضي. أطلق شغفك وآمن أنه بمساعدة QNET وThe V فأنت مقدر لك أن تكون بلا حدود. أخرج من منطقة راحتك وسر نحو التحدي بشجاعة. في الفترة من 24 إلى 28 من أبريل المقبل 2018، تجمع مع رفاقك من المسوقين الشبكيين وكن شاهداً على اتحاد آلاف الحالمين كعائلة واحدة.</p>
-                        <p dir="RTL" style="text-align: right;">تعال إلى الديار إلى V-Malaysia 2018! شاهد كيف أن قوة الفرد من قوة الجماعة، وكيف أن قوة الجماعة هي قوة للفرد.</p>
-                        <p dir="RTL" style="text-align: right;"><a href="http://the-v.net/vshoppe/product?title=v-malaysia-2018-ticket">اشتر تذاكرك الآن من خلال التوجه إلى VShoppe!</a></p>
+        <section id="landing-wrapper">
+            <div class="flex-between">
+                <div id="news-wrapper">
+                    <h1 id="news-title">News</h1>
+                    <hr/>
+                    <!-- http://the-v.net/ar/news?id=v-malaysia-2018-where-dreamers-unite-as-one-family -->
+                    <a href="http://the-v.net/news?id=v-malaysia-2018-where-dreamers-unite-as-one-family" id="news-link">
+                        <div class="thumbnail"></div>
+                    </a>
+                </div>
+
+                <div id="video-wrapper">
+                    <h1 id="video-title">Video</h1>
+                    <hr/>
+                    <a href="http://the-v.net/vtube/video?id=5727925141001">
+                        <div class="thumbnail"></div>
+                    </a>
+                </div>
+            </div>
+            <div id="gallery-wrapper">
+                <h1 id="gallery-title">Gallery</h1>
+                <hr/>
+                <div class="flex-between">
+                    <!-- http://the-v.net/en/album/v-uae-2017-day-1 -->
+                    <div class="thumbnail" onclick="window.location='http://the-v.net/en/album/v-uae-2017-day-1';">
+                        <p id="day-1-button">Day 1</p>
+                    </div>
+                    <div class="thumbnail" onclick="window.location='http://the-v.net/en/album/v-uae-2017-day-2';">
+                        <p id="day-2-button">Day 2</p>
+                    </div>
+                    <div class="thumbnail" onclick="window.location='http://the-v.net/en/album/v-uae-2017-day-3';">
+                        <p id="day-3-button">Day 3</p>
+                    </div>
+                    <div class="thumbnail" onclick="window.location='http://the-v.net/en/album/v-uae-2017-day-4';">
+                        <p id="day-4-button">Day 4</p>
+                    </div>
+                    <div class="thumbnail" onclick="window.location='http://the-v.net/en/album/v-uae-2017-day-5';">
+                        <p id="day-5-button">Day 5</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="video">
-            <h1 id="video-title">Video</h1>
-            <hr/>
-            <div id="video-container">
-                <div class="arrow-right"></div>
-            </div>
-        </section>
-        <section id="gallery">
-            <h1 id="gallery-title">Gallery</h1>
-            <hr/>
-            <center id="day-menu">
-                <button data-id="day-1" id="day-1-button">Day 1</button>
-                <button data-id="day-2" class="hallow-dark" id="day-2-button">Day 2</button>
-                <button data-id="day-3" class="hallow-dark" id="day-3-button">Day 3</button>
-                <button data-id="day-4" class="hallow-dark" id="day-4-button">Day 4</button>
-                <button data-id="day-5" class="hallow-dark" id="day-5-button">Day 5</button>
-            </center>
-            <center id="day-1" class="album-feed">
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-            </center>
-            <center id="day-2" class="album-feed">
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-            </center>
-            <center id="day-3" class="album-feed">
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-            </center>
-            <center id="day-4" class="album-feed">
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-            </center>
-            <center id="day-5" class="album-feed">
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-                <div class="album-image"></div>
-            </center>
-        </section>
+        <input type="hidden" value="إن التس" />
     </body>
 </html>
