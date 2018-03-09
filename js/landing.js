@@ -50,6 +50,7 @@ function applyLanguage(){
 }
 
 function toEnglish(){
+    $('button.buy-tickets').html('BUY TICKETS');
     $('#news-and-updates-title').html('NEWS & UPDATES');
     $('#all').html('ALL');
     $('#news').html('NEWS');
@@ -62,6 +63,7 @@ function toEnglish(){
 }
 
 function toArabic(){
+    $('button.buy-tickets').html("اشتر تذكرة");
     $('#news-and-updates-title').html("أخبار ومستجدات");
     $('#all').html('الكل');
     $('#news').html('أخبار');
@@ -74,6 +76,7 @@ function toArabic(){
 }
 
 function toTurkish(){
+    $('button.buy-tickets').html('BİLET ALIN');
     $('#news-and-updates-title').html('HABERLER & GÜNCELLEMELER');
     $('#all').html('HERŞEY');
     $('#news').html('HABER');
@@ -86,6 +89,7 @@ function toTurkish(){
 }
 
 function toFrench(){
+    $('button.buy-tickets').html('DES BILLETS');
     $('#news-and-updates-title').html('ACTUALITÉS ET MISES À JOUR');
     $('#all').html('TOUT');
     $('#news').html('ACTUALITÉS');
@@ -98,6 +102,7 @@ function toFrench(){
 }
 
 function toRussian(){
+    $('button.buy-tickets').html('КУПИТЬ БИЛЕТ');
     $('#news-and-updates-title').html('НОВОСТИ И ОБЪЯВЛЕНИЯ');
     $('#all').html('ВСЕ');
     $('#news').html('НОВОСТИ');
@@ -110,6 +115,7 @@ function toRussian(){
 }
 
 function toIndonesian(){
+    $('button.buy-tickets').html('BELI TIKET');
     $('#news-and-updates-title').html('BERITA & UPDATE');
     $('#all').html('SEMUA');
     $('#news').html('BERITA');
