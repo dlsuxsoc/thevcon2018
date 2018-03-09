@@ -31,12 +31,24 @@
     <body class="purple-blue-gradient">
 
         <img src="assets/svg/festive.svg" id="alternative-bg" />
-        <nav class="flex-start">
+        <nav class="flex-between">
             <ul>
                 <li>
                     <a href="https://dlsuxsoc.github.io/thevcon2018">
                         <button class="hallow-white">V-Malaysia 2018</button>
                     </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <select id="chosen_lang">
+                        <option value="0">English</option>
+                        <option value="1">عربى</option>
+                        <option value="2">Türk</option>
+                        <option value="3">français</option>
+                        <option value="4">русский</option>
+                        <option value="5">bahasa Indonesia</option>
+                    </select>
                 </li>
             </ul>
         </nav>
@@ -49,34 +61,9 @@
                 <button class="hallow-white" id="gallery">GALLERY</button>
             </div>
             <div id="media-feed">
-                <div class="thumbnail news-thumbnail" onclick="window.location='http://the-v.net/news?id=v-malaysia-2018-where-dreamers-unite-as-one-family';">
+                <div class="thumbnail news-thumbnail" id="news-link-1" onclick="window.location='http://the-v.net/news?id=v-malaysia-2018-where-dreamers-unite-as-one-family';">
                     <div class="featured-image"></div>
                     <h5 class="thumbnail-title">V-Malaysia 2018, Where Dreamers Unite as One Family</h5>
-                </div>
-
-                <div class="thumbnail news-thumbnail" onclick="window.location='http://the-v.net/ar/news?id=v-malaysia-2018-where-dreamers-unite-as-one-family';">
-                    <div class="featured-image"></div>
-                    <h5 class="thumbnail-title" dir="rtl">V-Malaysia 2018، حيث يتحد الحالمون كعائلة واحدة</h5>
-                </div>
-
-                <div class="thumbnail news-thumbnail" onclick="window.location='http://the-v.net/fr/news?id=v-malaysia-2018-where-dreamers-unite-as-one-family';">
-                    <div class="featured-image"></div>
-                    <h5 class="thumbnail-title">V-Malaysia 2018, là où les rêveurs s'unissent comme une seule famille</h5>
-                </div>
-
-                <div class="thumbnail news-thumbnail" onclick="window.location='http://the-v.net/tr/news?id=v-malaysia-2018-where-dreamers-unite-as-one-family';">
-                    <div class="featured-image"></div>
-                    <h5 class="thumbnail-title">V-Malaysia 2018, Hayalperestlerin Bir Aile Olarak Biraraya Geldiği Yer</h5>
-                </div>
-
-                <div class="thumbnail news-thumbnail" onclick="window.location='http://the-v.net/ru/news?id=v-malaysia-2018-where-dreamers-unite-as-one-family';">
-                    <div class="featured-image"></div>
-                    <h5 class="thumbnail-title">V-Malaysia 2018, где мечтатели становятся одной семьей</h5>
-                </div>
-
-                <div class="thumbnail news-thumbnail" onclick="window.location='http://the-v.net/id/news?id=v-malaysia-2018-where-dreamers-unite-as-one-family';">
-                    <div class="featured-image"></div>
-                    <h5 class="thumbnail-title">V-Malaysia 2018, Dimana Para Pemimpi Bersatu Bagai Satu Keluarga</h5>
                 </div>
 
                 <div class="thumbnail videos-thumbnail" onclick="window.location='http://the-v.net/vtube/video?id=5727925141001';">
