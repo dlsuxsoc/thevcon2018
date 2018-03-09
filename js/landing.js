@@ -17,7 +17,7 @@ $(document).ready(function(){
         $(this).removeClass('hallow-white');
     });
 
-    //applyLanguage();
+    applyLanguage();
 });
 
 function applyLanguage(){
@@ -45,97 +45,49 @@ function applyLanguage(){
 }
 
 function toEnglish(){
-    $('#news-title').html('News');
-    $('#video-title').html('Video');
-    $('#gallery-title').html('Gallery');
-
-    $('#news-link-1').attr('href', 'http://the-v.net/news?id=v-malaysia-2018-where-dreamers-unite-as-one-family');
-    $('#news-thumbnail-1').html('V-Malaysia 2018, Where Dreamers Unite as One Family');
-    $('#news-thumbnail-1').attr('dir', 'ltr');
-
-    $('#day-1-button').html('Day 1');
-    $('#day-2-button').html('Day 2');
-    $('#day-3-button').html('Day 3');
-    $('#day-4-button').html('Day 4');
-    $('#day-5-button').html('Day 5');
+    $('#news-and-updates-title').html('NEWS & UPDATES');
+    $('#all').html('ALL');
+    $('#news').html('NEWS');
+    $('#videos').html('VIDEOS');
+    $('#gallery').html('GALLERY');
 }
 
 function toArabic(){
-    $('#news-title').html('أخبار');
-    $('#video-title').html('فيديو');
-    $('#gallery-title').html('صالة عرض');
-
-    $('#news-link-1').attr('href', 'http://the-v.net/ar/news?id=v-malaysia-2018-where-dreamers-unite-as-one-family');
-    $('#news-thumbnail-1').html('V-Malaysia 2018، حيث يتحد الحالمون كعائلة واحدة');
-    $('#news-thumbnail-1').attr('dir', 'rtl');
-
-    $('#day-1-button').html('1 '+'يوم');
-    $('#day-2-button').html('2 '+'يوم');
-    $('#day-3-button').html('3 '+'يوم');
-    $('#day-4-button').html('4 '+'يوم');
-    $('#day-5-button').html('5 '+'يوم');
+    $('#news-and-updates-title').html("أخبار ومستجدات");
+    $('#all').html('الكل');
+    $('#news').html('أخبار');
+    $('#videos').html('فيديو');
+    $('#gallery').html('صالة عرض');
 }
 
 function toTurkish(){
-    $('#news-title').html('HABER');
-    $('#video-title').html('VİDEO');
-    $('#gallery-title').html('GALERİSİ');
-
-    $('#news-link-1').attr('href', 'http://the-v.net/tr/news?id=v-malaysia-2018-where-dreamers-unite-as-one-family');
-    $('#news-thumbnail-1').html('V-Malaysia 2018, Hayalperestlerin Bir Aile Olarak Biraraya Geldiği Yer');
-    $('#news-thumbnail-1').attr('dir', 'ltr');
-
-    $('#day-1-button').html('Gün 1');
-    $('#day-2-button').html('Gün 2');
-    $('#day-3-button').html('Gün 3');
-    $('#day-4-button').html('Gün 4');
-    $('#day-5-button').html('Gün 5');
+    $('#news-and-updates-title').html('HABERLER & GÜNCELLEMELER');
+    $('#all').html('HERŞEY');
+    $('#news').html('HABER');
+    $('#videos').html('VİDEO');
+    $('#gallery').html('GALERİSİ');
 }
 
 function toFrench(){
-    $('#news-title').html('ACTUALITÉS');
-    $('#video-title').html('VIDÉO');
-    $('#gallery-title').html('GALERIE');
-
-    $('#news-link-1').attr('href', 'http://the-v.net/fr/news?id=v-malaysia-2018-where-dreamers-unite-as-one-family');
-    $('#news-thumbnail-1').html('V-Malaysia 2018, là où les rêveurs s\'unissent comme une seule famille');
-    $('#news-thumbnail-1').attr('dir', 'ltr');
-
-    $('#day-1-button').html('Jour 1');
-    $('#day-2-button').html('Jour 2');
-    $('#day-3-button').html('Jour 3');
-    $('#day-4-button').html('Jour 4');
-    $('#day-5-button').html('Jour 5');
+    $('#news-and-updates-title').html('ACTUALITÉS ET MISES À JOUR');
+    $('#all').html('TOUT');
+    $('#news').html('ACTUALITÉS');
+    $('#videos').html('VIDÉO');
+    $('#gallery').html('GALERIE');
 }
 
 function toRussian(){
-    $('#news-title').html('НОВОСТИ');
-    $('#video-title').html('ВИДЕО');
-    $('#gallery-title').html('ГАЛЕРЕЯ');
-
-    $('#news-link-1').attr('href', 'http://the-v.net/ru/news?id=v-malaysia-2018-where-dreamers-unite-as-one-family');
-    $('#news-thumbnail-1').html('V-Malaysia 2018, где мечтатели становятся одной семьей');
-    $('#news-thumbnail-1').attr('dir', 'ltr');
-
-    $('#day-1-button').html('день 1');
-    $('#day-2-button').html('день 2');
-    $('#day-3-button').html('день 3');
-    $('#day-4-button').html('день 4');
-    $('#day-5-button').html('день 5');
+    $('#news-and-updates-title').html('НОВОСТИ И ОБЪЯВЛЕНИЯ');
+    $('#all').html('ВСЕ');
+    $('#news').html('НОВОСТИ');
+    $('#videos').html('ВИДЕО');
+    $('#gallery').html('ГАЛЕРЕЯ');
 }
 
 function toIndonesian(){
-    $('#news-title').html('BERITA');
-    $('#video-title').html('VIDEO');
-    $('#gallery-title').html('GALERI');
-
-    $('#news-link-1').attr('href', 'http://the-v.net/id/news?id=v-malaysia-2018-where-dreamers-unite-as-one-family');
-    $('#news-thumbnail-1').html('V-Malaysia 2018, Dimana Para Pemimpi Bersatu Bagai Satu Keluarga');
-    $('#news-thumbnail-1').attr('dir', 'ltr');
-
-    $('#day-1-button').html('Hari 1');
-    $('#day-2-button').html('Hari 2');
-    $('#day-3-button').html('Hari 3');
-    $('#day-4-button').html('Hari 4');
-    $('#day-5-button').html('Hari 5');
+    $('#news-and-updates-title').html('BERITA & UPDATE');
+    $('#all').html('SEMUA');
+    $('#news').html('BERITA');
+    $('#videos').html('VIDEO');
+    $('#gallery').html('GALERI');
 }
