@@ -5,20 +5,14 @@ body, html{
     box-sizing: border-box;
 }
 
-h1#news-title, h1#video-title, h1#gallery-title{
+h1{
     color: white;
-    margin-bottom: 0;
-    text-align: left;
-}
-
-hr{
-    margin-bottom: 2em;
 }
 
 nav{
-    position: relative;
+    position: fixed;
     top: 0;
-    z-index: 10;
+    z-index: 999;
     left: 0;
 }
 
@@ -26,6 +20,15 @@ section{
     background-color: transparent;
     position: relative;
     z-index: 10;
+}
+
+section#landing-wrapper{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: scroll;
 }
 
 #alternative-bg{
@@ -36,127 +39,26 @@ section{
     position: fixed;
 }
 
-#landing-wrapper > div.flex-between{
-    align-items: flex-start;
-}
-
-#news-wrapper, #video-wrapper, #gallery-wrapper{
+#media-buttons{
     margin: 3em 0;
 }
 
-#news-wrapper, #video-wrapper{
-    max-width: 49%;
-    width: 100%;
+#media-buttons button{
+    margin: 0 0.3em;
 }
 
-#news-wrapper .thumbnail{
-    background: url('../../assets/png/news-featured.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#media-feed{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-#video-wrapper .thumbnail{
-    background: url('../../assets/png/video-featured.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#news-wrapper .item-wrapper, #video-wrapper .item-wrapper{
-    display: block;
-    margin-bottom: 2em;
-}
-
-#news-wrapper .thumbnail-title, #video-wrapper .thumbnail-title{
-    margin-top: 0.5em;
-    color: white;
-}
-
-#gallery-wrapper .thumbnail{
-    background-color: #333;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 2em 0;
-    max-width: 19%;
-    width: 100%;
-
-    transition: ease all 0.3s;
-    -webkit-transition: ease all 0.3s;
-    -moz-transition: ease all 0.3s;
-    -ms-transition: ease all 0.3s;
-    -o-transition: ease all 0.3s;
-}
-
-#gallery-wrapper .thumbnail:nth-child(1){
-    background: url('../../assets/png/day1.jpg');
-    background-position: bottom;
-
-    transition: ease all 0.3s;
-    -webkit-transition: ease all 0.3s;
-    -moz-transition: ease all 0.3s;
-    -ms-transition: ease all 0.3s;
-    -o-transition: ease all 0.3s;
-}
-
-#gallery-wrapper .thumbnail:nth-child(2){
-    background: url('../../assets/png/day2.jpg');
-    background-position: bottom;
-
-    transition: ease all 0.3s;
-    -webkit-transition: ease all 0.3s;
-    -moz-transition: ease all 0.3s;
-    -ms-transition: ease all 0.3s;
-    -o-transition: ease all 0.3s;
-}
-
-#gallery-wrapper .thumbnail:nth-child(3){
-    background: url('../../assets/png/day3.jpg');
-    background-position: bottom;
-
-    transition: ease all 0.3s;
-    -webkit-transition: ease all 0.3s;
-    -moz-transition: ease all 0.3s;
-    -ms-transition: ease all 0.3s;
-    -o-transition: ease all 0.3s;
-}
-
-#gallery-wrapper .thumbnail:nth-child(4){
-    background: url('../../assets/png/day4.jpg');
-    background-position: bottom;
-
-    transition: ease all 0.3s;
-    -webkit-transition: ease all 0.3s;
-    -moz-transition: ease all 0.3s;
-    -ms-transition: ease all 0.3s;
-    -o-transition: ease all 0.3s;
-}
-
-#gallery-wrapper .thumbnail:nth-child(5){
-    background: url('../../assets/png/day5.jpg');
-    background-position: bottom;
-
-    transition: ease all 0.3s;
-    -webkit-transition: ease all 0.3s;
-    -moz-transition: ease all 0.3s;
-    -ms-transition: ease all 0.3s;
-    -o-transition: ease all 0.3s;
-}
-
-#gallery-wrapper .thumbnail p{
-    text-align: center;
-    font-size: 1.3em;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    text-shadow: 0px 0px 11px #000;
-}
-
-.thumbnail{
-    padding: 10em 0;
-    background-color: white;
+div.thumbnail{
+    max-width: 30%;
+    padding: 0.5em 0.5em;
     border-radius: 0.3em;
+    margin-bottom: 1em;
+    width: 100%;
     cursor: pointer;
 
     transition: ease all 0.3s;
@@ -166,9 +68,29 @@ section{
     -o-transition: ease all 0.3s;
 }
 
-#video-wrapper .thumbnail:hover, #news-wrapper .thumbnail:hover,
-#gallery-wrapper .thumbnail:hover{
-    box-shadow: 0px 0px 21px #999;
+div.thumbnail:hover{
+    box-shadow: 0px 0px 11px #ccc;
+}
+
+div.featured-image{
+    width: 100%;
+    padding: 7em 0;
+    background-color: #333;
+    border-radius: 0.3em;
+
+    background: url('../../assets/png/day1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div.thumbnail .thumbnail-title{
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.3em;
+    font-size: 1em;
+    padding: 1em;
 }
 
 @media (max-width: 1043px){
@@ -192,31 +114,12 @@ section{
         width: 100%;
     }
 
-    section#landing-wrapper div.flex-between{
+    #media-feed{
         flex-direction: column;
+        align-items: center;
     }
 
-    #news-wrapper, #video-wrapper{
-        max-width: 100% !important;
-    }
-
-    #news-wrapper .thumbnail{
-        background-size: 200%;
-    }
-
-    #video-wrapper .thumbnail{
-        background-size: 200%;
-    }
-
-    #gallery-wrapper .thumbnail{
-        background-size: cover !important;
-        padding: 3em 0;
-        margin-bottom: 2em;
-        max-width: 100%;
-        width: 100%;
-    }
-
-    #gallery-wrapper .thumbnail p{
-        font-size: 2.3em;
+    .thumbnail{
+        max-width: 95% !important;
     }
 }
