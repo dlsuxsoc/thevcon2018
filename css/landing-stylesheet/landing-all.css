@@ -36,6 +36,10 @@ section{
     position: fixed;
 }
 
+#landing-wrapper > div.flex-between{
+    align-items: flex-start;
+}
+
 #news-wrapper, #video-wrapper, #gallery-wrapper{
     margin: 3em 0;
 }
@@ -57,6 +61,16 @@ section{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#news-wrapper .item-wrapper, #video-wrapper .item-wrapper{
+    display: block;
+    margin-bottom: 2em;
+}
+
+#news-wrapper .thumbnail-title, #video-wrapper .thumbnail-title{
+    margin-top: 0.5em;
+    color: white;
 }
 
 #gallery-wrapper .thumbnail{
