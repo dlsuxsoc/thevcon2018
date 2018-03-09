@@ -2,7 +2,22 @@ $(document).ready(function(){
     if(localStorage.vconLang == null)
         localStorage.vconLang = '0';
 
-    applyLanguage();
+    $('#media-buttons button').click(function(){
+        var mediaType = $(this).attr('id');
+
+        if(mediaType === 'all')
+            $('.thumbnail').css('display', 'block');
+
+        else{
+            $('.thumbnail').css('display', 'none');
+            $("." + mediaType + "-thumbnail").css('display', 'block');
+        }
+
+        $('#media-buttons button').addClass('hallow-white');
+        $(this).removeClass('hallow-white');
+    });
+
+    //applyLanguage();
 });
 
 function applyLanguage(){
