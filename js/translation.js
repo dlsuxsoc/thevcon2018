@@ -94,7 +94,7 @@ function checkArabic(){
             document.getElementById('vcon-2017-title').innerHTML = ":2017 عام <br/>V-Malaysia 2017<br/>V-UAE 2017";
 
             document.getElementById('ig-dock-title').innerHTML = "";
-            $('#ig-dock-title').append("#VCON18 " + "سحر" + "<br/>");
+            $('#ig-dock-title').append("#VMALAYSIA2018 " + "سحر" + "<br/>");
             $('#ig-dock-title').append("يستولي " + "على " + "العالم ");
 
             document.getElementById('room-reservation-title').innerHTML = "";
@@ -121,7 +121,7 @@ function checkArabic(){
             document.getElementById('vcon-2016-title').innerHTML = "V-Malaysia 2016 وV-UAE 2016 :2016 عام";
             document.getElementById('vcon-2017-title').innerHTML = "V-Malaysia 2017 وV-UAE 2017 :2017 عام";
 
-            document.getElementById('ig-dock-title').innerHTML =  "يستولي " + "على " + "العالم " + "#VCON18 " + "سحر";
+            document.getElementById('ig-dock-title').innerHTML =  "يستولي " + "على " + "العالم " + "#VMALAYSIA2018 " + "سحر";
             document.getElementById('room-reservation-title').innerHTML = "V-Malaysia 2018 أكمل رحلتك في";
         }
     }
@@ -214,7 +214,7 @@ function toEnglish(){
     $('#nu-gallery').html('GALLERY');
     $('#nu-view').html('View');
 
-    $('#ig-dock-title').html('The #VCON18 Magic Taking Over The World');
+    $('#ig-dock-title').html('The #VMALAYSIA2018 Magic Taking Over The World');
 
     $('#faqs-title').html('Frequently Asked Questions');
     document.getElementById('faq-tab-one').innerHTML = "How do I purchase a ticket?";
@@ -361,7 +361,7 @@ function toArabic(){
 
     /* INSTAGRAM POSTS */
     // document.getElementById('ig-dock-title').innerHTML = "سحر  يستولي #VCON18 على العالم";
-    document.getElementById('ig-dock-title').innerHTML =  "يستولي " + "على " + "العالم " + "#VCON18 " + "سحر";
+    document.getElementById('ig-dock-title').innerHTML =  "يستولي " + "على " + "العالم " + "#VMALAYSIA2018 " + "سحر";
 
     /* FAQ */
     document.getElementById('faqs-title').innerHTML = "أسئلة متكررة";
@@ -465,7 +465,7 @@ function toTurkish(){
 
 
     /* INSTAGRAM POSTS */
-    document.getElementById('ig-dock-title').innerHTML = "#VCON18 BÜYÜSÜ DÜNYAYI SARIYOR";
+    document.getElementById('ig-dock-title').innerHTML = "#VMALAYSIA2018 BÜYÜSÜ DÜNYAYI SARIYOR";
 
     /* CONTACT US */
     document.getElementById('contact-us-title').innerHTML = "BİZİMLE İLETİŞİME GEÇİN";
@@ -587,7 +587,7 @@ function toFrench(){
 
 
     /* INSTAGRAM POSTS */
-    document.getElementById('ig-dock-title').innerHTML = "LA MAGIE DU #VCON18 PREND LE CONTRÔLE DU MONDE";
+    document.getElementById('ig-dock-title').innerHTML = "LA MAGIE DU #VMALAYSIA2018 PREND LE CONTRÔLE DU MONDE";
 
 
     /* CONTACT US */
@@ -702,7 +702,7 @@ function toRussian(){
 
 
     /* INSTAGRAM POSTS */
-    document.getElementById('ig-dock-title').innerHTML = "МАГИЯ #VCON18 ПОКОРЯЕТ МИР";
+    document.getElementById('ig-dock-title').innerHTML = "МАГИЯ #VMALAYSIA2018 ПОКОРЯЕТ МИР";
 
     /* CONTACT US */
     document.getElementById('contact-us-title').innerHTML = "КОНТАКТЫ";
@@ -815,7 +815,7 @@ function toIndonesian(){
 
 
     /* INSTAGRAM POSTS */
-    document.getElementById('ig-dock-title').innerHTML = "THE # VCON18 MAGIC MENGAMBIL ALIH DUNIA";
+    document.getElementById('ig-dock-title').innerHTML = "THE #VMALAYSIA2018 MAGIC MENGAMBIL ALIH DUNIA";
 
     /* CONTACT US */
     document.getElementById('contact-us-title').innerHTML = "HUBUNGI KAMI";
